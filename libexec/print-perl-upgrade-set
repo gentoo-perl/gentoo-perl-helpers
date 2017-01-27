@@ -14,9 +14,9 @@ set -euo pipefail
 
 (
   einfo "Scanning virtual/perl-*"
-  installed-perl-virtuals
+  installed-perl-virtuals || ewarn "No Perl Virtuals detected"
   einfo "Scanning Subslot-Redeps of dev-lang/perl:0/${subslot}"
-  installed-deps-perl-subslot "${subslot}"
+  installed-deps-perl-subslot "${subslot}"  || ewarn "No subslot deps on Perl 0/${subslot} detected"
 ) | sort -u
 
 # help: Invocation:
