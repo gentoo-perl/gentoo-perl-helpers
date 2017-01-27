@@ -2,11 +2,41 @@
 
 # ABSTRACT: Shows all installed packages that depend on Perl
 
+source "${LIBDIR}/core-functions.sh" || exit 1
+
 set -euo pipefail
-type xargs >/dev/null     || _gentoo_perl_die "No xargs in path, install sys-apps/findutils";
-type qatom >/dev/null     || _gentoo_perl_die "No qatom in path, install app-portage/portage-utils";
-type qdepends >/dev/null  || _gentoo_perl_die "No qdepends in path, install app-portage/portage-utils";
 
-qdepends --nocolor --depend --quiet --query dev-lang/perl |\
-           xargs qatom --quiet --nocolor --format "%{CATEGORY}/%{PN}"
+require_bin xargs sys-apps/findutils
+require_bin qatom app-portage/portage-utils
+require_bin qdepends app-portage/portage-utils
+require_bin sed sys-apps/sed
+require_bin sort sys-apps/coreutils
 
+(
+    einfo "revdep DEPEND scanning"
+    qdepends --nocolor --depend --quiet --query dev-lang/perl                 |\
+           xargs qdepends --nocolor --quiet -k SLOT | sed 's/: /:/'           |\
+           xargs qatom --quiet --nocolor --format "%{CATEGORY}/%{PN}%[SLOT]"  |\
+           sed -r 's|:([^/])*/[^/]*|:\1|'
+
+    einfo "revdep RDEPEND scanning"
+    qdepends --nocolor --rdepend --quiet --query dev-lang/perl                |\
+           xargs qdepends --nocolor --quiet -k SLOT | sed 's/: /:/'           |\
+           xargs qatom --quiet --nocolor --format "%{CATEGORY}/%{PN}%[SLOT]"  |\
+           sed -r 's|:([^/])*/[^/]*|:\1|'
+
+
+    einfo "revdep PDEPEND scanning"
+    qdepends --nocolor --pdepend --quiet --query dev-lang/perl                |\
+           xargs qdepends --nocolor --quiet -k SLOT | sed 's/: /:/'           |\
+           xargs qatom --quiet --nocolor --format "%{CATEGORY}/%{PN}%[SLOT]"  |\
+           sed -r 's|:([^/])*/[^/]*|:\1|'
+
+) | sort -u
+
+# help: Invocation:
+# help:   gentoo-perl installed-deps-perl
+# help:
+# help: Outputs:
+# help:   A list of all packages in Category/Package-Name format
+# help:   which in some way depend on dev-lang/perl

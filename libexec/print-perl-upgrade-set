@@ -1,16 +1,30 @@
 #!/bin/bash
 
 # ABSTRACT: Produces a list of all packages that should be rebuilt when upgrading perl
+source "${LIBDIR}/core-functions.sh" || exit 1
+require_bin sort sys-apps/coreutils
 
-( [[ $# -gt 0 ]] && [[ $# -lt 2 ]] ) || _gentoo_perl_die "${0}: Expected ${0} [previous-perl-version]"
-local subslot=$1;
+[[ $# -gt  0 ]] || die "${FULL_COMMAND:-$0}: Expected [previous-perl-version] in ${FULL_COMMAND:-$0} [previous-perl-version] [wanted-perl-version]"
+[[ $# -gt  1 ]] || die "${FULL_COMMAND:-$0}: Expected [wanted-perl-version] in ${FULL_COMMAND:-$0} [previous-perl-version] [wanted-perl-version]"
+[[ $# -lt  3 ]] || die "${FULL_COMMAND:-$0}: Too many arguments, expected 2 at most."
+
+subslot=$1;
 shift
 set -euo pipefail
-        
+
 (
-  _gentoo_perl_info "Scanning virtual/perl-*"
-  installed-perl-virtual
-  _gentoo_perl_info "Scanning Subslot-Redeps of dev-lang/perl:0/${subslot}"
+  einfo "Scanning virtual/perl-*"
+  installed-perl-virtuals
+  einfo "Scanning Subslot-Redeps of dev-lang/perl:0/${subslot}"
   installed-deps-perl-subslot "${subslot}"
 ) | sort -u
 
+# help: Invocation:
+# help:   gentoo-perl print-perl-upgrade-set [oldABI] [newABI]
+# help:
+# help: Example:
+# help:   gentoo-perl installed-deps-perl-subslot 5.22 5.24 | tee /etc/portage/sets/perl-upgrade
+# help:
+# help: Outputs:
+# help:   A list of all packages (with slots) that should be rebuilt in order
+# help:   for dev-lang/perl to be upgraded from "oldABI" to "newABI"

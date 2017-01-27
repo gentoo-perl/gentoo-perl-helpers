@@ -2,16 +2,52 @@
 
 # ABSTRACT: Shows all packages that currently depend on a given perl subslot
 
-( [[ $# -gt 0 ]] && [[ $# -lt 2 ]] ) || _gentoo_perl_die "${0}: Expected ${0} [perl-version]"
+source "${LIBDIR}/core-functions.sh" || exit 1
 
-local subslot=$1; 
+[[ $# == 1 ]]  || die "${FULL_COMMAND:-$0}: Expected argument [perl-version] in: ${FULL_COMMAND:-$0} [perl-version]"
+set -euo pipefail
+
+subslot=$1;
 
 shift
+require_bin xargs sys-apps/findutils
+require_bin qatom app-portage/portage-utils
+require_bin qdepends app-portage/portage-utils
+require_bin sed sys-apps/sed
+require_bin sort sys-apps/coreutils
 
-set -euo pipefail
-type xargs >/dev/null     || _gentoo_perl_die "No xargs in path, install sys-apps/findutils";
-type qatom >/dev/null     || _gentoo_perl_die "No qatom in path, install app-portage/portage-utils";
-type qdepends >/dev/null  || _gentoo_perl_die "No qdepends in path, install app-portage/portage-utils";
+(
+    einfo "revdep DEPEND scanning"
+    qdepends --nocolor --depend --quiet --query "dev-lang/perl:0/${subslot}=" |\
+           xargs qdepends --nocolor --quiet -k SLOT | sed 's/: /:/'           |\
+           xargs qatom --quiet --nocolor --format "%{CATEGORY}/%{PN}%[SLOT]"  |\
+           sed -r 's|:([^/]*)/[^/]*|:\1|'       || ewarn "No matches in DEPEND"
 
-depends --nocolor --depend --quiet --query "dev-lang/perl:0/${subslot}=" |\
-          xargs qatom --quiet --nocolor --format "%{CATEGORY}/%{PN}"
+
+    einfo "revdep RDEPEND scanning"
+    qdepends --nocolor --rdepend --quiet --query "dev-lang/perl:0/${subslot}=" |\
+           xargs qdepends --nocolor --quiet -k SLOT | sed 's/: /:/'            |\
+           xargs qatom --quiet --nocolor --format "%{CATEGORY}/%{PN}%[SLOT]"   |\
+           sed -r 's|:([^/]*)/[^/]*|:\1|'       || ewarn "No matches in RDEPEND"
+
+    einfo "revdep PDEPEND scanning"
+    qdepends --nocolor --pdepend --quiet --query "dev-lang/perl:0/${subslot}=" |\
+           xargs qdepends --nocolor --quiet -k SLOT | sed 's/: /:/'           |\
+           xargs qatom --quiet --nocolor --format "%{CATEGORY}/%{PN}%[SLOT]"   |\
+           sed -r 's|:([^/]*)/[^/]*|:\1|' || ewarn "No matches in PDEPEND"
+
+) | sort -u
+
+# help: Invocation:
+# help:   gentoo-perl installed-deps-perl-subslot [perl-subslot-version]
+# help:
+# help: Example:
+# help:   gentoo-perl installed-deps-perl-subslot 5.22
+# help:
+# help: Outputs:
+# help:   A list of all packages in Category/Package-Name format
+# help:   which in some way depend on dev-lang/perl:0/5.22=
+# help:
+# help: Note that [perl-subslot-version] is not typically 5.22.3 or similar,
+# help: but 5.22 , the ABI version.
+

@@ -2,12 +2,26 @@
 
 # ABSTRACT: Produces a list of packages that should be removed when upgrading from a given perl version
 
-( [[ $# -gt 0 ]] && [[ $# -lt 2 ]] ) || _gentoo_perl_die "${FUNC}: Expected ${FUNC} [previous-perl-version]"
-local subslot=$1;
+source "${LIBDIR}/core-functions.sh" || exit 1
+require_bin sort sys-apps/coreutils
+
+[[ $# -gt  0 ]] || die "${FULL_COMMAND:-$0}: Expected [previous-perl-version] in ${FULL_COMMAND:-$0} [previous-perl-version] [wanted-perl-version]"
+[[ $# -gt  1 ]] || die "${FULL_COMMAND:-$0}: Expected [wanted-perl-version] in ${FULL_COMMAND:-$0} [previous-perl-version] [wanted-perl-version]"
+[[ $# -lt  3 ]] || die "${FULL_COMMAND:-$0}: Too many arguments, expected 2 at most."
+
+subslot=$1;
 shift
 
 set -euo pipefail
 (
-  _gentoo_perl_info "Scanning perl-core/ for removals"
+  einfo "Scanning perl-core/ for removals"
   installed-perl-core
 ) | sort -u
+
+# help: Invocation:
+# help:   gentoo-perl print-perl-cleanup-set | sudo tee /etc/portage/sets/perl-cleanup
+# help:
+# help: Output:
+# help:   A list of things that should be uninstalled. This is mostly just a wrapper
+# help:   for <installed-perl-core> but serves as a placeholder for other extractions
+

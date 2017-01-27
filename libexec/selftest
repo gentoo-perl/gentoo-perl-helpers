@@ -11,4 +11,6 @@ require_bin portageq sys-app/portage
 require_bin qatom app-portage/portage-utils
 require_bin qdepends app-portage/portage-utils
 require_bin xargs sys-apps/findutils
+require_bin sed sys-apps/sed
+require_bin sort sys-apps/coreutils
 einfo "OK"
