@@ -1,0 +1,62 @@
+#!/bin/bash
+
+# ABSTRACT: generates/updates sets in /etc/portage/sets for helping dev-lang/perl upgrades
+
+source "${LIBDIR}/core-functions.sh" || exit 1;
+
+[[ $# == 2 ]] || die "Expected ${cmdname} [previous-perl-version] [wanted-version]"
+
+subslot="$1"
+shift
+destsubslot="$1"
+shift;
+
+set -euo pipefail
+
+sets="${ETC_PORTAGE_SETS:-${ETC_PORTAGE:-/etc/portage}/sets}"
+cleanup="${sets}/perl-downgrade-cleanup"
+downgrade="${sets}/perl-downgrade"
+
+mkdir -p "${sets}"    || die "Cannot ensure ${sets} directory exists"
+touch -m "${cleanup}" || die "Cannot write ${cleanup}"
+touch -m "${downgrade}" || die "Cannot write ${downgrade}"
+
+einfo "Generating ${cleanup}"
+( 
+  dorun print-perl-cleanup-set "$subslot" "${destsubslot}" || ewarn "no perl-core/ to cleanup"
+  dorun installed-perl-virtuals   || ewarn "no virtuals to cleanup"
+)>"${cleanup}" || ewarn "Nothing to clean"
+einfo "... Done ${cleanup}"
+
+einfo "Generating ${downgrade}"
+dorun print-perl-upgrade-set "$subslot" "${destsubslot}" >"${downgrade}"  ||\
+  die "No packages detected to downgrade, perhaps you've already downgraded to 0/${destsubslot}"
+
+einfo "... Done ${downgrade}"
+
+einfo "Created set @perl-cleanup in ${cleanup}"
+einfo "Created set @perl-upgrade in ${downgrade}"
+einfo "Assuming both of those were in /etc/portage/sets you can now do"
+einfo "  emerge -C -va @perl-downgrade-cleanup"
+einfo "  emerge -va1 -k n dev-lang/perl:0/${destsubslot} @perl-downgrade"
+einfo ""
+ewarn "NOTE: Downgrades are hard and probably wont work. Best attempts"
+ewarn "are made by cleaning all virtuals and hoping portage does the right thing"
+ewarn "as portage defaults to trying to install even masked perl-core/ to keep"
+ewarn "newer virtuals around"
+
+# help: gen-downgrade-sets [previous perl version] [wanted perl version]
+# help:
+# help: example:
+# help:   gen-downgrade-sets 5.24 5.22
+# help:
+# help: In both cases, the version should be the "subslot" value used by portage
+# help: which will be likely 5.22, 5.24, 5.26, etc. ( But unlikely 5.22.1, 5.22.2 etc )
+# help:
+# help: This will generate two sets:
+# help:
+# help:   @perl-downgrade-cleanup - Contains packages we encourage removal of before upgrading
+# help:   @perl-downgrade         - Contains packages that will need rebuilding during upgrade
+# help:
+# help: If an upgrade fails mid-way, regenerating these sets will regenerate the
+# help: sets with fewer upgrades to install, which is probably what you want.
