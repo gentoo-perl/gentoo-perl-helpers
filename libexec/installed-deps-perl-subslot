@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# ABSTRACT: Shows all packages that currently depend on a given perl subslot
+
 ( [[ $# -gt 0 ]] && [[ $# -lt 2 ]] ) || _gentoo_perl_die "${0}: Expected ${0} [perl-version]"
 
 local subslot=$1; 

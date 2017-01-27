@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# ABSTRACT: Checks for the presense of all required tools
+
 source "${LIBDIR}/core-functions.sh"
 
 set -euo pipefail

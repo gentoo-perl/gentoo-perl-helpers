@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# ABSTRACT: Shows all installed packages that depend on Perl
+
 set -euo pipefail
 type xargs >/dev/null     || _gentoo_perl_die "No xargs in path, install sys-apps/findutils";
 type qatom >/dev/null     || _gentoo_perl_die "No qatom in path, install app-portage/portage-utils";

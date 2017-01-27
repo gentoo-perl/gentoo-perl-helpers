@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# ABSTRACT: Produces a list of packages that should be removed when upgrading from a given perl version
+
 ( [[ $# -gt 0 ]] && [[ $# -lt 2 ]] ) || _gentoo_perl_die "${FUNC}: Expected ${FUNC} [previous-perl-version]"
 local subslot=$1;
 shift

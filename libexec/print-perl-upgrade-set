@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# ABSTRACT: Produces a list of all packages that should be rebuilt when upgrading perl
+
 ( [[ $# -gt 0 ]] && [[ $# -lt 2 ]] ) || _gentoo_perl_die "${0}: Expected ${0} [previous-perl-version]"
 local subslot=$1;
 shift

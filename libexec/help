@@ -2,6 +2,7 @@
 
 # ABSTRACT: displays help
 
+
 source "${LIBDIR}/core-functions.sh" || exit 1
 
 require_bin grep sys-apps/grep
