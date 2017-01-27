@@ -4,9 +4,9 @@
 source "${LIBDIR}/core-functions.sh" || exit 1
 require_bin sort sys-apps/coreutils
 
-[[ $# -gt  0 ]] || die "${FULL_COMMAND:-$0}: Expected [previous-perl-version] in ${FULL_COMMAND:-$0} [previous-perl-version] [wanted-perl-version]"
-[[ $# -gt  1 ]] || die "${FULL_COMMAND:-$0}: Expected [wanted-perl-version] in ${FULL_COMMAND:-$0} [previous-perl-version] [wanted-perl-version]"
-[[ $# -lt  3 ]] || die "${FULL_COMMAND:-$0}: Too many arguments, expected 2 at most."
+[[ $# -gt  0 ]] || die "Expected [previous-perl-version] in ${cmdname} [previous-perl-version] [wanted-perl-version]"
+[[ $# -gt  1 ]] || die "Expected [wanted-perl-version] in ${cmdname} [previous-perl-version] [wanted-perl-version]"
+[[ $# -lt  3 ]] || die "Too many arguments, expected 2 at most."
 
 subslot=$1;
 shift
@@ -14,9 +14,9 @@ set -euo pipefail
 
 (
   einfo "Scanning virtual/perl-*"
-  installed-perl-virtuals || ewarn "No Perl Virtuals detected"
+  dorun installed-perl-virtuals || ewarn "No Perl Virtuals detected"
   einfo "Scanning Subslot-Redeps of dev-lang/perl:0/${subslot}"
-  installed-deps-perl-subslot "${subslot}"  || ewarn "No subslot deps on Perl 0/${subslot} detected"
+  dorun installed-deps-perl-subslot "${subslot}"  || ewarn "No subslot deps on Perl 0/${subslot} detected"
 ) | sort -u
 
 # help: Invocation:

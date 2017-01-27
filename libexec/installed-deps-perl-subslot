@@ -4,7 +4,7 @@
 
 source "${LIBDIR}/core-functions.sh" || exit 1
 
-[[ $# == 1 ]]  || die "${FULL_COMMAND:-$0}: Expected argument [perl-version] in: ${FULL_COMMAND:-$0} [perl-version]"
+[[ $# == 1 ]]  || die "Expected argument [perl-version] in: ${cmdname} [perl-version]"
 set -euo pipefail
 
 subslot=$1;
