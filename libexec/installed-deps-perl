@@ -1,0 +1,9 @@
+#!/bin/bash
+set -euo pipefail
+type xargs >/dev/null     || _gentoo_perl_die "No xargs in path, install sys-apps/findutils";
+type qatom >/dev/null     || _gentoo_perl_die "No qatom in path, install app-portage/portage-utils";
+type qdepends >/dev/null  || _gentoo_perl_die "No qdepends in path, install app-portage/portage-utils";
+
+qdepends --nocolor --depend --quiet --query dev-lang/perl |\
+           xargs qatom --quiet --nocolor --format "%{CATEGORY}/%{PN}"
+

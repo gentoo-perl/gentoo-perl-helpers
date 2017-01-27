@@ -1,0 +1,15 @@
+#!/bin/bash
+
+( [[ $# -gt 0 ]] && [[ $# -lt 2 ]] ) || _gentoo_perl_die "${0}: Expected ${0} [perl-version]"
+
+local subslot=$1; 
+
+shift
+
+set -euo pipefail
+type xargs >/dev/null     || _gentoo_perl_die "No xargs in path, install sys-apps/findutils";
+type qatom >/dev/null     || _gentoo_perl_die "No qatom in path, install app-portage/portage-utils";
+type qdepends >/dev/null  || _gentoo_perl_die "No qdepends in path, install app-portage/portage-utils";
+
+depends --nocolor --depend --quiet --query "dev-lang/perl:0/${subslot}=" |\
+          xargs qatom --quiet --nocolor --format "%{CATEGORY}/%{PN}"

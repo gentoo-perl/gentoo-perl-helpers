@@ -1,0 +1,12 @@
+#!/bin/bash
+
+source "${LIBDIR}/core-functions.sh"
+
+set -euo pipefail
+
+einfo "Testing ...."
+require_bin portageq sys-app/portage
+require_bin qatom app-portage/portage-utils
+require_bin qdepends app-portage/portage-utils
+require_bin xargs sys-apps/findutils
+einfo "OK"

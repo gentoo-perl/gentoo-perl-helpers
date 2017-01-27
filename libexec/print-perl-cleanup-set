@@ -1,0 +1,11 @@
+#!/bin/bash
+
+( [[ $# -gt 0 ]] && [[ $# -lt 2 ]] ) || _gentoo_perl_die "${FUNC}: Expected ${FUNC} [previous-perl-version]"
+local subslot=$1;
+shift
+
+set -euo pipefail
+(
+  _gentoo_perl_info "Scanning perl-core/ for removals"
+  installed-perl-core
+) | sort -u
