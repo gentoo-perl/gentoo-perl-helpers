@@ -10,13 +10,16 @@ require_bin sort sys-apps/coreutils
 
 subslot=$1;
 shift
+target=$1
+shift
+
 set -euo pipefail
 
 (
-  einfo "Scanning virtual/perl-*"
-  dorun installed-perl-virtuals || ewarn "No Perl Virtuals detected"
-  einfo "Scanning Subslot-Redeps of dev-lang/perl:0/${subslot}"
-  dorun installed-deps-perl-subslot "${subslot}"  || ewarn "No subslot deps on Perl 0/${subslot} detected"
+  #einfo "Scanning virtual/perl-*"
+  #dorun installed-perl-virtuals || ewarn "No Perl Virtuals detected"
+  einfo "Scanning Subslot-Redeps for upgrade to dev-lang/perl:0/${target}"
+  dorun installed-deps-perl-subslot-rebuild "${target}"  || ewarn "No subslot deps on Perls other than 0/${target} detected"
 ) | sort -u
 
 # help: Invocation:
