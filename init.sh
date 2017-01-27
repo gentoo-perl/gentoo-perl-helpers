@@ -30,11 +30,19 @@ _gentoo_perl_helpers_init() {
   fi
 
   function no_gentoo_perl_helpers() {
-    unset no_gentoo_perl_helpers
     unset installed_perl_core
     unset installed_perl_virtual
+    unset installed_deps_perl
+    unset installed_deps_perl_subslot
+    unset gen_perl_upgrade_set
+    unset gen_perl_remove_set
+    unset gen_perl_upgrade_sets
+
     unset _gentoo_perl_die
-    unset 
+    unset _gentoo_perl_info
+
+    unset no_gentoo_perl_helpers
+
   }
 
   function _gentoo_perl_die() {
