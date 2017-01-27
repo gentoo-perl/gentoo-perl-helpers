@@ -101,7 +101,7 @@ _gentoo_perl_helpers_init() {
       local subslot=$1; shift
       set -euo pipefail
       (
-        _gentoo_perl_info "Scanning virual/perl-*"
+        _gentoo_perl_info "Scanning virtual/perl-*"
         installed_perl_virtual
         _gentoo_perl_info "Scanning Subslot-Redeps of dev-lang/perl:0/${subslot}"
         installed_deps_perl_subslot "${subslot}"
