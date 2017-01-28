@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# ABSTRACT: displays help
+
+source "${LIBDIR}/core-functions.sh" || exit 1
+
+require_bin grep sys-apps/grep
+require_bin sed sys-apps/sed
+
+commandname="help"
+
+if [[ $# -gt 0 ]]; then
+  commandname="$1"
+  shift
+fi
+helpfile="${LIBEXECDIR}/${commandname}"
+
+if [[ -e "$helpfile" ]]; then
+  einfo "Command: ${commandname}"
+  echo >&2
+
+  einfo "Purpose:"
+  echo >&2
+
+  grep '^#\s*ABSTRACT:' "${helpfile}" | sed 's/^#\s*ABSTRACT:\s*//; s/^/   /'  >&2
+  echo >&2
+
+  einfo "About:"
+  echo >&2
+  grep '^#\s*help:' "${helpfile}" | sed "s/^#\s*help://; s/^/   /" >&2
+else
+  eerror "No such command ${commandname}"
+fi
+exit 1;
+
+# help: Invokation:
+# help:   gentoo-perl subcommand --args
+# help:   gentoo-perl help
+# help:   gentoo-perl help subcommand
+# help:
+# help: Useful Commands:
+# help:   gentoo-perl gen-upgrade-sets
+# help:   gentoo-perl list-commands
+# help:   gentoo-perl list-commands-desc
+# help:   gentoo-perl installed-perl-core
+# help:   gentoo-perl installed-perl-virtuals
+

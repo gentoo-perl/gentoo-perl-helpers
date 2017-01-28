@@ -1,0 +1,40 @@
+#!/bin/bash
+export LIBDIR="@@LIBDIR@@"
+export LIBEXECDIR="@@LIBEXECDIR@@"
+
+if [[ ${LIBDIR:0:2} == "@@" ]]; then
+  export LIBDIR="$PWD/lib"
+  export LIBEXECDIR="$PWD/libexec"
+fi
+
+export PATH="${LIBEXECDIR}:$PATH"
+
+source "${LIBDIR}/core-functions.sh"
+
+my_command="help"
+
+if [[ $# == 0 ]]; then
+  eerror "No command specified";
+  my_command="help"
+else
+  if [[ ${1:1:0}  == '-' ]]; then
+    eerror "Unknown command $1"
+    my_command="help"
+    shift;
+  else
+    my_command="$1"
+    shift
+  fi
+fi
+
+fullcommand="${LIBEXECDIR%/}/${my_command}"
+
+if [[ ! -e "${fullcommand}" ]]; then
+  die "No such command ${my_command}, ${fullcommand} does not exist";
+fi
+if [[ ! -x "${fullcommand}" ]]; then
+  die "${fullcommand} is not executable";
+fi
+
+#export FULL_COMMAND="${BINSCRIPT}"
+dorun "${fullcommand}" "$@"
