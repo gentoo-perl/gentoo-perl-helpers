@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# ABSTRACT: Lists all commands in a format suitable for machine reading
+
+for i in "${LIBEXECDIR}"/*; do
+  echo $(basename "$i")
+done
+
+# help: Invocation
+# help:   gentoo-perl list-commands
+# help:
+# help: Outputs:
+# help:   A list of usable commands
+# help:
+# help: See Also:
+# help:   gentoo-perl help list-commands-desc
