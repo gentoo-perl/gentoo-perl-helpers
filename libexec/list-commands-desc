@@ -10,9 +10,9 @@ require_bin sed sys-apps/sed
 require_bin grep sys-apps/grep
 
 for i in "${LIBEXECDIR}"/*; do
-  printf "%30s : %s\n" \
-    "$(basename "$i")" \
-    "$( grep '#\s*ABSTRACT:' ${i} | sed "s/^#\s*ABSTRACT:\s*//;" | tr -d "\n" )"
+  [[ -x ${i} ]] && printf "%30s : %s\n" \
+      "$(basename "$i")" \
+      "$( grep '#\s*ABSTRACT:' ${i} | sed "s/^#\s*ABSTRACT:\s*//;" | tr -d "\n" )"
 done
 
 # help: Invocation

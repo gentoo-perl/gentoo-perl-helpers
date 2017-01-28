@@ -3,7 +3,7 @@
 # ABSTRACT: Lists all commands in a format suitable for machine reading
 
 for i in "${LIBEXECDIR}"/*; do
-  echo $(basename "$i")
+  [[ -x $i ]] && echo $(basename "$i")
 done
 
 # help: Invocation
