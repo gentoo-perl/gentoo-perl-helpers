@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# ABSTRACT: Validate and expand an ABI version
+
+source "${LIBDIR}/core-functions.sh" || exit 1
+
+ABISFILE="${LIBDIR}/perl-abis.txt"
+
+set -euo pipefail
+
+require_bin grep sys-apps/grep
+require_bin wc sys-apps/coreutils
+
+[[ $# -gt 0 ]] || die "Expected [wanted-perl-version] in ${cmdname} [wanted-perl-version]"
+[[ $# -lt 2 ]] || die "Too many arguments, expected 2 at most."
+
+subslot="$1"
+shift;
+
+nmatches="$( grep -cxF "${subslot}" < "${ABISFILE}" || true )"
+
+[[ "${nmatches}" -gt 0 ]] || die "No ABI matched \"${subslot}\"."
+[[ "${nmatches}" -lt 2 ]] || die "Multiple ABIs matched \"${subslot}\"."
+
+printf "dev-lang/perl:0/%s" "$( grep -xF "${subslot}" "${ABISFILE}" )"
+
+# help: Invocation
+# help:   gentoo-perl print-matching-abi [wanted-subslot]
+# help:
+# help: Outputs:
+# help:   Validate an ABI and return its expanded form
