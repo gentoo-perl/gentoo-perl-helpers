@@ -15,6 +15,7 @@ bash t/cmd/installed-perl-core.t.sh
 bash t/cmd/installed-deps-perl-subslot-rebuild.t.sh
 ) |& tee t/runtest.out
 echo "------// DIFF //------------------"
+sed -i 's|[^ ]*/gentoo-perl-helper[.]test[.]gen-upgrade-sets[.][^/]*/|TEMPDIR/|' t/runtest.out
 diff -Naur t/runtest.expected t/runtest.out
 echo "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
 mv t/runtest.out t/runtest.expected
