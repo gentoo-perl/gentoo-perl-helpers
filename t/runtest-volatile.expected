@@ -1733,9 +1733,15 @@ x11-terms/rxvt-unicode:0
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m... Done TEMPDIR/5.22/sets/perl-upgrade
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mCreated set @perl-cleanup in TEMPDIR/5.22/sets/perl-cleanup
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mCreated set @perl-upgrade in TEMPDIR/5.22/sets/perl-upgrade
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mAssuming both of those were in /etc/portage/sets you can now do
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m  emerge -va1 -k n @perl-upgrade
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mAnd if this exhibits confusing blockers that only refer to perl-core
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m  emerge -C -va @perl-cleanup
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m  emerge -va1 -k n dev-lang/perl:0/5.22 @perl-upgrade
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mShould help pave the way forward
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mIf portage crashes mid-way through an upgrade, after any relevant issues
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mRe-run this tool to regenerate the sets before proceeding
 
 ==== [ bin/gentoo-perl gen-upgrade-sets 5.18 5.20 ] ====
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating TEMPDIR/5.20/sets/perl-cleanup
@@ -1774,9 +1780,15 @@ x11-terms/rxvt-unicode:0
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m... Done TEMPDIR/5.20/sets/perl-upgrade
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mCreated set @perl-cleanup in TEMPDIR/5.20/sets/perl-cleanup
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mCreated set @perl-upgrade in TEMPDIR/5.20/sets/perl-upgrade
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mAssuming both of those were in /etc/portage/sets you can now do
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m  emerge -va1 -k n @perl-upgrade
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mAnd if this exhibits confusing blockers that only refer to perl-core
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m  emerge -C -va @perl-cleanup
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m  emerge -va1 -k n dev-lang/perl:0/5.20 @perl-upgrade
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mShould help pave the way forward
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mIf portage crashes mid-way through an upgrade, after any relevant issues
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mRe-run this tool to regenerate the sets before proceeding
 
 ==== [ bin/gentoo-perl gen-upgrade-sets 5.20 5.21 ] ====
 [31;1m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > print-matching-abi] [0mNo ABI matched "5.21".

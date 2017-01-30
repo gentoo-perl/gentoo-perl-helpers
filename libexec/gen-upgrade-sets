@@ -38,9 +38,15 @@ einfo "... Done ${upgrade}"
 
 einfo "Created set @perl-cleanup in ${cleanup}"
 einfo "Created set @perl-upgrade in ${upgrade}"
+einfo
 einfo "Assuming both of those were in /etc/portage/sets you can now do"
+einfo "  emerge -va1 -k n @perl-upgrade"
+einfo "And if this exhibits confusing blockers that only refer to perl-core"
 einfo "  emerge -C -va @perl-cleanup"
-einfo "  emerge -va1 -k n ${perl_target} @perl-upgrade"
+einfo "Should help pave the way forward"
+einfo
+einfo "If portage crashes mid-way through an upgrade, after any relevant issues"
+einfo "Re-run this tool to regenerate the sets before proceeding"
 
 # help: gen-upgrade-sets [previous perl version] [wanted perl version]
 # help:
