@@ -11,8 +11,10 @@
 
 ### USAGE From Git Checkout
 
-    git clone <REPO>
-    pushd <CLONEDIR>
+```bash
+git clone https://github.com/gentoo-perl/gentoo-perl-helpers
+pushd gentoo-perl-helpers
+```
 
 ### Generating the sets automatically in `/etc/portage/sets`
 
