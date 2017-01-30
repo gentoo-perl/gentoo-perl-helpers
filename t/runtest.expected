@@ -1,0 +1,223 @@
+====[ die test ]====
+[31;1m * [die.t.sh] [0mThis is an error
+[31;1m * [test] [0mThis is an error
+[31;1m * [test > die] [0mthis is an error
+[31;1m * [die.t.sh > die] [0mthis is an error
+====[ dorun test ]====
+[32m * [dorun.t.sh > softspot] [0mCommand name is softspot, FULL_COMMAND=dorun.t.sh > softspot
+[32m * [dorun.t.sh > deepspot] [0mCommand name is deepspot, FULL_COMMAND=dorun.t.sh > deepspot
+[32m * [dorun.t.sh > deepspot > softspot] [0mCommand name is softspot, FULL_COMMAND=dorun.t.sh > deepspot > softspot
+[32m * [dorun.t.sh > deepspot] [0mCommand name is deepspot, FULL_COMMAND=dorun.t.sh > deepspot
+====[ eerror test ]====
+[31;1m * [info.t.sh] [0mThis is an error
+[31;1m * [test] [0mThis is an error
+[31;1m * [test > eerror] [0mthis is an error
+[31;1m * [info.t.sh > eerror] [0mthis is an error
+====[ einfo test ]====
+[32m * [info.t.sh] [0mThis is info
+[32m * [test] [0mThis is info
+[32m * [test > einfo] [0mthis is info
+[32m * [info.t.sh > einfo] [0mthis is info
+====[ ewarn test ]====
+[33m * [info.t.sh] [0mThis is warn
+[33m * [test] [0mThis is warn
+[33m * [test > ewarn] [0mthis is warn
+[33m * [info.t.sh > ewarn] [0mthis is warn
+====[ require_bin test ]====
+lib/core-functions.sh: line 32: type: x-some-program-that-does-not-exist: not found
+[31;1m * [require_bin.t.sh] [0mNo x-some-program-that-does-not-exist in path, install sys-fictious/troll-program
+lib/core-functions.sh: line 32: type: x-some-program-that-does-not-exist: not found
+[31;1m * [require_bin.t.sh > require_bin] [0mNo x-some-program-that-does-not-exist in path, install sys-fictious/troll-program
+==== [ bin/gentoo-perl ] ====
+[31;1m * [interface.t.sh] [0mNo command specified
+[32m * [interface.t.sh > help] [0mCommand: help
+
+[32m * [interface.t.sh > help] [0mPurpose:
+
+   displays help
+
+[32m * [interface.t.sh > help] [0mAbout:
+
+    Invokation:
+      gentoo-perl subcommand --args
+      gentoo-perl help
+      gentoo-perl help subcommand
+   
+    Useful Commands:
+      gentoo-perl gen-upgrade-sets
+      gentoo-perl list-commands
+      gentoo-perl list-commands-desc
+      gentoo-perl installed-perl-core
+      gentoo-perl installed-perl-virtuals
+==== [ bin/gentoo-perl help ] ====
+[32m * [interface.t.sh > help] [0mCommand: help
+
+[32m * [interface.t.sh > help] [0mPurpose:
+
+   displays help
+
+[32m * [interface.t.sh > help] [0mAbout:
+
+    Invokation:
+      gentoo-perl subcommand --args
+      gentoo-perl help
+      gentoo-perl help subcommand
+   
+    Useful Commands:
+      gentoo-perl gen-upgrade-sets
+      gentoo-perl list-commands
+      gentoo-perl list-commands-desc
+      gentoo-perl installed-perl-core
+      gentoo-perl installed-perl-virtuals
+==== [ bin/gentoo-perl help help ] ====
+[32m * [interface.t.sh > help] [0mCommand: help
+
+[32m * [interface.t.sh > help] [0mPurpose:
+
+   displays help
+
+[32m * [interface.t.sh > help] [0mAbout:
+
+    Invokation:
+      gentoo-perl subcommand --args
+      gentoo-perl help
+      gentoo-perl help subcommand
+   
+    Useful Commands:
+      gentoo-perl gen-upgrade-sets
+      gentoo-perl list-commands
+      gentoo-perl list-commands-desc
+      gentoo-perl installed-perl-core
+      gentoo-perl installed-perl-virtuals
+==== [ bin/gentoo-perl help x-does-not-exist ] ====
+[31;1m * [interface.t.sh > help] [0mNo such command x-does-not-exist
+==== [ bin/gentoo-perl x-does-not-exist ] ====
+[31;1m * [interface.t.sh] [0mNo such command x-does-not-exist, /home/kent/gentoo/gentoo-perl-helpers/libexec/x-does-not-exist does not exist
+==== [ bin/gentoo-perl version ] ====
+0.1.0
+==== [ bin/gentoo-perl list-commands ] ====
+help
+installed-perl-virtuals
+list-commands
+list-commands-desc
+list-excluded-abis
+print-matching-abi
+version
+==== [ bin/gentoo-perl list-commands-desc ] ====
+ help                           : displays help
+ installed-perl-virtuals        : Lists all installed virtuals
+ list-commands                  : Lists all commands in a format suitable for machine reading
+ list-commands-desc             : Lists all commands with descriptions extracted from "ABSTRACT" headings
+ list-excluded-abis             : Lists all known ABI's except the one specified
+ print-matching-abi             : Validate and expand an ABI version
+ version                        : Print the version of gentoo-perl helpers
+==== [ bin/gentoo-perl installed-perl-virtuals ] ====
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+virtual/perl-Term-ANSIColor:0
+virtual/perl-parent:0
+virtual/perl-Carp:0
+virtual/perl-autodie:0
+virtual/perl-Digest-SHA:0
+virtual/perl-Digest:0
+virtual/perl-Pod-Escapes:0
+virtual/perl-DB_File:0
+virtual/perl-version:0
+virtual/perl-Time-Piece:0
+virtual/perl-Text-Balanced:0
+virtual/perl-Test-Simple:0
+virtual/perl-Parse-CPAN-Meta:0
+virtual/perl-ExtUtils-Manifest:0
+virtual/perl-Module-CoreList:0
+virtual/perl-Socket:0
+virtual/perl-Pod-Parser:0
+virtual/perl-HTTP-Tiny:0
+virtual/perl-if:0
+virtual/perl-ExtUtils-Install:0
+virtual/perl-MIME-Base64:0
+virtual/perl-File-Spec:0
+virtual/perl-Module-Load:0
+virtual/perl-Text-Tabs+Wrap:0
+virtual/perl-Perl-OSType:0
+virtual/perl-Test:0
+virtual/perl-Term-ReadLine:0
+virtual/perl-Archive-Tar:0
+virtual/perl-podlators:0
+virtual/perl-Getopt-Long:0
+virtual/perl-IO-Socket-IP:0
+virtual/perl-libnet:0
+virtual/perl-Compress-Raw-Zlib:0
+virtual/perl-File-Temp:0
+virtual/perl-bignum:0
+virtual/perl-AutoLoader:0
+virtual/perl-Scalar-List-Utils:0
+virtual/perl-Encode:0
+virtual/perl-CPAN:0
+virtual/perl-CPAN-Meta:0
+virtual/perl-JSON-PP:0
+virtual/perl-CPAN-Meta-YAML:0
+virtual/perl-Sys-Syslog:0
+virtual/perl-ExtUtils-CBuilder:0
+virtual/perl-XSLoader:0
+virtual/perl-Attribute-Handlers:0
+virtual/perl-Locale-Maketext-Simple:0
+virtual/perl-CPAN-Meta-Requirements:0
+virtual/perl-ExtUtils-MakeMaker:0
+virtual/perl-Compress-Raw-Bzip2:0
+virtual/perl-Pod-Simple:0
+virtual/perl-IO:0
+virtual/perl-Test-Harness:0
+virtual/perl-IO-Zlib:0
+virtual/perl-Params-Check:0
+virtual/perl-threads-shared:0
+virtual/perl-Math-Complex:0
+virtual/perl-IO-Compress:0
+virtual/perl-Digest-MD5:0
+virtual/perl-Unicode-Normalize:0
+virtual/perl-Locale-Maketext:0
+virtual/perl-Time-Local:0
+virtual/perl-ExtUtils-ParseXS:0
+virtual/perl-Text-ParseWords:0
+virtual/perl-Exporter:0
+virtual/perl-Module-Metadata:0
+virtual/perl-Math-BigRat:0
+virtual/perl-Storable:0
+virtual/perl-Math-BigInt:0
+virtual/perl-Math-BigInt-FastCalc:0
+virtual/perl-File-Path:0
+virtual/perl-ExtUtils-Constant:0
+virtual/perl-IPC-Cmd:0
+virtual/perl-Data-Dumper:0
+virtual/perl-Time-HiRes:0
+==== [ bin/gentoo-perl print-matching-abi 5.24 ] ====
+dev-lang/perl:0/5.24
+==== [ bin/gentoo-perl print-matching-abi 5.22 ] ====
+dev-lang/perl:0/5.22
+==== [ bin/gentoo-perl print-matching-abi 5.20 ] ====
+dev-lang/perl:0/5.20
+==== [ bin/gentoo-perl print-matching-abi 5.21 ] ====
+[31;1m * [print-matching-abi.t.sh > print-matching-abi] [0mNo ABI matched "5.21".
+
+==== [ bin/gentoo-perl list-excluded-abis 5.24 ] ====
+dev-lang/perl:0/5.26
+dev-lang/perl:0/5.22
+dev-lang/perl:0/5.20
+dev-lang/perl:0/5.18
+dev-lang/perl:0/5.16
+
+==== [ bin/gentoo-perl list-excluded-abis 5.22 ] ====
+dev-lang/perl:0/5.26
+dev-lang/perl:0/5.24
+dev-lang/perl:0/5.20
+dev-lang/perl:0/5.18
+dev-lang/perl:0/5.16
+
+==== [ bin/gentoo-perl list-excluded-abis 5.20 ] ====
+dev-lang/perl:0/5.26
+dev-lang/perl:0/5.24
+dev-lang/perl:0/5.22
+dev-lang/perl:0/5.18
+dev-lang/perl:0/5.16
+
+==== [ bin/gentoo-perl list-excluded-abis 5.21 ] ====
+[31;1m * [list-excluded-abis.t.sh > list-excluded-abis] [0mAll known ABIs excluded, does "5.21" match a known Perl ABI-version?
+
