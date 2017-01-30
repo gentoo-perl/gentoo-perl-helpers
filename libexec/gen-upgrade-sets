@@ -63,3 +63,13 @@ einfo "Re-run this tool to regenerate the sets before proceeding"
 # help:
 # help: If an upgrade fails mid-way, regenerating these sets will regenerate the
 # help: sets with fewer upgrades to install, which is probably what you want.
+# help:
+# help: ENVIRONMENT
+# help:   By default, this tool writes to /etc/portage/sets, and the following variables
+# help:   can be employed in your environement to allow writing to a different location
+# help:
+# help:   ETC_PORTAGE
+# help:     Defaults to /etc/portage
+# help:
+# help:   ETC_PORTAGE_SETS
+# help:     Defaults to ${ETC_PORTAGE}/sets
