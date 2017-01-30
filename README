@@ -2,9 +2,12 @@
 REQUIREMENTS:
 
 - Gentoo
-- sys-apps/portage
-- app-portage/portage-utils
-- sys-apps/findutils
+- app-portage/portage-utils (qatom)
+- sys-apps/coreutils (sort)
+- sys-apps/findutils (xargs)
+- sys-apps/grep (grep)
+- sys-apps/portage  (portageq)
+- sys-apps/sed (sed)
 
 USAGE:
 
