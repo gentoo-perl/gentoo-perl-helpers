@@ -28,8 +28,11 @@ einfo "... Done ${cleanup}"
 
 einfo "Generating ${upgrade}"
 
-dorun installed-deps-perl-subslot-rebuild "${destsubslot}" | grep -v '^perl-core/' >"${upgrade}" ||\
-  die "No packages detected needing recompilation against ${perl_target}, perhaps you've already upgraded to it?"
+(
+  dorun installed-deps-perl-subslot-rebuild "${destsubslot}" | grep -v '^perl-core/' ||\
+    die "No packages detected needing recompilation against ${perl_target}, perhaps you've already upgraded to it?"
+  dorun installed-perl-virtuals
+) | sort -u >"${upgrade}" || die "Error generating rebuild list"
 
 einfo "... Done ${upgrade}"
 
