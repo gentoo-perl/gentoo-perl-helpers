@@ -20,22 +20,30 @@ pushd gentoo-perl-helpers
 
 Where `5.20` is your existing perl(**ABI/SUBSLOT**) and `5.22` is your target perl
 
-    bin/gentoo-perl gen-upgrade-sets 5.20 5.22
+```bash
+bin/gentoo-perl gen-upgrade-sets 5.20 5.22
+```
 
 ### Generating the sets in another dir as a non-privlegled user
 
-    ETC_PORTAGE_SETS=/tmp/sets/ bin/gentoo-perl gen-upgrade-sets 5.20 5.22
-    sudo cp /tmp/sets/* /etc/portage/sets/*
+```bash
+ETC_PORTAGE_SETS="/tmp/sets/" bin/gentoo-perl gen-upgrade-sets 5.20 5.22
+sudo cp /tmp/sets/* /etc/portage/sets/*
+```
 
 ### Performing the upgrade
 
-    sudo emerge -va1 -k n @perl-upgrade
+```bash
+sudo emerge -va1 -k n @perl-upgrade
+```
 
 ### Blockers
 
 If portage gets stuck with `perl-core/*` ( it shouldn't, but it might )
 
-    sudo emerge -C -va @perl-cleanup
+```bash
+sudo emerge -C -va @perl-cleanup
+```
 
 Will purge them for you, and a subsequent retry should then work.
 
@@ -46,11 +54,15 @@ resuming it somehow is necessary.
 
 If portage gets confused by a reattempt at 
 
-    sudo emerge -va1 -k n @perl-upgrade
+```bash
+sudo emerge -va1 -k n @perl-upgrade
+```
 
 Then rexecuting 
 
-    bin/gentoo-perl gen-upgrade-sets 5.20 5.22
+```bash
+bin/gentoo-perl gen-upgrade-sets 5.20 5.22
+```
 
 Will regenerate a smaller installation target, containing only packages
 that are still necessary for a portage upgrade
