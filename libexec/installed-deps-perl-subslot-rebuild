@@ -1,0 +1,56 @@
+#!/bin/bash
+
+# ABSTRACT: Shows all packages would need to be rebuilt to match a target subslot
+
+source "${LIBDIR}/core-functions.sh" || exit 1
+
+[[ $# == 1 ]]  || die "Expected argument [target-perl-version] in: ${cmdname} [target-perl-version]"
+set -euo pipefail
+
+subslot=$1;
+
+shift
+require_bin xargs sys-apps/findutils
+require_bin qatom app-portage/portage-utils
+require_bin qdepends app-portage/portage-utils
+require_bin sed sys-apps/sed
+require_bin sort sys-apps/coreutils
+
+abis=( $(dorun list-excluded-abis "${subslot}") )
+(
+    for abi in "${abis[@]}"; do
+    einfo "revdep DEPEND scanning for $abi"
+    qdepends --nocolor --depend --quiet --query "${abi}=" |\
+           xargs qdepends --nocolor --quiet -k SLOT | sed 's/: /:/'           |\
+           xargs qatom --quiet --nocolor --format "%{CATEGORY}/%{PN}%[SLOT]"  |\
+           sed -r 's|:([^/]*)/[^/]*|:\1|'       || ewarn "No matches in DEPEND"
+
+
+    einfo "revdep RDEPEND scanning for $abi"
+    qdepends --nocolor --rdepend --quiet --query "${abi}=" |\
+           xargs qdepends --nocolor --quiet -k SLOT | sed 's/: /:/'            |\
+           xargs qatom --quiet --nocolor --format "%{CATEGORY}/%{PN}%[SLOT]"   |\
+           sed -r 's|:([^/]*)/[^/]*|:\1|'       || ewarn "No matches in RDEPEND"
+
+    einfo "revdep PDEPEND scanning for $abi"
+    qdepends --nocolor --pdepend --quiet --query "${abi}=" |\
+           xargs qdepends --nocolor --quiet -k SLOT | sed 's/: /:/'           |\
+           xargs qatom --quiet --nocolor --format "%{CATEGORY}/%{PN}%[SLOT]"   |\
+           sed -r 's|:([^/]*)/[^/]*|:\1|' || ewarn "No matches in PDEPEND"
+
+    done
+) | sort -u
+
+# help: Invocation:
+# help:   gentoo-perl installed-deps-perl-subslot-rebuild [perl-subslot-version]
+# help:
+# help: Example:
+# help:   gentoo-perl installed-deps-perl-subslot-rebuild 5.22
+# help:
+# help: Outputs:
+# help:   A list of all packages in Category/Package-Name format
+# help:   which have a subslot binding on any perl other than the desired one.
+# help:
+# help: Note that [perl-subslot-version] is not typically 5.22.3 or similar,
+# help: but 5.22 , the ABI version.
+
