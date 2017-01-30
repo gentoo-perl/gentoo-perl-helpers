@@ -9,15 +9,26 @@ REQUIREMENTS:
 - sys-apps/portage  (portageq)
 - sys-apps/sed (sed)
 
-USAGE:
+USAGE From Git Checkout:
 
  git clone <REPO>
- source <Path/To/Clone>/init.sh
+ pushd <CLONEDIR>
 
- mkdir -p /tmp/sets/
- ETC_PORTAGE_SETS=/tmp/sets/ gen_perl_upgrade_sets 5.22 5.24
+Generating the sets automatically in /etc/portage/sets:
 
+ bin/gentoo-perl gen-upgrade-sets 5.20 5.22
+
+Generating the sets in another dir as a non-privlegled user:
+
+ ETC_PORTAGE_SETS=/tmp/sets/ bin/gentoo-perl gen-upgrade-sets 5.20 5.22
  sudo cp /tmp/sets/* /etc/portage/sets/*
 
- sudo emerge -C -va @perl-cleanup
- sudo emerge -va1 @perl-upgrade
+Performing the upgrade:
+
+  sudo emerge -va1 -k n @perl-upgrade
+
+If portage gets stuck with perl-core/* ( it shouldn't, but it might )
+
+  sudo emerge -C -va @perl-cleanup
+
+Will purge them for you, and a subsequent retry should then work.
