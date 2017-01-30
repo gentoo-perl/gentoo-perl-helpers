@@ -1,0 +1,1783 @@
+==== [ bin/gentoo-perl installed-perl-virtuals ] ====
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+virtual/perl-Term-ANSIColor:0
+virtual/perl-parent:0
+virtual/perl-Carp:0
+virtual/perl-autodie:0
+virtual/perl-Digest-SHA:0
+virtual/perl-Digest:0
+virtual/perl-Pod-Escapes:0
+virtual/perl-DB_File:0
+virtual/perl-version:0
+virtual/perl-Time-Piece:0
+virtual/perl-Text-Balanced:0
+virtual/perl-Test-Simple:0
+virtual/perl-Parse-CPAN-Meta:0
+virtual/perl-ExtUtils-Manifest:0
+virtual/perl-Module-CoreList:0
+virtual/perl-Socket:0
+virtual/perl-Pod-Parser:0
+virtual/perl-HTTP-Tiny:0
+virtual/perl-if:0
+virtual/perl-ExtUtils-Install:0
+virtual/perl-MIME-Base64:0
+virtual/perl-File-Spec:0
+virtual/perl-Module-Load:0
+virtual/perl-Text-Tabs+Wrap:0
+virtual/perl-Perl-OSType:0
+virtual/perl-Test:0
+virtual/perl-Term-ReadLine:0
+virtual/perl-Archive-Tar:0
+virtual/perl-podlators:0
+virtual/perl-Getopt-Long:0
+virtual/perl-IO-Socket-IP:0
+virtual/perl-libnet:0
+virtual/perl-Compress-Raw-Zlib:0
+virtual/perl-File-Temp:0
+virtual/perl-bignum:0
+virtual/perl-AutoLoader:0
+virtual/perl-Scalar-List-Utils:0
+virtual/perl-Encode:0
+virtual/perl-CPAN:0
+virtual/perl-CPAN-Meta:0
+virtual/perl-JSON-PP:0
+virtual/perl-CPAN-Meta-YAML:0
+virtual/perl-Sys-Syslog:0
+virtual/perl-ExtUtils-CBuilder:0
+virtual/perl-XSLoader:0
+virtual/perl-Attribute-Handlers:0
+virtual/perl-Locale-Maketext-Simple:0
+virtual/perl-CPAN-Meta-Requirements:0
+virtual/perl-ExtUtils-MakeMaker:0
+virtual/perl-Compress-Raw-Bzip2:0
+virtual/perl-Pod-Simple:0
+virtual/perl-IO:0
+virtual/perl-Test-Harness:0
+virtual/perl-IO-Zlib:0
+virtual/perl-Params-Check:0
+virtual/perl-threads-shared:0
+virtual/perl-Math-Complex:0
+virtual/perl-IO-Compress:0
+virtual/perl-Digest-MD5:0
+virtual/perl-Unicode-Normalize:0
+virtual/perl-Locale-Maketext:0
+virtual/perl-Time-Local:0
+virtual/perl-ExtUtils-ParseXS:0
+virtual/perl-Text-ParseWords:0
+virtual/perl-Exporter:0
+virtual/perl-Module-Metadata:0
+virtual/perl-Math-BigRat:0
+virtual/perl-Storable:0
+virtual/perl-Math-BigInt:0
+virtual/perl-Math-BigInt-FastCalc:0
+virtual/perl-File-Path:0
+virtual/perl-ExtUtils-Constant:0
+virtual/perl-IPC-Cmd:0
+virtual/perl-Data-Dumper:0
+virtual/perl-Time-HiRes:0
+==== [ bin/gentoo-perl installed-perl-core ] ====
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+perl-core/File-Temp:0
+perl-core/Scalar-List-Utils:0
+perl-core/Test-Simple:0
+perl-core/Math-BigInt:0
+==== [ bin/gentoo-perl installed-deps-perl-subslot-rebuild 5.24 ] ====
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.26
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.26
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.26
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.22
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.22
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.22
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.20
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.20
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.20
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.18
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.18
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.18
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.16
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.16
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.16
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+
+==== [ bin/gentoo-perl installed-deps-perl-subslot-rebuild 5.22 ] ====
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.26
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.26
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.26
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.24
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.24
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.24
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.20
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.20
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.20
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.18
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.18
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.18
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.16
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.16
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.16
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+app-admin/rex:0
+app-editors/gvim:0
+app-editors/vim:0
+app-editors/vim-qt:0
+app-shells/psh:0
+dev-perl/Acme-Damn:0
+dev-perl/Algorithm-C3:0
+dev-perl/Algorithm-Diff:0
+dev-perl/aliased:0
+dev-perl/AnyEvent:0
+dev-perl/Any-Moose:0
+dev-perl/Apache-LogFormat-Compiler:0
+dev-perl/App-Cmd:0
+dev-perl/AppConfig:0
+dev-perl/App-cpanminus:0
+dev-perl/App-Nopaste:0
+dev-perl/App-perlbrew:0
+dev-perl/App-pwhich:0
+dev-perl/Archive-Tar-Wrapper:0
+dev-perl/Archive-Zip:0
+dev-perl/Array-RefElem:0
+dev-perl/Authen-NTLM:0
+dev-perl/Authen-SASL:0
+dev-perl/Authen-SASL-SASLprep:0
+dev-perl/Authen-SCRAM:0
+dev-perl/autobox:0
+dev-perl/AutoXS-Header:0
+dev-perl/bareword-filehandles:0
+dev-perl/B-Hooks-EndOfScope:0
+dev-perl/B-Hooks-OP-Check:0
+dev-perl/Bit-Vector:0
+dev-perl/B-Keywords:0
+dev-perl/boolean:0
+dev-perl/BSON:0
+dev-perl/B-Utils:0
+dev-perl/BZ-Client:0
+dev-perl/Cache:0
+dev-perl/Cache-Cache:0
+dev-perl/Cache-Simple-TimedExpiry:0
+dev-perl/Canary-Stability:0
+dev-perl/capitalization:0
+dev-perl/Capture-Tiny:0
+dev-perl/Carp-Always:0
+dev-perl/Carp-Assert:0
+dev-perl/Carp-Clan:0
+dev-perl/CBOR-XS:0
+dev-perl/CGI:0
+dev-perl/CGI-Compile:0
+dev-perl/CGI-Emulate-PSGI:0
+dev-perl/CGI-Fast:0
+dev-perl/CHI:0
+dev-perl/Class-Accessor:0
+dev-perl/Class-Accessor-Chained:0
+dev-perl/Class-Accessor-Grouped:0
+dev-perl/Class-Accessor-Lite:0
+dev-perl/Class-C3:0
+dev-perl/Class-C3-Componentised:0
+dev-perl/Class-Data-Inheritable:0
+dev-perl/Class-ErrorHandler:0
+dev-perl/Class-Factory-Util:0
+dev-perl/Class-Inspector:0
+dev-perl/Class-Load:0
+dev-perl/Class-Loader:0
+dev-perl/Class-Load-XS:0
+dev-perl/Class-Method-Modifiers:0
+dev-perl/Class-ReturnValue:0
+dev-perl/Class-Singleton:0
+dev-perl/Class-Std:0
+dev-perl/Class-Std-Fast:0
+dev-perl/Class-Tiny:0
+dev-perl/Class-Trigger:0
+dev-perl/Class-XSAccessor:0
+dev-perl/Clone:0
+dev-perl/common-sense:0
+dev-perl/Config-Any:0
+dev-perl/Config-AutoConf:0
+dev-perl/Config-General:0
+dev-perl/Config-INI:0
+dev-perl/Config-MVP:0
+dev-perl/Config-MVP-Reader-INI:0
+dev-perl/Config-Properties:0
+dev-perl/Config-Tiny:0
+dev-perl/Context-Preserve:0
+dev-perl/Contextual-Return:0
+dev-perl/Convert-ASCII-Armour:0
+dev-perl/Convert-ASN1:0
+dev-perl/Convert-PEM:0
+dev-perl/Cookie-Baker:0
+dev-perl/CPAN-DistnameInfo:0
+dev-perl/CPAN-Meta-Check:0
+dev-perl/cpan-outdated:0
+dev-perl/CPAN-Perl-Releases:0
+dev-perl/CPAN-Uploader:0
+dev-perl/Crypt-Blowfish:0
+dev-perl/Crypt-CAST5_PP:0
+dev-perl/Crypt-CBC:0
+dev-perl/Crypt-DES:0
+dev-perl/Crypt-DES_EDE3:0
+dev-perl/Crypt-DSA:0
+dev-perl/Crypt-IDEA:0
+dev-perl/Crypt-OpenPGP:0
+dev-perl/Crypt-OpenSSL-Bignum:0
+dev-perl/Crypt-OpenSSL-DSA:0
+dev-perl/Crypt-OpenSSL-Random:0
+dev-perl/Crypt-OpenSSL-RSA:0
+dev-perl/Crypt-Primes:0
+dev-perl/Crypt-Random:0
+dev-perl/Crypt-RC4:0
+dev-perl/Crypt-Rijndael:0
+dev-perl/Crypt-RIPEMD160:0
+dev-perl/Crypt-RSA:0
+dev-perl/Crypt-SMIME:0
+dev-perl/Crypt-Twofish:0
+dev-perl/Crypt-URandom:0
+dev-perl/CryptX:0
+dev-perl/Daemon-Generic:0
+dev-perl/Danga-Socket:0
+dev-perl/Data-AMF:0
+dev-perl/Data-Buffer:0
+dev-perl/Data-Clone:0
+dev-perl/Data-Compare:0
+dev-perl/Data-Diver:0
+dev-perl/Data-Dump:0
+dev-perl/Data-Dumper-Concise:0
+dev-perl/Data-Dump-Streamer:0
+dev-perl/Data-DumpXML:0
+dev-perl/Data-Float:0
+dev-perl/Data-FormValidator:0
+dev-perl/Data-GUID:0
+dev-perl/Data-HexDump:0
+dev-perl/Data-Hexify:0
+dev-perl/Data-Hierarchy:0
+dev-perl/Data-ICal:0
+dev-perl/Data-ObjectDriver:0
+dev-perl/Data-OptList:0
+dev-perl/Data-Page:0
+dev-perl/Data-Page-Pageset:0
+dev-perl/Data-Perl:0
+dev-perl/Data-Random:0
+dev-perl/Data-Section:0
+dev-perl/Data-Serializer:0
+dev-perl/Data-ShowTable:0
+dev-perl/Data-Stag:0
+dev-perl/Data-Stream-Bulk:0
+dev-perl/Data-Structure-Util:0
+dev-perl/Data-Types:0
+dev-perl/Data-Uniqid:0
+dev-perl/Data-URIEncode:0
+dev-perl/Data-Utilities:0
+dev-perl/Data-UUID:0
+dev-perl/Data-Validate-Domain:0
+dev-perl/Data-Validate-IP:0
+dev-perl/Data-Visitor:0
+dev-perl/Date-Calc:0
+dev-perl/Date-Extract:0
+dev-perl/Date-ICal:0
+dev-perl/Date-Leapyear:0
+dev-perl/Date-Manip:0
+dev-perl/Date-Simple:0
+dev-perl/DateTime:0
+dev-perl/DateTime-Calendar-Julian:0
+dev-perl/DateTime-Event-ICal:0
+dev-perl/DateTime-Event-Recurrence:0
+dev-perl/DateTime-Format-Builder:0
+dev-perl/DateTime-Format-DateParse:0
+dev-perl/DateTime-Format-Flexible:0
+dev-perl/DateTime-Format-HTTP:0
+dev-perl/DateTime-Format-Human-Duration:0
+dev-perl/DateTime-Format-ICal:0
+dev-perl/DateTime-Format-ISO8601:0
+dev-perl/DateTime-Format-Mail:0
+dev-perl/DateTime-Format-Natural:0
+dev-perl/DateTime-Format-SQLite:0
+dev-perl/DateTime-Format-Strptime:0
+dev-perl/DateTime-Format-W3CDTF:0
+dev-perl/DateTime-HiRes:0
+dev-perl/DateTime-Locale:0
+dev-perl/DateTime-Set:0
+dev-perl/DateTime-TimeZone:0
+dev-perl/DateTime-Tiny:0
+dev-perl/DateTimeX-Easy:0
+dev-perl/DBD-mysql:0
+dev-perl/DBD-Pg:0
+dev-perl/DBD-SQLite:0
+dev-perl/DB_File-Lock:0
+dev-perl/DBI:0
+dev-perl/DBICx-TestDatabase:0
+dev-perl/DBI-Shell:0
+dev-perl/DBIx-Class:0
+dev-perl/DBIx-Class-DynamicDefault:0
+dev-perl/DBIx-Class-InflateColumn-Boolean:0
+dev-perl/DBIx-Class-InflateColumn-IP:0
+dev-perl/DBIx-Class-InflateColumn-Object-Enum:0
+dev-perl/DBIx-Class-UserStamp:0
+dev-perl/DBIx-ContextualFetch:0
+dev-perl/DBIx-DBSchema:0
+dev-perl/DBIx-Migration:0
+dev-perl/DBIx-Safe:0
+dev-perl/DBIx-SearchBuilder:0
+dev-perl/DBIx-Simple:0
+dev-perl/DelimMatch:0
+dev-perl/Devel-ArgNames:0
+dev-perl/Devel-Caller:0
+dev-perl/Devel-CheckBin:0
+dev-perl/Devel-CheckCompiler:0
+dev-perl/Devel-CheckLib:0
+dev-perl/Devel-Cover:0
+dev-perl/Devel-Cycle:0
+dev-perl/Devel-Declare:0
+dev-perl/Devel-Dumpvar:0
+dev-perl/Devel-FindPerl:0
+dev-perl/Devel-GlobalDestruction:0
+dev-perl/Devel-Hide:0
+dev-perl/Devel-Leak:0
+dev-perl/Devel-LexAlias:0
+dev-perl/Devel-NYTProf:0
+dev-perl/Devel-OverloadInfo:0
+dev-perl/Devel-PatchPerl:0
+dev-perl/Devel-Refactor:0
+dev-perl/Devel-REPL:0
+dev-perl/Devel-Size:0
+dev-perl/Devel-SmallProf:0
+dev-perl/Devel-StackTrace:0
+dev-perl/Devel-StackTrace-AsHTML:0
+dev-perl/Devel-Symdump:0
+dev-perl/Device-SerialPort:0
+dev-perl/Digest-BubbleBabble:0
+dev-perl/Digest-CRC:0
+dev-perl/Digest-GOST:0
+dev-perl/Digest-HMAC:0
+dev-perl/Digest-JHash:0
+dev-perl/Digest-MD2:0
+dev-perl/Digest-MD4:0
+dev-perl/Digest-MD5-File:0
+dev-perl/Digest-Nilsimsa:0
+dev-perl/Digest-Perl-MD5:0
+dev-perl/Digest-SHA1:0
+dev-perl/Dist-CheckConflicts:0
+dev-perl/Dist-Zilla:0
+dev-perl/Dist-Zilla-Plugin-MakeMaker-Awesome:0
+dev-perl/Dist-Zilla-Plugin-MetaProvides:0
+dev-perl/Dist-Zilla-Plugin-MetaProvides-Package:0
+dev-perl/Dist-Zilla-Plugin-OSPrereqs:0
+dev-perl/Dist-Zilla-Plugin-OurPkgVersion:0
+dev-perl/Dist-Zilla-Plugin-Test-MinimumVersion:0
+dev-perl/Dist-Zilla-Plugin-Test-Perl-Critic:0
+dev-perl/Dist-Zilla-Role-ModuleMetadata:0
+dev-perl/Email-Abstract:0
+dev-perl/Email-Address:0
+dev-perl/Email-Date-Format:0
+dev-perl/Email-Filter:0
+dev-perl/Email-FolderType:0
+dev-perl/Email-LocalDelivery:0
+dev-perl/Email-MessageID:0
+dev-perl/Email-MIME:0
+dev-perl/Email-MIME-ContentType:0
+dev-perl/Email-MIME-Encodings:0
+dev-perl/Email-Sender:0
+dev-perl/Email-Simple:0
+dev-perl/Email-Valid:0
+dev-perl/Encode-Locale:0
+dev-perl/enum:0
+dev-perl/Error:0
+dev-perl/EV:0
+dev-perl/Eval-Closure:0
+dev-perl/Eval-LineNumbers:0
+dev-perl/Event:0
+dev-perl/Event-RPC:0
+dev-perl/Exception-Class:0
+dev-perl/Expect:0
+dev-perl/Exporter-Lite:0
+dev-perl/Exporter-Tiny:0
+dev-perl/ExtUtils-CChecker:0
+dev-perl/ExtUtils-Config:0
+dev-perl/ExtUtils-Depends:0
+dev-perl/ExtUtils-F77:0
+dev-perl/ExtUtils-Helpers:0
+dev-perl/ExtUtils-InstallPaths:0
+dev-perl/ExtUtils-LibBuilder:0
+dev-perl/ExtUtils-PkgConfig:0
+dev-perl/FCGI:0
+dev-perl/FCGI-ProcManager:0
+dev-perl/File-BaseDir:0
+dev-perl/File-Copy-Recursive:0
+dev-perl/File-DesktopEntry:0
+dev-perl/File-Find-Rule:0
+dev-perl/File-Find-Rule-Perl:0
+dev-perl/File-Flock:0
+dev-perl/File-HomeDir:0
+dev-perl/File-Listing:0
+dev-perl/File-MimeInfo:0
+dev-perl/File-MMagic:0
+dev-perl/File-Next:0
+dev-perl/File-NFSLock:0
+dev-perl/File-Path-Expand:0
+dev-perl/File-pushd:0
+dev-perl/File-Remove:0
+dev-perl/File-Scan-ClamAV:0
+dev-perl/File-Share:0
+dev-perl/File-ShareDir:0
+dev-perl/File-ShareDir-Install:0
+dev-perl/File-ShareDir-ProjectDistDir:0
+dev-perl/File-Slurp:0
+dev-perl/File-Slurper:0
+dev-perl/File-Slurp-Tiny:0
+dev-perl/Filesys-Notify-Simple:0
+dev-perl/File-Which:0
+dev-perl/Filter:0
+dev-perl/Font-AFM:0
+dev-perl/GD:0
+dev-perl/GDGraph:0
+dev-perl/GDTextUtil:0
+dev-perl/Gearman:0
+dev-perl/Gentoo-PerlMod-Version:0
+dev-perl/Getopt-Long-Descriptive:0
+dev-perl/Glib-Object-Introspection:0
+dev-perl/glib-perl:0
+dev-perl/Google-Ads-AdWords-Client:0
+dev-perl/GraphViz:0
+dev-perl/Hash-Merge:0
+dev-perl/Hash-Merge-Simple:0
+dev-perl/Hash-MoreUtils:0
+dev-perl/Hash-MultiValue:0
+dev-perl/Heap:0
+dev-perl/HTML-Form:0
+dev-perl/HTML-Format:0
+dev-perl/HTML-FormatText-WithLinks:0
+dev-perl/HTML-FormatText-WithLinks-AndTables:0
+dev-perl/HTML-Parser:0
+dev-perl/HTML-Tagset:0
+dev-perl/HTML-Tree:0
+dev-perl/HTTP-Body:0
+dev-perl/HTTP-CookieJar:0
+dev-perl/HTTP-Cookies:0
+dev-perl/HTTP-Daemon:0
+dev-perl/HTTP-Date:0
+dev-perl/HTTP-Headers-Fast:0
+dev-perl/HTTP-Message:0
+dev-perl/HTTP-Negotiate:0
+dev-perl/HTTP-Server-Simple:0
+dev-perl/Image-Info:0
+dev-perl/Image-Size:0
+dev-perl/Importer:0
+dev-perl/Import-Into:0
+dev-perl/indirect:0
+dev-perl/Inline:0
+dev-perl/Inline-Python:0
+dev-perl/IO-All:0
+dev-perl/IO-CaptureOutput:0
+dev-perl/IO-Event:0
+dev-perl/IO-HTML:0
+dev-perl/IO-Prompt:0
+dev-perl/IO-Socket-INET6:0
+dev-perl/IO-Socket-SSL:0
+dev-perl/IO-String:0
+dev-perl/IO-stringy:0
+dev-perl/IO-Stty:0
+dev-perl/IO-Tee:0
+dev-perl/IO-TieCombine:0
+dev-perl/IO-Tty:0
+dev-perl/IPC-Run:0
+dev-perl/IPC-Run3:0
+dev-perl/IPC-Shareable:0
+dev-perl/IPC-ShareLite:0
+dev-perl/IPC-Signal:0
+dev-perl/IPC-System-Simple:0
+dev-perl/JSON:0
+dev-perl/JSON-MaybeXS:0
+dev-perl/JSON-Parse:0
+dev-perl/JSON-XS:0
+dev-perl/Lexical-Persistence:0
+dev-perl/Lexical-SealRequireHints:0
+dev-perl/libintl-perl:0
+dev-perl/libwww-perl:0
+dev-perl/libxml-perl:0
+dev-perl/Lingua-EN-Inflect:0
+dev-perl/List-MoreUtils:0
+dev-perl/Locale-gettext:0
+dev-perl/Locale-Maketext-Lexicon:0
+dev-perl/local-lib:0
+dev-perl/Log-Agent:0
+dev-perl/Log-Any:0
+dev-perl/Log-Dispatch:0
+dev-perl/Log-Dispatch-Array:0
+dev-perl/Log-Dispatchouli:0
+dev-perl/Log-Log4perl:0
+dev-perl/Log-Message:0
+dev-perl/Log-Message-Simple:0
+dev-perl/Log-Report:0
+dev-perl/Log-Report-Optional:0
+dev-perl/LWP-MediaTypes:0
+dev-perl/LWP-Protocol-https:0
+dev-perl/Mail-Sender:0
+dev-perl/MailTools:0
+dev-perl/Math-Base36:0
+dev-perl/Math-BigInt-GMP:0
+dev-perl/Math-CDF:0
+dev-perl/Math-FFT:0
+dev-perl/Math-Pari:0
+dev-perl/Math-Random-MT:0
+dev-perl/MCE:0
+dev-perl/MIME-Charset:0
+dev-perl/mime-construct:0
+dev-perl/MIME-Types:0
+dev-perl/Mixin-Linewise:0
+dev-perl/Modern-Perl:0
+dev-perl/Module-Build:0
+dev-perl/Module-Build-Tiny:0
+dev-perl/Module-Find:0
+dev-perl/Module-Implementation:0
+dev-perl/Module-Locate:0
+dev-perl/Module-Path:0
+dev-perl/Module-Pluggable:0
+dev-perl/Module-Refresh:0
+dev-perl/Module-Runtime:0
+dev-perl/Module-Runtime-Conflicts:0
+dev-perl/Module-ScanDeps:0
+dev-perl/Module-Signature:0
+dev-perl/Module-Util:0
+dev-perl/Mojolicious:0
+dev-perl/MongoDB:0
+dev-perl/Moo:0
+dev-perl/Moose:0
+dev-perl/MooseX-Getopt:0
+dev-perl/MooseX-LazyRequire:0
+dev-perl/MooseX-Object-Pluggable:0
+dev-perl/MooseX-OneArgNew:0
+dev-perl/MooseX-Role-Parameterized:0
+dev-perl/MooseX-Role-WithOverloading:0
+dev-perl/MooseX-SetOnce:0
+dev-perl/MooseX-Types:0
+dev-perl/MooseX-Types-Path-Class:0
+dev-perl/MooseX-Types-Perl:0
+dev-perl/MooseX-Types-Stringlike:0
+dev-perl/MooX-Types-MooseLike:0
+dev-perl/MooX-Types-MooseLike-Numeric:0
+dev-perl/Mozilla-CA:0
+dev-perl/Mozilla-PublicSuffix:0
+dev-perl/MP3-Info:0
+dev-perl/MP3-Tag:0
+dev-perl/MRO-Compat:0
+dev-perl/multidimensional:0
+dev-perl/namespace-autoclean:0
+dev-perl/namespace-clean:0
+dev-perl/NetAddr-IP:0
+dev-perl/Net-Daemon:0
+dev-perl/Net-DNS:0
+dev-perl/Net-DNS-SEC:0
+dev-perl/Net-Domain-TLD:0
+dev-perl/Net-HTTP:0
+dev-perl/Net-IDN-Encode:0
+dev-perl/Net-LibIDN:0
+dev-perl/Net-OAuth:0
+dev-perl/Net-OpenSSH:0
+dev-perl/Net-SFTP-Foreign:0
+dev-perl/Net-SMTP-SSL:0
+dev-perl/Net-SSH-Any:0
+dev-perl/Net-SSLeay:0
+dev-perl/Net-Twitter:0
+dev-perl/Number-Compare:0
+dev-perl/Object-Enum:0
+dev-perl/OLE-StorageLite:0
+dev-perl/Package-DeprecationManager:0
+dev-perl/Package-Stash:0
+dev-perl/Package-Stash-XS:0
+dev-perl/Package-Variant:0
+dev-perl/PadWalker:0
+dev-perl/PAR:0
+dev-perl/Parallel-ForkManager:0
+dev-perl/Parallel-Prefork:0
+dev-perl/Params-Util:0
+dev-perl/Params-Validate:0
+dev-perl/Params-ValidationCompiler:0
+dev-perl/PAR-Dist:0
+dev-perl/Parse-RecDescent:0
+dev-perl/Path-Class:0
+dev-perl/Path-FindDev:0
+dev-perl/Path-IsDev:0
+dev-perl/Path-Iterator-Rule:0
+dev-perl/Path-Tiny:0
+dev-perl/PBKDF2-Tiny:0
+dev-perl/PDF-Create:0
+dev-perl/Pegex:0
+dev-perl/Perl6-Junction:0
+dev-perl/Perl-Critic:0
+dev-perl/PerlIO-utf8_strict:0
+dev-perl/Perl-MinimumVersion:0
+dev-perl/Perl-PrereqScanner:0
+dev-perl/Perl-Tags:0
+dev-perl/Perl-Tidy:0
+dev-perl/Perl-Version:0
+dev-perl/Plack:0
+dev-perl/PlRPC:0
+dev-perl/Pod-Eventual:0
+dev-perl/Pod-LaTeX:0
+dev-perl/Pod-Spell:0
+dev-perl/PortageXS:0
+dev-perl/POSIX-strftime-Compiler:0
+dev-perl/PostScript-Simple:0
+dev-perl/PPI:0
+dev-perl/PPIx-Regexp:0
+dev-perl/PPIx-Utilities:0
+dev-perl/prefork:0
+dev-perl/Probe-Perl:0
+dev-perl/Proc-Guard:0
+dev-perl/Proc-ProcessTable:0
+dev-perl/Proc-Wait3:0
+dev-perl/Proc-WaitStat:0
+dev-perl/Readonly:0
+dev-perl/Ref-Util:0
+dev-perl/Regexp-Common:0
+dev-perl/Role-HasMessage:0
+dev-perl/Role-Identifiable:0
+dev-perl/Role-Tiny:0
+dev-perl/Safe-Isa:0
+dev-perl/Scalar-Properties:0
+dev-perl/Scope-Guard:0
+dev-perl/Sereal:0
+dev-perl/Sereal-Decoder:0
+dev-perl/Sereal-Encoder:0
+dev-perl/Server-Starter:0
+dev-perl/Set-Infinite:0
+dev-perl/Signal-Mask:0
+dev-perl/SOAP-WSDL:0
+dev-perl/Socket6:0
+dev-perl/Software-License:0
+dev-perl/Sort-Naturally:0
+dev-perl/Sort-Versions:0
+dev-perl/Specio:0
+dev-perl/Spiffy:0
+dev-perl/Spreadsheet-ParseExcel:0
+dev-perl/SQL-Abstract:0
+dev-perl/SQL-Translator:0
+dev-perl/Starlet:0
+dev-perl/Stream-Buffered:0
+dev-perl/strictures:0
+dev-perl/String-CRC32:0
+dev-perl/String-Errf:0
+dev-perl/String-Escape:0
+dev-perl/String-Flogger:0
+dev-perl/String-Format:0
+dev-perl/String-Formatter:0
+dev-perl/String-Print:0
+dev-perl/String-RewritePrefix:0
+dev-perl/Sub-Exporter:0
+dev-perl/Sub-Exporter-ForMethods:0
+dev-perl/Sub-Exporter-GlobExporter:0
+dev-perl/Sub-Exporter-Progressive:0
+dev-perl/Sub-Identify:0
+dev-perl/Sub-Install:0
+dev-perl/Sub-Name:0
+dev-perl/Sub-Override:0
+dev-perl/Sub-Quote:0
+dev-perl/Sub-Uplevel:0
+dev-perl/SUPER:0
+dev-perl/Sys-SigAction:0
+dev-perl/Sys-Syscall:0
+dev-perl/Sys-Virt:0
+dev-perl/Taint-Util:0
+dev-perl/Task-Weaken:0
+dev-perl/Template-Toolkit:0
+dev-perl/Term-Encoding:0
+dev-perl/TermReadKey:0
+dev-perl/Term-ReadLine-Gnu:0
+dev-perl/Term-ReadLine-Perl:0
+dev-perl/Term-UI:0
+dev-perl/Test2-Plugin-NoWarnings:0
+dev-perl/Test2-Suite:0
+dev-perl/Test-Base:0
+dev-perl/Test-CheckDeps:0
+dev-perl/Test-Class:0
+dev-perl/Test-CleanNamespaces:0
+dev-perl/Test-Deep:0
+dev-perl/Test-Deep-JSON:0
+dev-perl/Test-Differences:0
+dev-perl/Test-Exception:0
+dev-perl/Test-FailWarnings:0
+dev-perl/Test-Fatal:0
+dev-perl/Test-File-ShareDir:0
+dev-perl/Test-Inter:0
+dev-perl/Test-LeakTrace:0
+dev-perl/Test-LongString:0
+dev-perl/Test-MinimumVersion:0
+dev-perl/Test-MockModule:0
+dev-perl/Test-MockObject:0
+dev-perl/Test-MockTime:0
+dev-perl/Test-Most:0
+dev-perl/Test-Needs:0
+dev-perl/Test-NoWarnings:0
+dev-perl/Test-Number-Delta:0
+dev-perl/Test-Output:0
+dev-perl/Test-Perl-Critic:0
+dev-perl/Test-Regexp:0
+dev-perl/Test-Requires:0
+dev-perl/Test-RequiresInternet:0
+dev-perl/Test-Script:0
+dev-perl/Test-SharedFork:0
+dev-perl/Test-Spec:0
+dev-perl/Test-Taint:0
+dev-perl/Test-TCP:0
+dev-perl/Test-Timer:0
+dev-perl/Test-Trap:0
+dev-perl/Test-Version:0
+dev-perl/Test-Warn:0
+dev-perl/Test-Warnings:0
+dev-perl/Test-Without-Module:0
+dev-perl/Test-YAML:0
+dev-perl/Text-Aligner:0
+dev-perl/Text-Autoformat:0
+dev-perl/Text-BibTeX:0
+dev-perl/Text-CSV_XS:0
+dev-perl/Text-Diff:0
+dev-perl/Text-Glob:0
+dev-perl/Text-Iconv:0
+dev-perl/Text-Password-Pronounceable:0
+dev-perl/Text-Reform:0
+dev-perl/Text-Table:0
+dev-perl/Text-Template:0
+dev-perl/Text-Unidecode:0
+dev-perl/Text-vFile-asData:0
+dev-perl/Thread-SigMask:0
+dev-perl/Throwable:0
+dev-perl/Tie-EncryptedHash:0
+dev-perl/Tie-IxHash:0
+dev-perl/Tie-ToObject:0
+dev-perl/TimeDate:0
+dev-perl/Time-Duration:0
+dev-perl/Time-Duration-Parse:0
+dev-perl/Time-Moment:0
+dev-perl/Time-TZOffset:0
+dev-perl/Try-Tiny:0
+dev-perl/Types-Serialiser:0
+dev-perl/Type-Tiny:0
+dev-perl/Type-Tiny-XS:0
+dev-perl/Unicode-EastAsianWidth:0
+dev-perl/Unicode-LineBreak:0
+dev-perl/Unicode-Map:0
+dev-perl/Unicode-Stringprep:0
+dev-perl/Unicode-UTF8:0
+dev-perl/UNIVERSAL-can:0
+dev-perl/UNIVERSAL-isa:0
+dev-perl/UNIVERSAL-require:0
+dev-perl/URI:0
+dev-perl/Variable-Magic:0
+dev-perl/Want:0
+dev-perl/WWW-Mechanize:0
+dev-perl/WWW-Pastebin-PastebinCom-Create:0
+dev-perl/WWW-RobotRules:0
+dev-perl/XML-Compile:0
+dev-perl/XML-Compile-Cache:0
+dev-perl/XML-Compile-SOAP:0
+dev-perl/XML-Compile-Tester:0
+dev-perl/XML-Compile-WSDL11:0
+dev-perl/XML-Filter-BufferText:0
+dev-perl/XML-Handler-YAWriter:0
+dev-perl/XML-LibXML:0
+dev-perl/XML-LibXML-Simple:0
+dev-perl/XML-NamespaceSupport:0
+dev-perl/XML-Parser:0
+dev-perl/XML-SAX:0
+dev-perl/XML-SAX-Base:0
+dev-perl/XML-SAX-Expat:0
+dev-perl/XML-SAX-Writer:0
+dev-perl/XML-Simple:0
+dev-perl/XML-Twig:0
+dev-perl/XML-Writer:0
+dev-perl/XML-XPath:0
+dev-perl/YAML:0
+dev-perl/YAML-LibYAML:0
+dev-perl/YAML-Tiny:0
+dev-python/subunit:0
+dev-vcs/git:0
+dev-vcs/subversion:0
+media-gfx/graphviz:0
+net-fs/samba:0
+net-irc/irssi:0
+net-misc/bwwhois:0
+perl-core/File-Temp:0
+perl-core/Math-BigInt:0
+perl-core/Scalar-List-Utils:0
+perl-core/Test-Simple:0
+sys-apps/ack:0
+sys-apps/texinfo:0
+sys-fs/e4rat:0
+virtual/perl-Carp:0
+virtual/perl-Compress-Raw-Bzip2:0
+virtual/perl-Compress-Raw-Zlib:0
+virtual/perl-CPAN:0
+virtual/perl-CPAN-Meta:0
+virtual/perl-CPAN-Meta-YAML:0
+virtual/perl-Data-Dumper:0
+virtual/perl-Digest:0
+virtual/perl-Digest-MD5:0
+virtual/perl-Digest-SHA:0
+virtual/perl-Encode:0
+virtual/perl-Exporter:0
+virtual/perl-ExtUtils-CBuilder:0
+virtual/perl-ExtUtils-Constant:0
+virtual/perl-ExtUtils-Install:0
+virtual/perl-ExtUtils-MakeMaker:0
+virtual/perl-ExtUtils-Manifest:0
+virtual/perl-ExtUtils-ParseXS:0
+virtual/perl-File-Path:0
+virtual/perl-File-Spec:0
+virtual/perl-File-Temp:0
+virtual/perl-Getopt-Long:0
+virtual/perl-HTTP-Tiny:0
+virtual/perl-if:0
+virtual/perl-IO:0
+virtual/perl-IO-Compress:0
+virtual/perl-IO-Socket-IP:0
+virtual/perl-IO-Zlib:0
+virtual/perl-JSON-PP:0
+virtual/perl-libnet:0
+virtual/perl-Locale-Maketext:0
+virtual/perl-Math-BigInt:0
+virtual/perl-MIME-Base64:0
+virtual/perl-Module-CoreList:0
+virtual/perl-Module-Metadata:0
+virtual/perl-parent:0
+virtual/perl-Parse-CPAN-Meta:0
+virtual/perl-Perl-OSType:0
+virtual/perl-Pod-Escapes:0
+virtual/perl-podlators:0
+virtual/perl-Pod-Parser:0
+virtual/perl-Pod-Simple:0
+virtual/perl-Scalar-List-Utils:0
+virtual/perl-Storable:0
+virtual/perl-Sys-Syslog:0
+virtual/perl-Term-ANSIColor:0
+virtual/perl-Test-Harness:0
+virtual/perl-Test-Simple:0
+virtual/perl-Text-ParseWords:0
+virtual/perl-Text-Tabs+Wrap:0
+virtual/perl-threads-shared:0
+virtual/perl-Time-HiRes:0
+virtual/perl-Time-Local:0
+virtual/perl-Unicode-Normalize:0
+virtual/perl-version:0
+virtual/perl-XSLoader:0
+x11-terms/rxvt-unicode:0
+
+==== [ bin/gentoo-perl installed-deps-perl-subslot-rebuild 5.20 ] ====
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.26
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.26
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.26
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.24
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.24
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.24
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.22
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.22
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.22
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.18
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.18
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.18
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.16
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.16
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.16
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+app-admin/rex:0
+app-editors/gvim:0
+app-editors/vim:0
+app-editors/vim-qt:0
+app-shells/psh:0
+dev-perl/Acme-Damn:0
+dev-perl/Algorithm-C3:0
+dev-perl/Algorithm-Diff:0
+dev-perl/aliased:0
+dev-perl/AnyEvent:0
+dev-perl/Any-Moose:0
+dev-perl/Apache-LogFormat-Compiler:0
+dev-perl/App-Cmd:0
+dev-perl/AppConfig:0
+dev-perl/App-cpanminus:0
+dev-perl/App-Nopaste:0
+dev-perl/App-perlbrew:0
+dev-perl/App-pwhich:0
+dev-perl/Archive-Tar-Wrapper:0
+dev-perl/Archive-Zip:0
+dev-perl/Array-RefElem:0
+dev-perl/Authen-NTLM:0
+dev-perl/Authen-SASL:0
+dev-perl/Authen-SASL-SASLprep:0
+dev-perl/Authen-SCRAM:0
+dev-perl/autobox:0
+dev-perl/AutoXS-Header:0
+dev-perl/bareword-filehandles:0
+dev-perl/B-Hooks-EndOfScope:0
+dev-perl/B-Hooks-OP-Check:0
+dev-perl/Bit-Vector:0
+dev-perl/B-Keywords:0
+dev-perl/boolean:0
+dev-perl/BSON:0
+dev-perl/B-Utils:0
+dev-perl/BZ-Client:0
+dev-perl/Cache:0
+dev-perl/Cache-Cache:0
+dev-perl/Cache-Simple-TimedExpiry:0
+dev-perl/Canary-Stability:0
+dev-perl/capitalization:0
+dev-perl/Capture-Tiny:0
+dev-perl/Carp-Always:0
+dev-perl/Carp-Assert:0
+dev-perl/Carp-Clan:0
+dev-perl/CBOR-XS:0
+dev-perl/CGI:0
+dev-perl/CGI-Compile:0
+dev-perl/CGI-Emulate-PSGI:0
+dev-perl/CGI-Fast:0
+dev-perl/CHI:0
+dev-perl/Class-Accessor:0
+dev-perl/Class-Accessor-Chained:0
+dev-perl/Class-Accessor-Grouped:0
+dev-perl/Class-Accessor-Lite:0
+dev-perl/Class-C3:0
+dev-perl/Class-C3-Componentised:0
+dev-perl/Class-Data-Inheritable:0
+dev-perl/Class-ErrorHandler:0
+dev-perl/Class-Factory-Util:0
+dev-perl/Class-Inspector:0
+dev-perl/Class-Load:0
+dev-perl/Class-Loader:0
+dev-perl/Class-Load-XS:0
+dev-perl/Class-Method-Modifiers:0
+dev-perl/Class-ReturnValue:0
+dev-perl/Class-Singleton:0
+dev-perl/Class-Std:0
+dev-perl/Class-Std-Fast:0
+dev-perl/Class-Tiny:0
+dev-perl/Class-Trigger:0
+dev-perl/Class-XSAccessor:0
+dev-perl/Clone:0
+dev-perl/common-sense:0
+dev-perl/Config-Any:0
+dev-perl/Config-AutoConf:0
+dev-perl/Config-General:0
+dev-perl/Config-INI:0
+dev-perl/Config-MVP:0
+dev-perl/Config-MVP-Reader-INI:0
+dev-perl/Config-Properties:0
+dev-perl/Config-Tiny:0
+dev-perl/Context-Preserve:0
+dev-perl/Contextual-Return:0
+dev-perl/Convert-ASCII-Armour:0
+dev-perl/Convert-ASN1:0
+dev-perl/Convert-PEM:0
+dev-perl/Cookie-Baker:0
+dev-perl/CPAN-DistnameInfo:0
+dev-perl/CPAN-Meta-Check:0
+dev-perl/cpan-outdated:0
+dev-perl/CPAN-Perl-Releases:0
+dev-perl/CPAN-Uploader:0
+dev-perl/Crypt-Blowfish:0
+dev-perl/Crypt-CAST5_PP:0
+dev-perl/Crypt-CBC:0
+dev-perl/Crypt-DES:0
+dev-perl/Crypt-DES_EDE3:0
+dev-perl/Crypt-DSA:0
+dev-perl/Crypt-IDEA:0
+dev-perl/Crypt-OpenPGP:0
+dev-perl/Crypt-OpenSSL-Bignum:0
+dev-perl/Crypt-OpenSSL-DSA:0
+dev-perl/Crypt-OpenSSL-Random:0
+dev-perl/Crypt-OpenSSL-RSA:0
+dev-perl/Crypt-Primes:0
+dev-perl/Crypt-Random:0
+dev-perl/Crypt-RC4:0
+dev-perl/Crypt-Rijndael:0
+dev-perl/Crypt-RIPEMD160:0
+dev-perl/Crypt-RSA:0
+dev-perl/Crypt-SMIME:0
+dev-perl/Crypt-Twofish:0
+dev-perl/Crypt-URandom:0
+dev-perl/CryptX:0
+dev-perl/Daemon-Generic:0
+dev-perl/Danga-Socket:0
+dev-perl/Data-AMF:0
+dev-perl/Data-Buffer:0
+dev-perl/Data-Clone:0
+dev-perl/Data-Compare:0
+dev-perl/Data-Diver:0
+dev-perl/Data-Dump:0
+dev-perl/Data-Dumper-Concise:0
+dev-perl/Data-Dump-Streamer:0
+dev-perl/Data-DumpXML:0
+dev-perl/Data-Float:0
+dev-perl/Data-FormValidator:0
+dev-perl/Data-GUID:0
+dev-perl/Data-HexDump:0
+dev-perl/Data-Hexify:0
+dev-perl/Data-Hierarchy:0
+dev-perl/Data-ICal:0
+dev-perl/Data-ObjectDriver:0
+dev-perl/Data-OptList:0
+dev-perl/Data-Page:0
+dev-perl/Data-Page-Pageset:0
+dev-perl/Data-Perl:0
+dev-perl/Data-Random:0
+dev-perl/Data-Section:0
+dev-perl/Data-Serializer:0
+dev-perl/Data-ShowTable:0
+dev-perl/Data-Stag:0
+dev-perl/Data-Stream-Bulk:0
+dev-perl/Data-Structure-Util:0
+dev-perl/Data-Types:0
+dev-perl/Data-Uniqid:0
+dev-perl/Data-URIEncode:0
+dev-perl/Data-Utilities:0
+dev-perl/Data-UUID:0
+dev-perl/Data-Validate-Domain:0
+dev-perl/Data-Validate-IP:0
+dev-perl/Data-Visitor:0
+dev-perl/Date-Calc:0
+dev-perl/Date-Extract:0
+dev-perl/Date-ICal:0
+dev-perl/Date-Leapyear:0
+dev-perl/Date-Manip:0
+dev-perl/Date-Simple:0
+dev-perl/DateTime:0
+dev-perl/DateTime-Calendar-Julian:0
+dev-perl/DateTime-Event-ICal:0
+dev-perl/DateTime-Event-Recurrence:0
+dev-perl/DateTime-Format-Builder:0
+dev-perl/DateTime-Format-DateParse:0
+dev-perl/DateTime-Format-Flexible:0
+dev-perl/DateTime-Format-HTTP:0
+dev-perl/DateTime-Format-Human-Duration:0
+dev-perl/DateTime-Format-ICal:0
+dev-perl/DateTime-Format-ISO8601:0
+dev-perl/DateTime-Format-Mail:0
+dev-perl/DateTime-Format-Natural:0
+dev-perl/DateTime-Format-SQLite:0
+dev-perl/DateTime-Format-Strptime:0
+dev-perl/DateTime-Format-W3CDTF:0
+dev-perl/DateTime-HiRes:0
+dev-perl/DateTime-Locale:0
+dev-perl/DateTime-Set:0
+dev-perl/DateTime-TimeZone:0
+dev-perl/DateTime-Tiny:0
+dev-perl/DateTimeX-Easy:0
+dev-perl/DBD-mysql:0
+dev-perl/DBD-Pg:0
+dev-perl/DBD-SQLite:0
+dev-perl/DB_File-Lock:0
+dev-perl/DBI:0
+dev-perl/DBICx-TestDatabase:0
+dev-perl/DBI-Shell:0
+dev-perl/DBIx-Class:0
+dev-perl/DBIx-Class-DynamicDefault:0
+dev-perl/DBIx-Class-InflateColumn-Boolean:0
+dev-perl/DBIx-Class-InflateColumn-IP:0
+dev-perl/DBIx-Class-InflateColumn-Object-Enum:0
+dev-perl/DBIx-Class-UserStamp:0
+dev-perl/DBIx-ContextualFetch:0
+dev-perl/DBIx-DBSchema:0
+dev-perl/DBIx-Migration:0
+dev-perl/DBIx-Safe:0
+dev-perl/DBIx-SearchBuilder:0
+dev-perl/DBIx-Simple:0
+dev-perl/DelimMatch:0
+dev-perl/Devel-ArgNames:0
+dev-perl/Devel-Caller:0
+dev-perl/Devel-CheckBin:0
+dev-perl/Devel-CheckCompiler:0
+dev-perl/Devel-CheckLib:0
+dev-perl/Devel-Cover:0
+dev-perl/Devel-Cycle:0
+dev-perl/Devel-Declare:0
+dev-perl/Devel-Dumpvar:0
+dev-perl/Devel-FindPerl:0
+dev-perl/Devel-GlobalDestruction:0
+dev-perl/Devel-Hide:0
+dev-perl/Devel-Leak:0
+dev-perl/Devel-LexAlias:0
+dev-perl/Devel-NYTProf:0
+dev-perl/Devel-OverloadInfo:0
+dev-perl/Devel-PatchPerl:0
+dev-perl/Devel-Refactor:0
+dev-perl/Devel-REPL:0
+dev-perl/Devel-Size:0
+dev-perl/Devel-SmallProf:0
+dev-perl/Devel-StackTrace:0
+dev-perl/Devel-StackTrace-AsHTML:0
+dev-perl/Devel-Symdump:0
+dev-perl/Device-SerialPort:0
+dev-perl/Digest-BubbleBabble:0
+dev-perl/Digest-CRC:0
+dev-perl/Digest-GOST:0
+dev-perl/Digest-HMAC:0
+dev-perl/Digest-JHash:0
+dev-perl/Digest-MD2:0
+dev-perl/Digest-MD4:0
+dev-perl/Digest-MD5-File:0
+dev-perl/Digest-Nilsimsa:0
+dev-perl/Digest-Perl-MD5:0
+dev-perl/Digest-SHA1:0
+dev-perl/Dist-CheckConflicts:0
+dev-perl/Dist-Zilla:0
+dev-perl/Dist-Zilla-Plugin-MakeMaker-Awesome:0
+dev-perl/Dist-Zilla-Plugin-MetaProvides:0
+dev-perl/Dist-Zilla-Plugin-MetaProvides-Package:0
+dev-perl/Dist-Zilla-Plugin-OSPrereqs:0
+dev-perl/Dist-Zilla-Plugin-OurPkgVersion:0
+dev-perl/Dist-Zilla-Plugin-Test-MinimumVersion:0
+dev-perl/Dist-Zilla-Plugin-Test-Perl-Critic:0
+dev-perl/Dist-Zilla-Role-ModuleMetadata:0
+dev-perl/Email-Abstract:0
+dev-perl/Email-Address:0
+dev-perl/Email-Date-Format:0
+dev-perl/Email-Filter:0
+dev-perl/Email-FolderType:0
+dev-perl/Email-LocalDelivery:0
+dev-perl/Email-MessageID:0
+dev-perl/Email-MIME:0
+dev-perl/Email-MIME-ContentType:0
+dev-perl/Email-MIME-Encodings:0
+dev-perl/Email-Sender:0
+dev-perl/Email-Simple:0
+dev-perl/Email-Valid:0
+dev-perl/Encode-Locale:0
+dev-perl/enum:0
+dev-perl/Error:0
+dev-perl/EV:0
+dev-perl/Eval-Closure:0
+dev-perl/Eval-LineNumbers:0
+dev-perl/Event:0
+dev-perl/Event-RPC:0
+dev-perl/Exception-Class:0
+dev-perl/Expect:0
+dev-perl/Exporter-Lite:0
+dev-perl/Exporter-Tiny:0
+dev-perl/ExtUtils-CChecker:0
+dev-perl/ExtUtils-Config:0
+dev-perl/ExtUtils-Depends:0
+dev-perl/ExtUtils-F77:0
+dev-perl/ExtUtils-Helpers:0
+dev-perl/ExtUtils-InstallPaths:0
+dev-perl/ExtUtils-LibBuilder:0
+dev-perl/ExtUtils-PkgConfig:0
+dev-perl/FCGI:0
+dev-perl/FCGI-ProcManager:0
+dev-perl/File-BaseDir:0
+dev-perl/File-Copy-Recursive:0
+dev-perl/File-DesktopEntry:0
+dev-perl/File-Find-Rule:0
+dev-perl/File-Find-Rule-Perl:0
+dev-perl/File-Flock:0
+dev-perl/File-HomeDir:0
+dev-perl/File-Listing:0
+dev-perl/File-MimeInfo:0
+dev-perl/File-MMagic:0
+dev-perl/File-Next:0
+dev-perl/File-NFSLock:0
+dev-perl/File-Path-Expand:0
+dev-perl/File-pushd:0
+dev-perl/File-Remove:0
+dev-perl/File-Scan-ClamAV:0
+dev-perl/File-Share:0
+dev-perl/File-ShareDir:0
+dev-perl/File-ShareDir-Install:0
+dev-perl/File-ShareDir-ProjectDistDir:0
+dev-perl/File-Slurp:0
+dev-perl/File-Slurper:0
+dev-perl/File-Slurp-Tiny:0
+dev-perl/Filesys-Notify-Simple:0
+dev-perl/File-Which:0
+dev-perl/Filter:0
+dev-perl/Font-AFM:0
+dev-perl/GD:0
+dev-perl/GDGraph:0
+dev-perl/GDTextUtil:0
+dev-perl/Gearman:0
+dev-perl/Gentoo-PerlMod-Version:0
+dev-perl/Getopt-Long-Descriptive:0
+dev-perl/Glib-Object-Introspection:0
+dev-perl/glib-perl:0
+dev-perl/Google-Ads-AdWords-Client:0
+dev-perl/GraphViz:0
+dev-perl/Hash-Merge:0
+dev-perl/Hash-Merge-Simple:0
+dev-perl/Hash-MoreUtils:0
+dev-perl/Hash-MultiValue:0
+dev-perl/Heap:0
+dev-perl/HTML-Form:0
+dev-perl/HTML-Format:0
+dev-perl/HTML-FormatText-WithLinks:0
+dev-perl/HTML-FormatText-WithLinks-AndTables:0
+dev-perl/HTML-Parser:0
+dev-perl/HTML-Tagset:0
+dev-perl/HTML-Tree:0
+dev-perl/HTTP-Body:0
+dev-perl/HTTP-CookieJar:0
+dev-perl/HTTP-Cookies:0
+dev-perl/HTTP-Daemon:0
+dev-perl/HTTP-Date:0
+dev-perl/HTTP-Headers-Fast:0
+dev-perl/HTTP-Message:0
+dev-perl/HTTP-Negotiate:0
+dev-perl/HTTP-Server-Simple:0
+dev-perl/Image-Info:0
+dev-perl/Image-Size:0
+dev-perl/Importer:0
+dev-perl/Import-Into:0
+dev-perl/indirect:0
+dev-perl/Inline:0
+dev-perl/Inline-Python:0
+dev-perl/IO-All:0
+dev-perl/IO-CaptureOutput:0
+dev-perl/IO-Event:0
+dev-perl/IO-HTML:0
+dev-perl/IO-Prompt:0
+dev-perl/IO-Socket-INET6:0
+dev-perl/IO-Socket-SSL:0
+dev-perl/IO-String:0
+dev-perl/IO-stringy:0
+dev-perl/IO-Stty:0
+dev-perl/IO-Tee:0
+dev-perl/IO-TieCombine:0
+dev-perl/IO-Tty:0
+dev-perl/IPC-Run:0
+dev-perl/IPC-Run3:0
+dev-perl/IPC-Shareable:0
+dev-perl/IPC-ShareLite:0
+dev-perl/IPC-Signal:0
+dev-perl/IPC-System-Simple:0
+dev-perl/JSON:0
+dev-perl/JSON-MaybeXS:0
+dev-perl/JSON-Parse:0
+dev-perl/JSON-XS:0
+dev-perl/Lexical-Persistence:0
+dev-perl/Lexical-SealRequireHints:0
+dev-perl/libintl-perl:0
+dev-perl/libwww-perl:0
+dev-perl/libxml-perl:0
+dev-perl/Lingua-EN-Inflect:0
+dev-perl/List-MoreUtils:0
+dev-perl/Locale-gettext:0
+dev-perl/Locale-Maketext-Lexicon:0
+dev-perl/local-lib:0
+dev-perl/Log-Agent:0
+dev-perl/Log-Any:0
+dev-perl/Log-Dispatch:0
+dev-perl/Log-Dispatch-Array:0
+dev-perl/Log-Dispatchouli:0
+dev-perl/Log-Log4perl:0
+dev-perl/Log-Message:0
+dev-perl/Log-Message-Simple:0
+dev-perl/Log-Report:0
+dev-perl/Log-Report-Optional:0
+dev-perl/LWP-MediaTypes:0
+dev-perl/LWP-Protocol-https:0
+dev-perl/Mail-Sender:0
+dev-perl/MailTools:0
+dev-perl/Math-Base36:0
+dev-perl/Math-BigInt-GMP:0
+dev-perl/Math-CDF:0
+dev-perl/Math-FFT:0
+dev-perl/Math-Pari:0
+dev-perl/Math-Random-MT:0
+dev-perl/MCE:0
+dev-perl/MIME-Charset:0
+dev-perl/mime-construct:0
+dev-perl/MIME-Types:0
+dev-perl/Mixin-Linewise:0
+dev-perl/Modern-Perl:0
+dev-perl/Module-Build:0
+dev-perl/Module-Build-Tiny:0
+dev-perl/Module-Find:0
+dev-perl/Module-Implementation:0
+dev-perl/Module-Locate:0
+dev-perl/Module-Path:0
+dev-perl/Module-Pluggable:0
+dev-perl/Module-Refresh:0
+dev-perl/Module-Runtime:0
+dev-perl/Module-Runtime-Conflicts:0
+dev-perl/Module-ScanDeps:0
+dev-perl/Module-Signature:0
+dev-perl/Module-Util:0
+dev-perl/Mojolicious:0
+dev-perl/MongoDB:0
+dev-perl/Moo:0
+dev-perl/Moose:0
+dev-perl/MooseX-Getopt:0
+dev-perl/MooseX-LazyRequire:0
+dev-perl/MooseX-Object-Pluggable:0
+dev-perl/MooseX-OneArgNew:0
+dev-perl/MooseX-Role-Parameterized:0
+dev-perl/MooseX-Role-WithOverloading:0
+dev-perl/MooseX-SetOnce:0
+dev-perl/MooseX-Types:0
+dev-perl/MooseX-Types-Path-Class:0
+dev-perl/MooseX-Types-Perl:0
+dev-perl/MooseX-Types-Stringlike:0
+dev-perl/MooX-Types-MooseLike:0
+dev-perl/MooX-Types-MooseLike-Numeric:0
+dev-perl/Mozilla-CA:0
+dev-perl/Mozilla-PublicSuffix:0
+dev-perl/MP3-Info:0
+dev-perl/MP3-Tag:0
+dev-perl/MRO-Compat:0
+dev-perl/multidimensional:0
+dev-perl/namespace-autoclean:0
+dev-perl/namespace-clean:0
+dev-perl/NetAddr-IP:0
+dev-perl/Net-Daemon:0
+dev-perl/Net-DNS:0
+dev-perl/Net-DNS-SEC:0
+dev-perl/Net-Domain-TLD:0
+dev-perl/Net-HTTP:0
+dev-perl/Net-IDN-Encode:0
+dev-perl/Net-LibIDN:0
+dev-perl/Net-OAuth:0
+dev-perl/Net-OpenSSH:0
+dev-perl/Net-SFTP-Foreign:0
+dev-perl/Net-SMTP-SSL:0
+dev-perl/Net-SSH-Any:0
+dev-perl/Net-SSLeay:0
+dev-perl/Net-Twitter:0
+dev-perl/Number-Compare:0
+dev-perl/Object-Enum:0
+dev-perl/OLE-StorageLite:0
+dev-perl/Package-DeprecationManager:0
+dev-perl/Package-Stash:0
+dev-perl/Package-Stash-XS:0
+dev-perl/Package-Variant:0
+dev-perl/PadWalker:0
+dev-perl/PAR:0
+dev-perl/Parallel-ForkManager:0
+dev-perl/Parallel-Prefork:0
+dev-perl/Params-Util:0
+dev-perl/Params-Validate:0
+dev-perl/Params-ValidationCompiler:0
+dev-perl/PAR-Dist:0
+dev-perl/Parse-RecDescent:0
+dev-perl/Path-Class:0
+dev-perl/Path-FindDev:0
+dev-perl/Path-IsDev:0
+dev-perl/Path-Iterator-Rule:0
+dev-perl/Path-Tiny:0
+dev-perl/PBKDF2-Tiny:0
+dev-perl/PDF-Create:0
+dev-perl/Pegex:0
+dev-perl/Perl6-Junction:0
+dev-perl/Perl-Critic:0
+dev-perl/PerlIO-utf8_strict:0
+dev-perl/Perl-MinimumVersion:0
+dev-perl/Perl-PrereqScanner:0
+dev-perl/Perl-Tags:0
+dev-perl/Perl-Tidy:0
+dev-perl/Perl-Version:0
+dev-perl/Plack:0
+dev-perl/PlRPC:0
+dev-perl/Pod-Eventual:0
+dev-perl/Pod-LaTeX:0
+dev-perl/Pod-Spell:0
+dev-perl/PortageXS:0
+dev-perl/POSIX-strftime-Compiler:0
+dev-perl/PostScript-Simple:0
+dev-perl/PPI:0
+dev-perl/PPIx-Regexp:0
+dev-perl/PPIx-Utilities:0
+dev-perl/prefork:0
+dev-perl/Probe-Perl:0
+dev-perl/Proc-Guard:0
+dev-perl/Proc-ProcessTable:0
+dev-perl/Proc-Wait3:0
+dev-perl/Proc-WaitStat:0
+dev-perl/Readonly:0
+dev-perl/Ref-Util:0
+dev-perl/Regexp-Common:0
+dev-perl/Role-HasMessage:0
+dev-perl/Role-Identifiable:0
+dev-perl/Role-Tiny:0
+dev-perl/Safe-Isa:0
+dev-perl/Scalar-Properties:0
+dev-perl/Scope-Guard:0
+dev-perl/Sereal:0
+dev-perl/Sereal-Decoder:0
+dev-perl/Sereal-Encoder:0
+dev-perl/Server-Starter:0
+dev-perl/Set-Infinite:0
+dev-perl/Signal-Mask:0
+dev-perl/SOAP-WSDL:0
+dev-perl/Socket6:0
+dev-perl/Software-License:0
+dev-perl/Sort-Naturally:0
+dev-perl/Sort-Versions:0
+dev-perl/Specio:0
+dev-perl/Spiffy:0
+dev-perl/Spreadsheet-ParseExcel:0
+dev-perl/SQL-Abstract:0
+dev-perl/SQL-Translator:0
+dev-perl/Starlet:0
+dev-perl/Stream-Buffered:0
+dev-perl/strictures:0
+dev-perl/String-CRC32:0
+dev-perl/String-Errf:0
+dev-perl/String-Escape:0
+dev-perl/String-Flogger:0
+dev-perl/String-Format:0
+dev-perl/String-Formatter:0
+dev-perl/String-Print:0
+dev-perl/String-RewritePrefix:0
+dev-perl/Sub-Exporter:0
+dev-perl/Sub-Exporter-ForMethods:0
+dev-perl/Sub-Exporter-GlobExporter:0
+dev-perl/Sub-Exporter-Progressive:0
+dev-perl/Sub-Identify:0
+dev-perl/Sub-Install:0
+dev-perl/Sub-Name:0
+dev-perl/Sub-Override:0
+dev-perl/Sub-Quote:0
+dev-perl/Sub-Uplevel:0
+dev-perl/SUPER:0
+dev-perl/Sys-SigAction:0
+dev-perl/Sys-Syscall:0
+dev-perl/Sys-Virt:0
+dev-perl/Taint-Util:0
+dev-perl/Task-Weaken:0
+dev-perl/Template-Toolkit:0
+dev-perl/Term-Encoding:0
+dev-perl/TermReadKey:0
+dev-perl/Term-ReadLine-Gnu:0
+dev-perl/Term-ReadLine-Perl:0
+dev-perl/Term-UI:0
+dev-perl/Test2-Plugin-NoWarnings:0
+dev-perl/Test2-Suite:0
+dev-perl/Test-Base:0
+dev-perl/Test-CheckDeps:0
+dev-perl/Test-Class:0
+dev-perl/Test-CleanNamespaces:0
+dev-perl/Test-Deep:0
+dev-perl/Test-Deep-JSON:0
+dev-perl/Test-Differences:0
+dev-perl/Test-Exception:0
+dev-perl/Test-FailWarnings:0
+dev-perl/Test-Fatal:0
+dev-perl/Test-File-ShareDir:0
+dev-perl/Test-Inter:0
+dev-perl/Test-LeakTrace:0
+dev-perl/Test-LongString:0
+dev-perl/Test-MinimumVersion:0
+dev-perl/Test-MockModule:0
+dev-perl/Test-MockObject:0
+dev-perl/Test-MockTime:0
+dev-perl/Test-Most:0
+dev-perl/Test-Needs:0
+dev-perl/Test-NoWarnings:0
+dev-perl/Test-Number-Delta:0
+dev-perl/Test-Output:0
+dev-perl/Test-Perl-Critic:0
+dev-perl/Test-Regexp:0
+dev-perl/Test-Requires:0
+dev-perl/Test-RequiresInternet:0
+dev-perl/Test-Script:0
+dev-perl/Test-SharedFork:0
+dev-perl/Test-Spec:0
+dev-perl/Test-Taint:0
+dev-perl/Test-TCP:0
+dev-perl/Test-Timer:0
+dev-perl/Test-Trap:0
+dev-perl/Test-Version:0
+dev-perl/Test-Warn:0
+dev-perl/Test-Warnings:0
+dev-perl/Test-Without-Module:0
+dev-perl/Test-YAML:0
+dev-perl/Text-Aligner:0
+dev-perl/Text-Autoformat:0
+dev-perl/Text-BibTeX:0
+dev-perl/Text-CSV_XS:0
+dev-perl/Text-Diff:0
+dev-perl/Text-Glob:0
+dev-perl/Text-Iconv:0
+dev-perl/Text-Password-Pronounceable:0
+dev-perl/Text-Reform:0
+dev-perl/Text-Table:0
+dev-perl/Text-Template:0
+dev-perl/Text-Unidecode:0
+dev-perl/Text-vFile-asData:0
+dev-perl/Thread-SigMask:0
+dev-perl/Throwable:0
+dev-perl/Tie-EncryptedHash:0
+dev-perl/Tie-IxHash:0
+dev-perl/Tie-ToObject:0
+dev-perl/TimeDate:0
+dev-perl/Time-Duration:0
+dev-perl/Time-Duration-Parse:0
+dev-perl/Time-Moment:0
+dev-perl/Time-TZOffset:0
+dev-perl/Try-Tiny:0
+dev-perl/Types-Serialiser:0
+dev-perl/Type-Tiny:0
+dev-perl/Type-Tiny-XS:0
+dev-perl/Unicode-EastAsianWidth:0
+dev-perl/Unicode-LineBreak:0
+dev-perl/Unicode-Map:0
+dev-perl/Unicode-Stringprep:0
+dev-perl/Unicode-UTF8:0
+dev-perl/UNIVERSAL-can:0
+dev-perl/UNIVERSAL-isa:0
+dev-perl/UNIVERSAL-require:0
+dev-perl/URI:0
+dev-perl/Variable-Magic:0
+dev-perl/Want:0
+dev-perl/WWW-Mechanize:0
+dev-perl/WWW-Pastebin-PastebinCom-Create:0
+dev-perl/WWW-RobotRules:0
+dev-perl/XML-Compile:0
+dev-perl/XML-Compile-Cache:0
+dev-perl/XML-Compile-SOAP:0
+dev-perl/XML-Compile-Tester:0
+dev-perl/XML-Compile-WSDL11:0
+dev-perl/XML-Filter-BufferText:0
+dev-perl/XML-Handler-YAWriter:0
+dev-perl/XML-LibXML:0
+dev-perl/XML-LibXML-Simple:0
+dev-perl/XML-NamespaceSupport:0
+dev-perl/XML-Parser:0
+dev-perl/XML-SAX:0
+dev-perl/XML-SAX-Base:0
+dev-perl/XML-SAX-Expat:0
+dev-perl/XML-SAX-Writer:0
+dev-perl/XML-Simple:0
+dev-perl/XML-Twig:0
+dev-perl/XML-Writer:0
+dev-perl/XML-XPath:0
+dev-perl/YAML:0
+dev-perl/YAML-LibYAML:0
+dev-perl/YAML-Tiny:0
+dev-python/subunit:0
+dev-vcs/git:0
+dev-vcs/subversion:0
+media-gfx/graphviz:0
+net-fs/samba:0
+net-irc/irssi:0
+net-misc/bwwhois:0
+perl-core/File-Temp:0
+perl-core/Math-BigInt:0
+perl-core/Scalar-List-Utils:0
+perl-core/Test-Simple:0
+sys-apps/ack:0
+sys-apps/texinfo:0
+sys-fs/e4rat:0
+virtual/perl-Carp:0
+virtual/perl-Compress-Raw-Bzip2:0
+virtual/perl-Compress-Raw-Zlib:0
+virtual/perl-CPAN:0
+virtual/perl-CPAN-Meta:0
+virtual/perl-CPAN-Meta-YAML:0
+virtual/perl-Data-Dumper:0
+virtual/perl-Digest:0
+virtual/perl-Digest-MD5:0
+virtual/perl-Digest-SHA:0
+virtual/perl-Encode:0
+virtual/perl-Exporter:0
+virtual/perl-ExtUtils-CBuilder:0
+virtual/perl-ExtUtils-Constant:0
+virtual/perl-ExtUtils-Install:0
+virtual/perl-ExtUtils-MakeMaker:0
+virtual/perl-ExtUtils-Manifest:0
+virtual/perl-ExtUtils-ParseXS:0
+virtual/perl-File-Path:0
+virtual/perl-File-Spec:0
+virtual/perl-File-Temp:0
+virtual/perl-Getopt-Long:0
+virtual/perl-HTTP-Tiny:0
+virtual/perl-if:0
+virtual/perl-IO:0
+virtual/perl-IO-Compress:0
+virtual/perl-IO-Socket-IP:0
+virtual/perl-IO-Zlib:0
+virtual/perl-JSON-PP:0
+virtual/perl-libnet:0
+virtual/perl-Locale-Maketext:0
+virtual/perl-Math-BigInt:0
+virtual/perl-MIME-Base64:0
+virtual/perl-Module-CoreList:0
+virtual/perl-Module-Metadata:0
+virtual/perl-parent:0
+virtual/perl-Parse-CPAN-Meta:0
+virtual/perl-Perl-OSType:0
+virtual/perl-Pod-Escapes:0
+virtual/perl-podlators:0
+virtual/perl-Pod-Parser:0
+virtual/perl-Pod-Simple:0
+virtual/perl-Scalar-List-Utils:0
+virtual/perl-Storable:0
+virtual/perl-Sys-Syslog:0
+virtual/perl-Term-ANSIColor:0
+virtual/perl-Test-Harness:0
+virtual/perl-Test-Simple:0
+virtual/perl-Text-ParseWords:0
+virtual/perl-Text-Tabs+Wrap:0
+virtual/perl-threads-shared:0
+virtual/perl-Time-HiRes:0
+virtual/perl-Time-Local:0
+virtual/perl-Unicode-Normalize:0
+virtual/perl-version:0
+virtual/perl-XSLoader:0
+x11-terms/rxvt-unicode:0
+
+==== [ bin/gentoo-perl installed-deps-perl-subslot-rebuild 5.21 ] ====
+[31;1m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > list-excluded-abis] [0mAll known ABIs excluded, does "5.21" match a known Perl ABI-version?
+
+==== [ bin/gentoo-perl gen-upgrade-sets 5.22 5.24 ] ====
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating TEMPDIR/5.24/sets/perl-cleanup
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m... Done TEMPDIR/5.24/sets/perl-cleanup
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating TEMPDIR/5.24/sets/perl-upgrade
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.26
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.26
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.26
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.22
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.22
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.22
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.20
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.20
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.20
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.18
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.18
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.18
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.16
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.16
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.16
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[31;1m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mNo packages detected needing recompilation against dev-lang/perl:0/5.24, perhaps you've already upgraded to it?
+[31;1m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mError generating rebuild list
+
+==== [ bin/gentoo-perl gen-upgrade-sets 5.20 5.22 ] ====
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating TEMPDIR/5.22/sets/perl-cleanup
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m... Done TEMPDIR/5.22/sets/perl-cleanup
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating TEMPDIR/5.22/sets/perl-upgrade
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.26
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.26
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.26
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.24
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.24
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.24
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.20
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.20
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.20
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.18
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.18
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.18
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.16
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.16
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.16
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m... Done TEMPDIR/5.22/sets/perl-upgrade
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mCreated set @perl-cleanup in TEMPDIR/5.22/sets/perl-cleanup
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mCreated set @perl-upgrade in TEMPDIR/5.22/sets/perl-upgrade
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mAssuming both of those were in /etc/portage/sets you can now do
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m  emerge -C -va @perl-cleanup
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m  emerge -va1 -k n dev-lang/perl:0/5.22 @perl-upgrade
+
+==== [ bin/gentoo-perl gen-upgrade-sets 5.18 5.20 ] ====
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating TEMPDIR/5.20/sets/perl-cleanup
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m... Done TEMPDIR/5.20/sets/perl-cleanup
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating TEMPDIR/5.20/sets/perl-upgrade
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.26
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.26
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.26
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.24
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.24
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.24
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.22
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.22
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.22
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.18
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.18
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.18
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.16
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.16
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.16
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m... Done TEMPDIR/5.20/sets/perl-upgrade
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mCreated set @perl-cleanup in TEMPDIR/5.20/sets/perl-cleanup
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mCreated set @perl-upgrade in TEMPDIR/5.20/sets/perl-upgrade
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mAssuming both of those were in /etc/portage/sets you can now do
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m  emerge -C -va @perl-cleanup
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m  emerge -va1 -k n dev-lang/perl:0/5.20 @perl-upgrade
+
+==== [ bin/gentoo-perl gen-upgrade-sets 5.20 5.21 ] ====
+[31;1m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > print-matching-abi] [0mNo ABI matched "5.21".
+
