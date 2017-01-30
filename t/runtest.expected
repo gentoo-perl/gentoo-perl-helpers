@@ -96,6 +96,7 @@ lib/core-functions.sh: line 32: type: x-some-program-that-does-not-exist: not fo
 ==== [ bin/gentoo-perl version ] ====
 0.1.0
 ==== [ bin/gentoo-perl list-commands ] ====
+gen-upgrade-sets
 help
 installed-deps-perl-subslot-rebuild
 installed-perl-core
@@ -106,6 +107,7 @@ list-excluded-abis
 print-matching-abi
 version
 ==== [ bin/gentoo-perl list-commands-desc ] ====
+ gen-upgrade-sets               : generates/updates sets in /etc/portage/sets for helping dev-lang/perl upgrades
  help                           : displays help
  installed-deps-perl-subslot-rebuild : Shows all packages would need to be rebuilt to match a target subslot
  installed-perl-core            : Lists all packages installed in perl-core
@@ -1807,4 +1809,129 @@ x11-terms/rxvt-unicode:0
 
 ==== [ bin/gentoo-perl installed-deps-perl-subslot-rebuild 5.21 ] ====
 [31;1m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > list-excluded-abis] [0mAll known ABIs excluded, does "5.21" match a known Perl ABI-version?
+
+==== [ bin/gentoo-perl gen-upgrade-sets 5.22 5.24 ] ====
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating /tmp/gentoo-perl-helper.test.gen-upgrade-sets.mEyoOrg/5.24/sets/perl-cleanup
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m... Done /tmp/gentoo-perl-helper.test.gen-upgrade-sets.mEyoOrg/5.24/sets/perl-cleanup
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating /tmp/gentoo-perl-helper.test.gen-upgrade-sets.mEyoOrg/5.24/sets/perl-upgrade
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.26
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.26
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.26
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.22
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.22
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.22
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.20
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.20
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.20
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.18
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.18
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.18
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.16
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.16
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.16
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m... Done /tmp/gentoo-perl-helper.test.gen-upgrade-sets.mEyoOrg/5.24/sets/perl-upgrade
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mCreated set @perl-cleanup in /tmp/gentoo-perl-helper.test.gen-upgrade-sets.mEyoOrg/5.24/sets/perl-cleanup
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mCreated set @perl-upgrade in /tmp/gentoo-perl-helper.test.gen-upgrade-sets.mEyoOrg/5.24/sets/perl-upgrade
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mAssuming both of those were in /etc/portage/sets you can now do
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m  emerge -C -va @perl-cleanup
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m  emerge -va1 -k n dev-lang/perl:0/5.24 @perl-upgrade
+
+==== [ bin/gentoo-perl gen-upgrade-sets 5.20 5.22 ] ====
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating /tmp/gentoo-perl-helper.test.gen-upgrade-sets.mEyoOrg/5.22/sets/perl-cleanup
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m... Done /tmp/gentoo-perl-helper.test.gen-upgrade-sets.mEyoOrg/5.22/sets/perl-cleanup
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating /tmp/gentoo-perl-helper.test.gen-upgrade-sets.mEyoOrg/5.22/sets/perl-upgrade
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.26
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.26
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.26
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.24
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.24
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.24
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.20
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.20
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.20
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.18
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.18
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.18
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.16
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.16
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.16
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m... Done /tmp/gentoo-perl-helper.test.gen-upgrade-sets.mEyoOrg/5.22/sets/perl-upgrade
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mCreated set @perl-cleanup in /tmp/gentoo-perl-helper.test.gen-upgrade-sets.mEyoOrg/5.22/sets/perl-cleanup
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mCreated set @perl-upgrade in /tmp/gentoo-perl-helper.test.gen-upgrade-sets.mEyoOrg/5.22/sets/perl-upgrade
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mAssuming both of those were in /etc/portage/sets you can now do
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m  emerge -C -va @perl-cleanup
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m  emerge -va1 -k n dev-lang/perl:0/5.22 @perl-upgrade
+
+==== [ bin/gentoo-perl gen-upgrade-sets 5.18 5.20 ] ====
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating /tmp/gentoo-perl-helper.test.gen-upgrade-sets.mEyoOrg/5.20/sets/perl-cleanup
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m... Done /tmp/gentoo-perl-helper.test.gen-upgrade-sets.mEyoOrg/5.20/sets/perl-cleanup
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating /tmp/gentoo-perl-helper.test.gen-upgrade-sets.mEyoOrg/5.20/sets/perl-upgrade
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.26
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.26
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.26
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.24
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.24
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.24
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.22
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.22
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.22
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.18
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.18
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.18
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.16
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.16
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.16
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m... Done /tmp/gentoo-perl-helper.test.gen-upgrade-sets.mEyoOrg/5.20/sets/perl-upgrade
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mCreated set @perl-cleanup in /tmp/gentoo-perl-helper.test.gen-upgrade-sets.mEyoOrg/5.20/sets/perl-cleanup
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mCreated set @perl-upgrade in /tmp/gentoo-perl-helper.test.gen-upgrade-sets.mEyoOrg/5.20/sets/perl-upgrade
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mAssuming both of those were in /etc/portage/sets you can now do
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m  emerge -C -va @perl-cleanup
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m  emerge -va1 -k n dev-lang/perl:0/5.20 @perl-upgrade
+
+==== [ bin/gentoo-perl gen-upgrade-sets 5.20 5.21 ] ====
+[31;1m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > print-matching-abi] [0mNo ABI matched "5.21".
 

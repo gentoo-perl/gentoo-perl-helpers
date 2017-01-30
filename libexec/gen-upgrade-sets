@@ -1,0 +1,56 @@
+#!/bin/bash
+
+# ABSTRACT: generates/updates sets in /etc/portage/sets for helping dev-lang/perl upgrades
+
+source "${LIBDIR}/core-functions.sh" || exit 1;
+
+[[ $# == 2 ]] || die "Expected ${cmdname} [previous-perl-version] [wanted-version]"
+
+subslot="$1"
+shift
+destsubslot="$1"
+shift;
+
+set -euo pipefail
+
+sets="${ETC_PORTAGE_SETS:-${ETC_PORTAGE:-/etc/portage}/sets}"
+cleanup="${sets}/perl-cleanup"
+upgrade="${sets}/perl-upgrade"
+perl_target="$(dorun print-matching-abi "${destsubslot}")"
+
+mkdir -p "${sets}"    || die "Cannot ensure ${sets} directory exists"
+touch -m "${cleanup}" || die "Cannot write ${cleanup}"
+touch -m "${upgrade}" || die "Cannot write ${upgrade}"
+
+einfo "Generating ${cleanup}"
+dorun installed-perl-core >"${cleanup}" || ewarn "Nothing to clean"
+einfo "... Done ${cleanup}"
+
+einfo "Generating ${upgrade}"
+
+dorun installed-deps-perl-subslot-rebuild "${destsubslot}" >"${upgrade}" ||\
+  die "No packages detected compiled against ${perl_target}, perhaps you've already upgraded it?"
+
+einfo "... Done ${upgrade}"
+
+einfo "Created set @perl-cleanup in ${cleanup}"
+einfo "Created set @perl-upgrade in ${upgrade}"
+einfo "Assuming both of those were in /etc/portage/sets you can now do"
+einfo "  emerge -C -va @perl-cleanup"
+einfo "  emerge -va1 -k n ${perl_target} @perl-upgrade"
+
+# help: gen-upgrade-sets [previous perl version] [wanted perl version]
+# help:
+# help: example:
+# help:   gen-upgrade-sets 5.22 5.24
+# help:
+# help: In both cases, the version should be the "subslot" value used by portage
+# help: which will be likely 5.22, 5.24, 5.26, etc. ( But unlikely 5.22.1, 5.22.2 etc )
+# help:
+# help: This will generate two sets:
+# help:
+# help:   @perl-cleanup - Contains packages we encourage removal of before upgrading
+# help:   @perl-upgrade - Contains packages that will need rebuilding during upgrade
+# help:
+# help: If an upgrade fails mid-way, regenerating these sets will regenerate the
+# help: sets with fewer upgrades to install, which is probably what you want.
