@@ -73,3 +73,26 @@ It is strongly encouraged to run `perl-cleaner --all` after upgrading Perl
 in the event there are any stragglers with secret Perl dependencies that are
 not visible to portage.
 
+## Advanced Usage
+
+Most of the internals of this tool can be used directly to facilitate
+generating your own sets if it doesn't quite meet your needs.
+
+- `bin/gentoo-perl list-commands-desc` will give you a list of tools that you can use
+- `bin/gentoo-perl help $toolname` will give you detailed help on that tool
+
+For example, for the most part, `gen-upgrade-sets` is implemented in terms of:
+
+```bash
+bin/gentoo-perl installed-deps-subslot-rebuild ${perl_target}
+bin/gentoo-perl installed-perl-virtuals
+```
+
+And the `@perl-cleanup` target is mostly just
+
+```bash
+bin/gentoo-perl installed-perl-core
+```
+
+Some of these tools may be useful in fixing weird edge-cases, or
+simply reporting problems back to gentoo devs.
