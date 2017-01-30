@@ -49,6 +49,10 @@ lib/core-functions.sh: line 32: type: x-some-program-that-does-not-exist: not fo
       gentoo-perl list-commands-desc
       gentoo-perl installed-perl-core
       gentoo-perl installed-perl-virtuals
+   
+    Support/Bugs:
+      Please file any bugs on https://github.com/gentoo-perl/gentoo-perl-helpers
+      or ask questions on freenode.org#gentoo-perl ( make sure to highlight kentnl )
 ==== [ bin/gentoo-perl help ] ====
 [32m * [interface.t.sh > help] [0mCommand: help
 
@@ -69,6 +73,10 @@ lib/core-functions.sh: line 32: type: x-some-program-that-does-not-exist: not fo
       gentoo-perl list-commands-desc
       gentoo-perl installed-perl-core
       gentoo-perl installed-perl-virtuals
+   
+    Support/Bugs:
+      Please file any bugs on https://github.com/gentoo-perl/gentoo-perl-helpers
+      or ask questions on freenode.org#gentoo-perl ( make sure to highlight kentnl )
 ==== [ bin/gentoo-perl help help ] ====
 [32m * [interface.t.sh > help] [0mCommand: help
 
@@ -89,6 +97,10 @@ lib/core-functions.sh: line 32: type: x-some-program-that-does-not-exist: not fo
       gentoo-perl list-commands-desc
       gentoo-perl installed-perl-core
       gentoo-perl installed-perl-virtuals
+   
+    Support/Bugs:
+      Please file any bugs on https://github.com/gentoo-perl/gentoo-perl-helpers
+      or ask questions on freenode.org#gentoo-perl ( make sure to highlight kentnl )
 ==== [ bin/gentoo-perl help x-does-not-exist ] ====
 [31;1m * [interface.t.sh > help] [0mNo such command x-does-not-exist
 ==== [ bin/gentoo-perl x-does-not-exist ] ====

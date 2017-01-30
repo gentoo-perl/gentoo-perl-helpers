@@ -44,4 +44,7 @@ exit 1;
 # help:   gentoo-perl list-commands-desc
 # help:   gentoo-perl installed-perl-core
 # help:   gentoo-perl installed-perl-virtuals
-
+# help:
+# help: Support/Bugs:
+# help:   Please file any bugs on https://github.com/gentoo-perl/gentoo-perl-helpers
+# help:   or ask questions on freenode.org#gentoo-perl ( make sure to highlight kentnl )
