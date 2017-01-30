@@ -11,10 +11,17 @@
 
 ### USAGE From Git Checkout
 
+Specific steps and specific assumed working directories are needed to work
+directly from Git, as this tool is designed to be installed to `/usr/bin/`
+where library paths are hard-coded at installtime.
+
 ```bash
 git clone https://github.com/gentoo-perl/gentoo-perl-helpers
 pushd gentoo-perl-helpers
 ```
+
+Invoking it from a directory other than the project root will have unexpected
+side effects.
 
 ### Generating the sets automatically in `/etc/portage/sets`
 
