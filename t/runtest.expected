@@ -97,6 +97,7 @@ lib/core-functions.sh: line 32: type: x-some-program-that-does-not-exist: not fo
 0.1.0
 ==== [ bin/gentoo-perl list-commands ] ====
 help
+installed-perl-core
 installed-perl-virtuals
 list-commands
 list-commands-desc
@@ -105,6 +106,7 @@ print-matching-abi
 version
 ==== [ bin/gentoo-perl list-commands-desc ] ====
  help                           : displays help
+ installed-perl-core            : Lists all packages installed in perl-core
  installed-perl-virtuals        : Lists all installed virtuals
  list-commands                  : Lists all commands in a format suitable for machine reading
  list-commands-desc             : Lists all commands with descriptions extracted from "ABSTRACT" headings
@@ -221,3 +223,9 @@ dev-lang/perl:0/5.16
 ==== [ bin/gentoo-perl list-excluded-abis 5.21 ] ====
 [31;1m * [list-excluded-abis.t.sh > list-excluded-abis] [0mAll known ABIs excluded, does "5.21" match a known Perl ABI-version?
 
+==== [ bin/gentoo-perl installed-perl-core ] ====
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+perl-core/File-Temp:0
+perl-core/Scalar-List-Utils:0
+perl-core/Test-Simple:0
+perl-core/Math-BigInt:0

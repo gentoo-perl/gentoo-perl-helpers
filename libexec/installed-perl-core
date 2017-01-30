@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# ABSTRACT: Lists all packages installed in perl-core
+
+source "${LIBDIR}/core-functions.sh" || exit 1
+
+set -euo pipefail
+
+require_bin portageq sys-apps/portage
+require_bin xargs sys-apps/findutils
+require_bin qatom app-portage/portage-utils
+
+portageq match "${EPREFIX:-/}" "perl-core/*"                        |\
+  xargs qdepends --nocolor --quiet -k SLOT | sed 's/: /:/'          |\
+  xargs qatom --quiet --nocolor --format "%{CATEGORY}/%{PN}%[SLOT]" |\
+  sed -r 's|:([^/]*)/[^/]*|:\1|'
+
+
+# help: Invocation:
+# help:   gentoo-perl installed-perl-core
+# help:
+# help: Outputs:
+# help:   A list of all installed packages in perl-core/
+# help:
+# help: These items can typically be removed, as Perl's strategy
+# help: will basically resurrect them when they're missing,
+# help: and they will mostly continue working, but in a degraded
+# help: state due to them all being fallthrough provided by
+# help: dev-lang/perl
+

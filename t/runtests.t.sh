@@ -11,6 +11,7 @@ bash t/cmd/list-commands-desc.t.sh
 bash t/cmd/installed-perl-virtuals.t.sh
 bash t/cmd/print-matching-abi.t.sh
 bash t/cmd/list-excluded-abis.t.sh
+bash t/cmd/installed-perl-core.t.sh
 ) |& tee t/runtest.out
 echo "------// DIFF //------------------"
 diff -Naur t/runtest.expected t/runtest.out
