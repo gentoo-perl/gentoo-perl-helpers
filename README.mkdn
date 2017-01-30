@@ -1,0 +1,61 @@
+
+## REQUIREMENTS
+
+- Gentoo
+- app-portage/portage-utils (qatom)
+- sys-apps/coreutils (sort)
+- sys-apps/findutils (xargs)
+- sys-apps/grep (grep)
+- sys-apps/portage  (portageq)
+- sys-apps/sed (sed)
+
+### USAGE From Git Checkout
+
+    git clone <REPO>
+    pushd <CLONEDIR>
+
+### Generating the sets automatically in `/etc/portage/sets`
+
+Where `5.20` is your existing perl(**ABI/SUBSLOT**) and `5.22` is your target perl
+
+    bin/gentoo-perl gen-upgrade-sets 5.20 5.22
+
+### Generating the sets in another dir as a non-privlegled user
+
+    ETC_PORTAGE_SETS=/tmp/sets/ bin/gentoo-perl gen-upgrade-sets 5.20 5.22
+    sudo cp /tmp/sets/* /etc/portage/sets/*
+
+### Performing the upgrade
+
+    sudo emerge -va1 -k n @perl-upgrade
+
+### Blockers
+
+If portage gets stuck with `perl-core/*` ( it shouldn't, but it might )
+
+    sudo emerge -C -va @perl-cleanup
+
+Will purge them for you, and a subsequent retry should then work.
+
+### Mid-Upgrade Failures
+
+If portage fails midway though installing a package and aborts the upgrade,
+resuming it somehow is necessary.
+
+If portage gets confused by a reattempt at 
+
+    sudo emerge -va1 -k n @perl-upgrade
+
+Then rexecuting 
+
+    bin/gentoo-perl gen-upgrade-sets 5.20 5.22
+
+Will regenerate a smaller installation target, containing only packages
+that are still necessary for a portage upgrade
+
+### Post Install
+
+It is strongly encouraged to run `perl-cleaner --all` after upgrading Perl
+in the event there are any stragglers with secret Perl dependencies that are
+not visible to portage.
+
