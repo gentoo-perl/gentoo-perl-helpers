@@ -28,7 +28,7 @@ einfo "... Done ${cleanup}"
 
 einfo "Generating ${upgrade}"
 
-dorun installed-deps-perl-subslot-rebuild "${destsubslot}" >"${upgrade}" ||\
+dorun installed-deps-perl-subslot-rebuild "${destsubslot}" | grep -v '^perl-core/' >"${upgrade}" ||\
   die "No packages detected compiled against ${perl_target}, perhaps you've already upgraded it?"
 
 einfo "... Done ${upgrade}"

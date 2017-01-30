@@ -1845,12 +1845,7 @@ x11-terms/rxvt-unicode:0
 [33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.16
 [33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m... Done TEMPDIR/5.24/sets/perl-upgrade
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mCreated set @perl-cleanup in TEMPDIR/5.24/sets/perl-cleanup
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mCreated set @perl-upgrade in TEMPDIR/5.24/sets/perl-upgrade
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mAssuming both of those were in /etc/portage/sets you can now do
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m  emerge -C -va @perl-cleanup
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m  emerge -va1 -k n dev-lang/perl:0/5.24 @perl-upgrade
+[31;1m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mNo packages detected compiled against dev-lang/perl:0/5.24, perhaps you've already upgraded it?
 
 ==== [ bin/gentoo-perl gen-upgrade-sets 5.20 5.22 ] ====
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating TEMPDIR/5.22/sets/perl-cleanup
