@@ -1845,7 +1845,7 @@ x11-terms/rxvt-unicode:0
 [33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.16
 [33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
-[31;1m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mNo packages detected compiled against dev-lang/perl:0/5.24, perhaps you've already upgraded it?
+[31;1m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mNo packages detected needing recompilation against dev-lang/perl:0/5.24, perhaps you've already upgraded to it?
 
 ==== [ bin/gentoo-perl gen-upgrade-sets 5.20 5.22 ] ====
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating TEMPDIR/5.22/sets/perl-cleanup
