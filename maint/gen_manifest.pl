@@ -17,6 +17,7 @@ for my $i ( $git->ls_files('--exclude-standard', '--full-name') ) {
   next if $i =~ /\.orig$/;
   next if $i =~ /^maint\//;
   next if $i =~ /-volatile/;
+  next if $i =~ /(\A|\/)[.]gitignore\z/;
   $manifest->printf("%s${LF}", $i);
 }
 
