@@ -9,7 +9,18 @@
 - sys-apps/portage  (portageq)
 - sys-apps/sed (sed)
 
+
+### Installation
+
+This is now installable from portage by
+```bash
+emerge -va app-admin/gentoo-perl-helpers
+```
+
 ### USAGE From Git Checkout
+
+If using Git sources, running the helpers requires you be in a specific
+location for paths to load properly.
 
 Specific steps and specific assumed working directories are needed to work
 directly from Git, as this tool is designed to be installed to `/usr/bin/`
