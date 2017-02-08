@@ -33,12 +33,14 @@ function eerror() {
 
 # einfo message
 function einfo() {
+  [[ ${GENTOO_PERL_HELPERS_QUIETNESS:-0} -gt 4 ]] && return;
   _wrap_trace "32m" >&2
   echo "$@"         >&2
 }
 
 # ewarn message
 function ewarn() {
+  [[ ${GENTOO_PERL_HELPERS_QUIETNESS:-0} -gt 9 ]] && return;
   _wrap_trace "33m" >&2
   echo "$@"         >&2
 }

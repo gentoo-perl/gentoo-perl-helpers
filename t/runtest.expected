@@ -24,9 +24,9 @@
 [33m * [test > ewarn] [0mthis is warn
 [33m * [info.t.sh > ewarn] [0mthis is warn
 ====[ require_bin test ]====
-lib/core-functions.sh: line 48: type: x-some-program-that-does-not-exist: not found
+lib/core-functions.sh: line 50: type: x-some-program-that-does-not-exist: not found
 [31;1m * [require_bin.t.sh] [0mNo x-some-program-that-does-not-exist in path, install sys-fictious/troll-program
-lib/core-functions.sh: line 48: type: x-some-program-that-does-not-exist: not found
+lib/core-functions.sh: line 50: type: x-some-program-that-does-not-exist: not found
 [31;1m * [require_bin.t.sh > require_bin] [0mNo x-some-program-that-does-not-exist in path, install sys-fictious/troll-program
 ==== [ bin/gentoo-perl ] ====
 [31;1m * [interface.t.sh] [0mNo command specified
@@ -104,7 +104,7 @@ lib/core-functions.sh: line 48: type: x-some-program-that-does-not-exist: not fo
 ==== [ bin/gentoo-perl help x-does-not-exist ] ====
 [31;1m * [interface.t.sh > help] [0mNo such command x-does-not-exist
 ==== [ bin/gentoo-perl x-does-not-exist ] ====
-/home/kent/gentoo/gentoo-perl-helpers/lib/core-functions.sh: line 59: type: x-does-not-exist: not found
+/home/kent/gentoo/gentoo-perl-helpers/lib/core-functions.sh: line 61: type: x-does-not-exist: not found
 [31;1m * [interface.t.sh] [0mNo such command x-does-not-exist, /home/kent/gentoo/gentoo-perl-helpers/libexec/x-does-not-exist does not exist
 ==== [ bin/gentoo-perl version ] ====
 0.2.0
