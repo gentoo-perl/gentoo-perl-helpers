@@ -1,3 +1,13 @@
+if [[ -z "${LIBDIR:-}" ]]; then
+  export LIBDIR="@@LIBDIR@@"
+  export LIBEXECDIR="@@LIBEXECDIR@@"
+
+  if [[ ${LIBDIR:0:2} == "@@" ]]; then
+    export LIBDIR="$PWD/lib"
+    export LIBEXECDIR="$PWD/libexec"
+  fi
+fi
+
 function _wrap_trace() {
   FULL_COMMAND=${FULL_COMMAND:-$(basename $0)}
   color=$1
@@ -41,9 +51,21 @@ function require_bin() {
 # dorun cmd @args
 function dorun() {
   local cmd="$1"
+  local fullcommand="${LIBEXECDIR%/}/${cmd}"
   local cmdname="$(basename "$cmd")"
   shift
-  cmdname="${cmdname}" FULL_COMMAND="${FULL_COMMAND} > $cmdname" "$cmd" "$@"
+
+  if [[ ! -e "${fullcommand}" ]]; then
+    if type "${cmd}" >/dev/null ; then
+      cmdname="${cmdname}" FULL_COMMAND="${FULL_COMMAND} > $cmdname" "$cmd" "$@" || return $?
+    else
+      die "No such command ${cmd}, ${fullcommand} does not exist";
+    fi
+  else if [[ ! -x "${fullcommand}" ]]; then
+    die "${fullcommand} is not executable";
+    fi
+    cmdname="${cmdname}" FULL_COMMAND="${FULL_COMMAND} > $cmdname" "$fullcommand" "$@" || return $?
+  fi
 }
 
 # Initial values for these variables is the same, but they can diverge
