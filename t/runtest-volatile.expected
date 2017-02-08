@@ -1818,6 +1818,10 @@ x11-terms/rxvt-unicode:0
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mIf portage crashes mid-way through an upgrade, after any relevant issues
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mRe-run this tool to regenerate the sets before proceeding
 
+==== [ bin/gentoo-perl gen-upgrade-sets --quiet 5.18 5.20 ] ====
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+
 ==== [ bin/gentoo-perl gen-upgrade-sets 5.20 5.21 ] ====
 [31;1m * [...sh > gen-upgrade-sets > print-matching-abi] [0mNo ABI matched "5.21".
 

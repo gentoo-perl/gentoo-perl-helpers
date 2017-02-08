@@ -1,6 +1,7 @@
 0.2.0 2017-02-08/09
  - First version with this Changes file
  - Trace lines now have a right-aligned limit
+ - cmd gen-upgrade-sets now accepts --quiet
  - internal cmd dispatch checks now handled in dorun
  - new-command: installed-deps-atom
  - new-command: installed-match-atom

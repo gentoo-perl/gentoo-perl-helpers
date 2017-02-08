@@ -16,6 +16,10 @@ echo "==== [ bin/gentoo-perl gen-upgrade-sets 5.18 5.20 ] ===="
 ETC_PORTAGE="${tempdir}/5.20" bash bin/gentoo-perl gen-upgrade-sets 5.18 5.20
 echo
 
+echo "==== [ bin/gentoo-perl gen-upgrade-sets --quiet 5.18 5.20 ] ===="
+ETC_PORTAGE="${tempdir}/5.20-quiet" bash bin/gentoo-perl gen-upgrade-sets --quiet 5.18 5.20
+echo
+
 echo "==== [ bin/gentoo-perl gen-upgrade-sets 5.20 5.21 ] ===="
 ETC_PORTAGE="${tempdir}/5.21"  bash bin/gentoo-perl gen-upgrade-sets 5.20 5.21 && die "FAIL: Expected INVALID ABI Fails"
 echo

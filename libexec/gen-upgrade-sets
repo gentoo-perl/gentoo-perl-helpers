@@ -4,12 +4,28 @@
 
 source "${LIBDIR}/core-functions.sh" || exit 1;
 
-[[ $# == 2 ]] || die "Expected ${cmdname} [previous-perl-version] [wanted-version]"
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    "--quiet")
+      export GENTOO_PERL_HELPERS_QUIETNESS=10
+      shift
+      ;;
+    *)
+      [[ -z "${1}"  || "${1:0:1}" == "-" ]] && die "Unknown argument ${1}"
+      if [[ -z "${subslot}" ]]; then
+        subslot="$1"
+        shift
+      else if [[ -z "${destsubslot}" ]]; then
+          destsubslot="$1"
+          shift
+        else
+          die "Excess argument $1"
+        fi
+      fi ;;
+  esac
+done
 
-subslot="$1"
-shift
-destsubslot="$1"
-shift;
+[[ -z "${subslot}" || -z "${destsubslot}" ]] && die "Expected ${cmdname} [previous-perl-version] [wanted-version]"
 
 set -euo pipefail
 
@@ -48,7 +64,7 @@ einfo
 einfo "If portage crashes mid-way through an upgrade, after any relevant issues"
 einfo "Re-run this tool to regenerate the sets before proceeding"
 
-# help: gen-upgrade-sets [previous perl version] [wanted perl version]
+# help: gen-upgrade-sets --opts [previous perl version] [wanted perl version]
 # help:
 # help: example:
 # help:   gen-upgrade-sets 5.22 5.24
@@ -63,6 +79,9 @@ einfo "Re-run this tool to regenerate the sets before proceeding"
 # help:
 # help: If an upgrade fails mid-way, regenerating these sets will regenerate the
 # help: sets with fewer upgrades to install, which is probably what you want.
+# help:
+# help: OPTIONS:
+# help:   --quiet - Suppresses all info/warnings except for fatal ones.
 # help:
 # help: ENVIRONMENT
 # help:   By default, this tool writes to /etc/portage/sets, and the following variables
