@@ -1,4 +1,5 @@
-0.2.0 2017-02-08/07
+0.2.0 2017-02-08/08
+ - new-command: list-blacklisted-for
  - Trace lines now have a right-aligned limit
  - tarball generator now prefixes with ${P}
  - new-command: installed-match-atom

@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# ABSTRACT: Lists blacklisted atoms for installing targets
+
+source "${LIBDIR}/core-functions.sh" || exit 1
+
+BLACKLIST_FILE="${LIBDIR}/blacklists.map.tsv"
+BLACKLIST_ROOT="${LIBDIR}/blacklists"
+
+set -euo pipefail
+
+require_bin grep sys-apps/grep
+
+[[ $# -gt 0 ]] || die "Expected [atom] in ${cmdname} [atom]"
+[[ $# -lt 2 ]] || die "Too many arguments, expected 1 at most."
+
+atom="$1"
+shift;
+
+cut -f 1 "${BLACKLIST_FILE}" | grep -v "^#" | grep -xqF "${atom}"  || die "No blacklist entries for ${atom}"
+
+awk -v "blacklist_key=${atom}" '$1 == blacklist_key { print $2 }' "${BLACKLIST_FILE}" | while read -r i; do
+  cat "${BLACKLIST_ROOT}/${i}"
+done
+
+# help: Invocation
+# help:   gentoo-perl list-blacklisted-for [target-package]
+# help:
+# help: Example:
+# help:   gentoo-perl list-blacklisted-for dev-lang/perl:0/5.20=
+# help:
+# help: Outputs:
+# help:   A list of dependency strings used by subslots other than the desired one.

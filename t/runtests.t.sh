@@ -10,6 +10,7 @@ bash t/cmd/list-commands.t.sh
 bash t/cmd/list-commands-desc.t.sh
 bash t/cmd/print-matching-abi.t.sh
 bash t/cmd/list-excluded-abis.t.sh
+bash t/cmd/list-blacklisted-for.t.sh
 ) |& tee t/runtest.out
 echo "------// DIFF //------------------"
 sed -i 's|[^ ]*/gentoo-perl-helper[.]test[.]gen-upgrade-sets[.][^/]*/|TEMPDIR/|' t/runtest.out

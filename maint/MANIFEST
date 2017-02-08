@@ -1,6 +1,8 @@
 Changes
 README.mkdn
 bin/gentoo-perl
+lib/blacklists.map.tsv
+lib/blacklists/treecleaned-virtuals
 lib/core-functions.sh
 lib/perl-abis.txt
 libexec/gen-upgrade-sets
@@ -10,6 +12,7 @@ libexec/installed-deps-perl-subslot-rebuild
 libexec/installed-match-atom
 libexec/installed-perl-core
 libexec/installed-perl-virtuals
+libexec/list-blacklisted-for
 libexec/list-commands
 libexec/list-commands-desc
 libexec/list-excluded-abis
@@ -22,6 +25,7 @@ t/cmd/installed-deps-perl-subslot-rebuild.t.sh
 t/cmd/installed-match-atom.t.sh
 t/cmd/installed-perl-core.t.sh
 t/cmd/installed-perl-virtuals.t.sh
+t/cmd/list-blacklisted-for.t.sh
 t/cmd/list-commands-desc.t.sh
 t/cmd/list-commands.t.sh
 t/cmd/list-excluded-abis.t.sh

@@ -115,6 +115,7 @@ installed-deps-perl-subslot-rebuild
 installed-match-atom
 installed-perl-core
 installed-perl-virtuals
+list-blacklisted-for
 list-commands
 list-commands-desc
 list-excluded-abis
@@ -128,6 +129,7 @@ version
  installed-match-atom           : Lists all packages installed matching a specification
  installed-perl-core            : Lists all packages installed in perl-core
  installed-perl-virtuals        : Lists all installed virtuals
+ list-blacklisted-for           : Lists blacklisted atoms for installing targets
  list-commands                  : Lists all commands in a format suitable for machine reading
  list-commands-desc             : Lists all commands with descriptions extracted from "ABSTRACT" headings
  list-excluded-abis             : Lists all known ABI's except the one specified
@@ -165,4 +167,18 @@ dev-lang/perl:0/5.16
 
 ==== [ bin/gentoo-perl list-excluded-abis 5.21 ] ====
 [31;1m * [list-excluded-abis.t.sh > list-excluded-abis] [0mAll known ABIs excluded, does "5.21" match a known Perl ABI-version?
+
+==== [ bin/gentoo-perl list-blacklisted-for dev-lang/perl:0/5.24= ] ====
+virtual/perl-CGI
+virtual/perl-Module-Build
+virtual/perl-Module-Pluggable
+virtual/perl-Version-Requirements
+virtual/perl-Class-ISA
+virtual/perl-Filter
+virtual/perl-Switch
+virtual/perl-net-ping
+virtual/perl-locale-maketext
+virtual/perl-i18n-langtags
+virtual/perl-digest-base
+virtual/perl-PodParser
 

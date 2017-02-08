@@ -1,0 +1,12 @@
+virtual/perl-CGI
+virtual/perl-Module-Build
+virtual/perl-Module-Pluggable
+virtual/perl-Version-Requirements
+virtual/perl-Class-ISA
+virtual/perl-Filter
+virtual/perl-Switch
+virtual/perl-net-ping
+virtual/perl-locale-maketext
+virtual/perl-i18n-langtags
+virtual/perl-digest-base
+virtual/perl-PodParser

@@ -1,0 +1,7 @@
+# vim: noet list
+dev-lang/perl:0/5.20=	treecleaned-virtuals
+dev-lang/perl:0/5.22=	treecleaned-virtuals
+dev-lang/perl:0/5.24=	treecleaned-virtuals
+dev-lang/perl:0/5.20	treecleaned-virtuals
+dev-lang/perl:0/5.22	treecleaned-virtuals
+dev-lang/perl:0/5.24	treecleaned-virtuals
