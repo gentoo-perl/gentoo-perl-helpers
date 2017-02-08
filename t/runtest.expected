@@ -106,7 +106,7 @@ lib/core-functions.sh: line 32: type: x-some-program-that-does-not-exist: not fo
 ==== [ bin/gentoo-perl x-does-not-exist ] ====
 [31;1m * [interface.t.sh] [0mNo such command x-does-not-exist, /home/kent/gentoo/gentoo-perl-helpers/libexec/x-does-not-exist does not exist
 ==== [ bin/gentoo-perl version ] ====
-0.1.0
+0.2.0
 ==== [ bin/gentoo-perl list-commands ] ====
 gen-upgrade-sets
 help
