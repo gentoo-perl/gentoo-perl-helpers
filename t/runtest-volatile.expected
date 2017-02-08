@@ -153,7 +153,11 @@ dev-perl/Algorithm-Diff:0
 dev-perl/aliased:0
 dev-perl/AnyEvent:0
 dev-perl/Any-Moose:0
+dev-perl/Apache-AuthCookie:0
 dev-perl/Apache-LogFormat-Compiler:0
+dev-perl/Apache-Reload:0
+dev-perl/Apache-SizeLimit:0
+dev-perl/Apache-Test:0
 dev-perl/App-Cmd:0
 dev-perl/AppConfig:0
 dev-perl/App-cpanminus:0
@@ -175,6 +179,7 @@ dev-perl/B-Hooks-OP-Check:0
 dev-perl/Bit-Vector:0
 dev-perl/B-Keywords:0
 dev-perl/boolean:0
+dev-perl/Browser-Open:0
 dev-perl/BSON:0
 dev-perl/B-Utils:0
 dev-perl/BZ-Client:0
@@ -192,6 +197,7 @@ dev-perl/CGI:0
 dev-perl/CGI-Compile:0
 dev-perl/CGI-Emulate-PSGI:0
 dev-perl/CGI-Fast:0
+dev-perl/Chatbot-Eliza:0
 dev-perl/CHI:0
 dev-perl/Class-Accessor:0
 dev-perl/Class-Accessor-Chained:0
@@ -257,6 +263,7 @@ dev-perl/Crypt-SMIME:0
 dev-perl/Crypt-Twofish:0
 dev-perl/Crypt-URandom:0
 dev-perl/CryptX:0
+dev-perl/CSS-Tiny:0
 dev-perl/Daemon-Generic:0
 dev-perl/Danga-Socket:0
 dev-perl/Data-AMF:0
@@ -439,6 +446,7 @@ dev-perl/File-NFSLock:0
 dev-perl/File-Path-Expand:0
 dev-perl/File-pushd:0
 dev-perl/File-Remove:0
+dev-perl/File-RsyncP:0
 dev-perl/File-Scan-ClamAV:0
 dev-perl/File-Share:0
 dev-perl/File-ShareDir:0
@@ -518,6 +526,7 @@ dev-perl/libintl-perl:0
 dev-perl/libwww-perl:0
 dev-perl/libxml-perl:0
 dev-perl/Lingua-EN-Inflect:0
+dev-perl/Linux-Pid:0
 dev-perl/List-MoreUtils:0
 dev-perl/Locale-gettext:0
 dev-perl/Locale-Maketext-Lexicon:0
@@ -611,6 +620,7 @@ dev-perl/Package-Variant:0
 dev-perl/PadWalker:0
 dev-perl/PAR:0
 dev-perl/Parallel-ForkManager:0
+dev-perl/Parallel-Iterator:0
 dev-perl/Parallel-Prefork:0
 dev-perl/Params-Util:0
 dev-perl/Params-Validate:0
@@ -635,6 +645,7 @@ dev-perl/Perl-Tidy:0
 dev-perl/Perl-Version:0
 dev-perl/Plack:0
 dev-perl/PlRPC:0
+dev-perl/Pod-Coverage:0
 dev-perl/Pod-Eventual:0
 dev-perl/Pod-LaTeX:0
 dev-perl/Pod-Spell:0
@@ -642,6 +653,7 @@ dev-perl/PortageXS:0
 dev-perl/POSIX-strftime-Compiler:0
 dev-perl/PostScript-Simple:0
 dev-perl/PPI:0
+dev-perl/PPI-HTML:0
 dev-perl/PPIx-Regexp:0
 dev-perl/PPIx-Utilities:0
 dev-perl/prefork:0
@@ -787,6 +799,7 @@ dev-perl/UNIVERSAL-require:0
 dev-perl/URI:0
 dev-perl/Variable-Magic:0
 dev-perl/Want:0
+dev-perl/WWW-Form-UrlEncoded:0
 dev-perl/WWW-Mechanize:0
 dev-perl/WWW-Pastebin-PastebinCom-Create:0
 dev-perl/WWW-RobotRules:0
@@ -882,6 +895,7 @@ virtual/perl-Time-Local:0
 virtual/perl-Unicode-Normalize:0
 virtual/perl-version:0
 virtual/perl-XSLoader:0
+www-apache/mod_perl:1
 x11-terms/rxvt-unicode:0
 
 ==== [ bin/gentoo-perl installed-deps-perl-subslot-rebuild 5.20 ] ====
@@ -924,7 +938,11 @@ dev-perl/Algorithm-Diff:0
 dev-perl/aliased:0
 dev-perl/AnyEvent:0
 dev-perl/Any-Moose:0
+dev-perl/Apache-AuthCookie:0
 dev-perl/Apache-LogFormat-Compiler:0
+dev-perl/Apache-Reload:0
+dev-perl/Apache-SizeLimit:0
+dev-perl/Apache-Test:0
 dev-perl/App-Cmd:0
 dev-perl/AppConfig:0
 dev-perl/App-cpanminus:0
@@ -946,6 +964,7 @@ dev-perl/B-Hooks-OP-Check:0
 dev-perl/Bit-Vector:0
 dev-perl/B-Keywords:0
 dev-perl/boolean:0
+dev-perl/Browser-Open:0
 dev-perl/BSON:0
 dev-perl/B-Utils:0
 dev-perl/BZ-Client:0
@@ -963,6 +982,7 @@ dev-perl/CGI:0
 dev-perl/CGI-Compile:0
 dev-perl/CGI-Emulate-PSGI:0
 dev-perl/CGI-Fast:0
+dev-perl/Chatbot-Eliza:0
 dev-perl/CHI:0
 dev-perl/Class-Accessor:0
 dev-perl/Class-Accessor-Chained:0
@@ -1028,6 +1048,7 @@ dev-perl/Crypt-SMIME:0
 dev-perl/Crypt-Twofish:0
 dev-perl/Crypt-URandom:0
 dev-perl/CryptX:0
+dev-perl/CSS-Tiny:0
 dev-perl/Daemon-Generic:0
 dev-perl/Danga-Socket:0
 dev-perl/Data-AMF:0
@@ -1210,6 +1231,7 @@ dev-perl/File-NFSLock:0
 dev-perl/File-Path-Expand:0
 dev-perl/File-pushd:0
 dev-perl/File-Remove:0
+dev-perl/File-RsyncP:0
 dev-perl/File-Scan-ClamAV:0
 dev-perl/File-Share:0
 dev-perl/File-ShareDir:0
@@ -1289,6 +1311,7 @@ dev-perl/libintl-perl:0
 dev-perl/libwww-perl:0
 dev-perl/libxml-perl:0
 dev-perl/Lingua-EN-Inflect:0
+dev-perl/Linux-Pid:0
 dev-perl/List-MoreUtils:0
 dev-perl/Locale-gettext:0
 dev-perl/Locale-Maketext-Lexicon:0
@@ -1382,6 +1405,7 @@ dev-perl/Package-Variant:0
 dev-perl/PadWalker:0
 dev-perl/PAR:0
 dev-perl/Parallel-ForkManager:0
+dev-perl/Parallel-Iterator:0
 dev-perl/Parallel-Prefork:0
 dev-perl/Params-Util:0
 dev-perl/Params-Validate:0
@@ -1406,6 +1430,7 @@ dev-perl/Perl-Tidy:0
 dev-perl/Perl-Version:0
 dev-perl/Plack:0
 dev-perl/PlRPC:0
+dev-perl/Pod-Coverage:0
 dev-perl/Pod-Eventual:0
 dev-perl/Pod-LaTeX:0
 dev-perl/Pod-Spell:0
@@ -1413,6 +1438,7 @@ dev-perl/PortageXS:0
 dev-perl/POSIX-strftime-Compiler:0
 dev-perl/PostScript-Simple:0
 dev-perl/PPI:0
+dev-perl/PPI-HTML:0
 dev-perl/PPIx-Regexp:0
 dev-perl/PPIx-Utilities:0
 dev-perl/prefork:0
@@ -1558,6 +1584,7 @@ dev-perl/UNIVERSAL-require:0
 dev-perl/URI:0
 dev-perl/Variable-Magic:0
 dev-perl/Want:0
+dev-perl/WWW-Form-UrlEncoded:0
 dev-perl/WWW-Mechanize:0
 dev-perl/WWW-Pastebin-PastebinCom-Create:0
 dev-perl/WWW-RobotRules:0
@@ -1653,6 +1680,7 @@ virtual/perl-Time-Local:0
 virtual/perl-Unicode-Normalize:0
 virtual/perl-version:0
 virtual/perl-XSLoader:0
+www-apache/mod_perl:1
 x11-terms/rxvt-unicode:0
 
 ==== [ bin/gentoo-perl installed-deps-perl-subslot-rebuild 5.21 ] ====
