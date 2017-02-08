@@ -122,6 +122,7 @@ list-commands
 list-commands-desc
 list-excluded-abis
 print-matching-abi
+vdb-report-snapshot
 version
 ==== [ bin/gentoo-perl list-commands-desc ] ====
  gen-upgrade-sets               : generates/updates sets in /etc/portage/sets for helping dev-lang/perl upgrades
@@ -137,6 +138,7 @@ version
  list-commands-desc             : Lists all commands with descriptions extracted from "ABSTRACT" headings
  list-excluded-abis             : Lists all known ABI's except the one specified
  print-matching-abi             : Validate and expand an ABI version
+ vdb-report-snapshot            : Takes a snapshot of your portage package state for debugging
  version                        : Print the version of gentoo-perl helpers
 ==== [ bin/gentoo-perl print-matching-abi 5.24 ] ====
 dev-lang/perl:0/5.24

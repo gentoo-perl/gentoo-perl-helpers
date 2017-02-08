@@ -18,6 +18,7 @@ libexec/list-commands
 libexec/list-commands-desc
 libexec/list-excluded-abis
 libexec/print-matching-abi
+libexec/vdb-report-snapshot
 libexec/version
 t/bin/interface.t.sh
 t/cmd/gen-upgrade-sets.t.sh

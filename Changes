@@ -8,6 +8,7 @@
  - new-command: installed-match-atom
  - new-command: installed-match-atom-blacklisted
  - new-command: list-blacklisted-for
+ - new-command: vdb-report-snapshot
  - tarball generator now prefixes with ${P}
 
 0.1.0 2017-01-31/01

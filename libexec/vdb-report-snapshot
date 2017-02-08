@@ -1,0 +1,56 @@
+#!/bin/bash
+
+# ABSTRACT: Takes a snapshot of your portage package state for debugging
+
+source "${LIBDIR}/core-functions.sh" || exit 1
+
+[[ $# == 1 ]] || die "Expected argument [tar.xz] in: ${cmdname} [tar.xz]"
+
+require_bin tar app-arch/tar
+
+set -euo pipefail
+
+tarfile=$1
+
+shift;
+
+tar -caf "${tarfile}" \
+  -C "${EPREFIX:-/}"  \
+  --exclude CONTENTS  \
+  --exclude '*.ebuild'  \
+  --exclude 'environment.bz2' \
+  --exclude 'NEEDED*' \
+  --no-xattrs \
+  --sort=name \
+  --no-acls   \
+  --no-selinux \
+  --exclude-vcs \
+  --exclude-vcs-ignores \
+  --dereference   \
+  -v \
+  --totals  \
+  ./etc/portage \
+  ./var/db/pkg  \
+  $(cd ${EPREFIX:-/} && echo ./var/lib/portage/world* )
+
+# help: Invocation
+# help:   gentoo-perl vdb-report-snapshot /tmp/vdb.tar.xz
+# help:
+# help: Outputs:
+# help:   A .tar.xz file of a minimal subset of the following portage
+# help:   files for the purpose of reporting portage dependency resolution
+# help:   issues:
+# help:     - /var/db/pkg
+# help:     - /etc/portage
+# help:     - /var/lib/portage/world*
+# help:
+# help: PRIVACY NOTE
+# help:   although most of the files collected by this process
+# help:   are *probably* OK and not leaking anything interesting,
+# help:   there's still substantial room for personal stuff to leak.
+# help:
+# help:   It can also serve as a data file for using in an attack, as knowing
+# help:   the exact versions of software you run can help a wouldbe attacker
+# help:   specialise their attack.
+# help:
+# help:   Subsequently, use this command wisely or not at all.
