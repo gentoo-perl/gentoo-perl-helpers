@@ -6,15 +6,7 @@ source "${LIBDIR}/core-functions.sh" || exit 1
 
 set -euo pipefail
 
-require_bin xargs sys-apps/findutils
-require_bin qatom app-portage/portage-utils
-require_bin qdepends app-portage/portage-utils
-require_bin sed sys-apps/sed
-
-portageq match "${EPREFIX:-/}" "virtual/perl-*"                     |\
-  xargs qdepends --nocolor --quiet -k SLOT | sed 's/: /:/'          |\
-  xargs qatom --quiet --nocolor --format "%{CATEGORY}/%{PN}%[SLOT]" |\
-  sed -r 's|:([^/]*)/[^/]*|:\1|'
+dorun installed-match-atom "virtual/perl-*"
 
 # help: Invocation:
 # help:   gentoo-perl installed-perl-virtuals
