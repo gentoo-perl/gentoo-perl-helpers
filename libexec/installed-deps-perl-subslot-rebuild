@@ -19,25 +19,7 @@ require_bin sort sys-apps/coreutils
 abis=( $(dorun list-excluded-abis "${subslot}") )
 (
     for abi in "${abis[@]}"; do
-    einfo "revdep DEPEND scanning for $abi"
-    qdepends --nocolor --depend --quiet --query "${abi}=" |\
-           xargs qdepends --nocolor --quiet -k SLOT | sed 's/: /:/'           |\
-           xargs qatom --quiet --nocolor --format "%{CATEGORY}/%{PN}%[SLOT]"  |\
-           sed -r 's|:([^/]*)/[^/]*|:\1|'       || ewarn "No matches in DEPEND"
-
-
-    einfo "revdep RDEPEND scanning for $abi"
-    qdepends --nocolor --rdepend --quiet --query "${abi}=" |\
-           xargs qdepends --nocolor --quiet -k SLOT | sed 's/: /:/'            |\
-           xargs qatom --quiet --nocolor --format "%{CATEGORY}/%{PN}%[SLOT]"   |\
-           sed -r 's|:([^/]*)/[^/]*|:\1|'       || ewarn "No matches in RDEPEND"
-
-    einfo "revdep PDEPEND scanning for $abi"
-    qdepends --nocolor --pdepend --quiet --query "${abi}=" |\
-           xargs qdepends --nocolor --quiet -k SLOT | sed 's/: /:/'           |\
-           xargs qatom --quiet --nocolor --format "%{CATEGORY}/%{PN}%[SLOT]"   |\
-           sed -r 's|:([^/]*)/[^/]*|:\1|' || ewarn "No matches in PDEPEND"
-
+      dorun installed-deps-atom "${abi}="
     done
 ) | sort -u
 

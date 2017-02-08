@@ -82,66 +82,66 @@ perl-core/Scalar-List-Utils:0
 perl-core/Test-Simple:0
 perl-core/Math-BigInt:0
 ==== [ bin/gentoo-perl installed-deps-perl-subslot-rebuild 5.24 ] ====
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.26
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.26
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.26
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.22
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.22
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.22
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.20
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.20
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.20
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.18
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.18
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.18
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.16
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.16
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.16
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.26=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.26=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.26=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.22=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.22=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.22=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.20=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.20=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.20=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.18=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.18=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.18=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.16=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.16=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.16=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
 
 ==== [ bin/gentoo-perl installed-deps-perl-subslot-rebuild 5.22 ] ====
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.26
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.26
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.26
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.24
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.24
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.24
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.20
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.20
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.20
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.18
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.18
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.18
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.16
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.16
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.16
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.26=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.26=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.26=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.24=
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.24=
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.24=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.20=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.20=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.20=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.18=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.18=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.18=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.16=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.16=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.16=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
 app-admin/rex:0
 app-editors/gvim:0
 app-editors/vim:0
@@ -899,34 +899,34 @@ www-apache/mod_perl:1
 x11-terms/rxvt-unicode:0
 
 ==== [ bin/gentoo-perl installed-deps-perl-subslot-rebuild 5.20 ] ====
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.26
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.26
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.26
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.24
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.24
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.24
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.22
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.22
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.22
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.18
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.18
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.18
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.16
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.16
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
-[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.16
-[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.26=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.26=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.26=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.24=
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.24=
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.24=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.22=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.22=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.22=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.18=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.18=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.18=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.16=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.16=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.16=
+[33m * [installed-deps-perl-subslot-rebuild.t.sh > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
 app-admin/rex:0
 app-editors/gvim:0
 app-editors/vim:0
@@ -1691,36 +1691,36 @@ x11-terms/rxvt-unicode:0
 !!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m... Done TEMPDIR/5.24/sets/perl-cleanup
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating TEMPDIR/5.24/sets/perl-upgrade
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.26
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.26
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.26
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.22
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.22
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.22
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.20
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.20
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.20
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.18
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.18
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.18
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.16
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.16
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.16
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.26=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.26=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.26=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.22=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.22=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.22=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.20=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.20=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.20=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.18=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.18=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.18=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.16=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.16=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.16=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
 [31;1m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mNo packages detected needing recompilation against dev-lang/perl:0/5.24, perhaps you've already upgraded to it?
 [31;1m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mError generating rebuild list
 
@@ -1729,34 +1729,34 @@ x11-terms/rxvt-unicode:0
 !!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m... Done TEMPDIR/5.22/sets/perl-cleanup
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating TEMPDIR/5.22/sets/perl-upgrade
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.26
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.26
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.26
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.24
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.24
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.24
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.20
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.20
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.20
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.18
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.18
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.18
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.16
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.16
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.16
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.26=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.26=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.26=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.24=
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.24=
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.24=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.20=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.20=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.20=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.18=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.18=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.18=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.16=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.16=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.16=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
 !!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m... Done TEMPDIR/5.22/sets/perl-upgrade
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mCreated set @perl-cleanup in TEMPDIR/5.22/sets/perl-cleanup
@@ -1776,34 +1776,34 @@ x11-terms/rxvt-unicode:0
 !!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m... Done TEMPDIR/5.20/sets/perl-cleanup
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating TEMPDIR/5.20/sets/perl-upgrade
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.26
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.26
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.26
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.24
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.24
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.24
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.22
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.22
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.22
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.18
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.18
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.18
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.16
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in DEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.16
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in RDEPEND
-[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.16
-[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.26=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.26=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.26=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.24=
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.24=
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.24=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.22=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.22=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.22=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.18=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.18=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.18=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.16=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.16=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.16=
+[33m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > installed-deps-perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
 !!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m... Done TEMPDIR/5.20/sets/perl-upgrade
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mCreated set @perl-cleanup in TEMPDIR/5.20/sets/perl-cleanup
