@@ -35,7 +35,7 @@ if ( path($lzip_name)->exists ) {
 }
 my $tempdir = tempdir( TEMPLATE => "make_release.XXXXXXX" );
 
-tar_manifest( $manifest, path( $tempdir, $tar_name ), );
+tar_manifest( $output_name, $manifest, path( $tempdir, $tar_name ), );
 
 xz_compress(
     path( $tempdir, $tar_name ),
@@ -61,17 +61,18 @@ sub eerror {
 }
 
 sub tar_manifest {
-    my ( $manifest, $dest ) = @_;
+    my ( $output_name, $manifest, $dest ) = @_;
     einfo "Archiving files from " . green($manifest) . " to " . green($dest);
 
     system(
-        'tar',                    '-cf',
-        $dest,                    '--sort=name',
-        '--no-xattrs',            '--no-acls',
-        '--no-selinux',           '--exclude-vcs',
-        '--exclude-vcs-ignores',  '--dereference',
-        '-v',                     '--totals',
-        "--files-from=$manifest", "--verbatim-files-from"
+        'tar',                                    '-cf',
+        $dest,                                    '--sort=name',
+        '--no-xattrs',                            '--no-acls',
+        '--no-selinux',                           '--exclude-vcs',
+        '--exclude-vcs-ignores',                  '--dereference',
+        '-v',                                     '--totals',
+        "--files-from=$manifest",                 "--verbatim-files-from",
+        '--transform=s|^|' . $output_name . '/|', '--show-transformed-names',
       ) == 0
       or eerror "tar did not exit cleanly, $? $!";
 }
