@@ -113,6 +113,7 @@ help
 installed-deps-atom
 installed-deps-perl-subslot-rebuild
 installed-match-atom
+installed-match-atom-blacklisted
 installed-perl-core
 installed-perl-virtuals
 list-blacklisted-for
@@ -127,6 +128,7 @@ version
  installed-deps-atom            : Shows all packages depending on a specific atom
  installed-deps-perl-subslot-rebuild : Shows all packages would need to be rebuilt to match a target subslot
  installed-match-atom           : Lists all packages installed matching a specification
+ installed-match-atom-blacklisted : Lists all installed packages that should be removed for a given target
  installed-perl-core            : Lists all packages installed in perl-core
  installed-perl-virtuals        : Lists all installed virtuals
  list-blacklisted-for           : Lists blacklisted atoms for installing targets

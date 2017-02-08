@@ -3,6 +3,7 @@
  - Trace lines now have a right-aligned limit
  - new-command: installed-deps-atom
  - new-command: installed-match-atom
+ - new-command: installed-match-atom-blacklisted
  - new-command: list-blacklisted-for
  - tarball generator now prefixes with ${P}
 

@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# ABSTRACT: Lists all installed packages that should be removed for a given target
+
+source "${LIBDIR}/core-functions.sh" || exit 1
+
+[[ $# == 1 ]] || die "Expected argument [atom] in: ${cmdname} [atom]"
+
+set -euo pipefail
+
+atom=$1
+
+(
+  for package in $(dorun list-blacklisted-for "$atom"); do
+    einfo "Looking for cleanups for ${package}"
+    dorun installed-match-atom "${package}" || true
+  done
+) | sort -u
+
+# help: Invocation:
+# help:   gentoo-perl installed-match-atom-blacklisted [atomspec]
+# help:
+# help: Example
+# help:   gentoo-perl installed-match-atom-blacklisted "dev-lang/perl:0/5.22"
+# help:
+# help: Outputs:
+# help:   A list of all installed packages matching the specification which
+# help:   should be emerge -C'd before upgrading Perl
+# help:
