@@ -1689,6 +1689,30 @@ x11-terms/rxvt-unicode:0
 ==== [ bin/gentoo-perl gen-upgrade-sets 5.22 5.24 ] ====
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating TEMPDIR/5.24/sets/perl-cleanup
 !!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-CGI
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Module-Build
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Module-Pluggable
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Version-Requirements
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Class-ISA
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Filter
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Switch
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-net-ping
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-locale-maketext
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-i18n-langtags
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-digest-base
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-PodParser
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m... Done TEMPDIR/5.24/sets/perl-cleanup
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating TEMPDIR/5.24/sets/perl-upgrade
 [32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.26=
@@ -1726,6 +1750,30 @@ x11-terms/rxvt-unicode:0
 
 ==== [ bin/gentoo-perl gen-upgrade-sets 5.20 5.22 ] ====
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating TEMPDIR/5.22/sets/perl-cleanup
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-CGI
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Module-Build
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Module-Pluggable
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Version-Requirements
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Class-ISA
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Filter
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Switch
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-net-ping
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-locale-maketext
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-i18n-langtags
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-digest-base
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-PodParser
 !!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m... Done TEMPDIR/5.22/sets/perl-cleanup
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating TEMPDIR/5.22/sets/perl-upgrade
@@ -1774,6 +1822,30 @@ x11-terms/rxvt-unicode:0
 ==== [ bin/gentoo-perl gen-upgrade-sets 5.18 5.20 ] ====
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating TEMPDIR/5.20/sets/perl-cleanup
 !!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-CGI
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Module-Build
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Module-Pluggable
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Version-Requirements
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Class-ISA
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Filter
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Switch
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-net-ping
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-locale-maketext
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-i18n-langtags
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-digest-base
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-PodParser
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m... Done TEMPDIR/5.20/sets/perl-cleanup
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating TEMPDIR/5.20/sets/perl-upgrade
 [32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.26=
@@ -1819,6 +1891,18 @@ x11-terms/rxvt-unicode:0
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mRe-run this tool to regenerate the sets before proceeding
 
 ==== [ bin/gentoo-perl gen-upgrade-sets --quiet 5.18 5.20 ] ====
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
 !!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
 !!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
 

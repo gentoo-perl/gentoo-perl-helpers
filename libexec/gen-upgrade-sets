@@ -39,7 +39,10 @@ touch -m "${cleanup}" || die "Cannot write ${cleanup}"
 touch -m "${upgrade}" || die "Cannot write ${upgrade}"
 
 einfo "Generating ${cleanup}"
-dorun installed-perl-core >"${cleanup}" || ewarn "Nothing to clean"
+(
+  dorun installed-perl-core || einfo "No perl-core to clean"
+  dorun installed-match-atom-blacklisted "${perl_target}" || einfo "No cruft virtuals to clean"
+) | sort -u >"${cleanup}"
 einfo "... Done ${cleanup}"
 
 einfo "Generating ${upgrade}"
