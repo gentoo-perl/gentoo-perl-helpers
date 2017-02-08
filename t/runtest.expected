@@ -110,6 +110,7 @@ lib/core-functions.sh: line 32: type: x-some-program-that-does-not-exist: not fo
 ==== [ bin/gentoo-perl list-commands ] ====
 gen-upgrade-sets
 help
+installed-deps-atom
 installed-deps-perl-subslot-rebuild
 installed-perl-core
 installed-perl-virtuals
@@ -121,6 +122,7 @@ version
 ==== [ bin/gentoo-perl list-commands-desc ] ====
  gen-upgrade-sets               : generates/updates sets in /etc/portage/sets for helping dev-lang/perl upgrades
  help                           : displays help
+ installed-deps-atom            : Shows all packages depending on a specific atom
  installed-deps-perl-subslot-rebuild : Shows all packages would need to be rebuilt to match a target subslot
  installed-perl-core            : Lists all packages installed in perl-core
  installed-perl-virtuals        : Lists all installed virtuals

@@ -1821,3 +1821,18 @@ x11-terms/rxvt-unicode:0
 ==== [ bin/gentoo-perl gen-upgrade-sets 5.20 5.21 ] ====
 [31;1m * [gen-upgrade-sets.t.sh > gen-upgrade-sets > print-matching-abi] [0mNo ABI matched "5.21".
 
+==== [ bin/gentoo-perl installed-deps-atom app-shells/bash ] ====
+[32m * [installed-deps-atom.t.sh > installed-deps-atom] [0mrevdep DEPEND scanning for app-shells/bash
+[32m * [installed-deps-atom.t.sh > installed-deps-atom] [0mrevdep RDEPEND scanning for app-shells/bash
+[32m * [installed-deps-atom.t.sh > installed-deps-atom] [0mrevdep PDEPEND scanning for app-shells/bash
+[33m * [installed-deps-atom.t.sh > installed-deps-atom] [0mNo matches in PDEPEND
+app-admin/perl-cleaner:0
+app-eselect/eselect-mesa:0
+app-shells/bash-completion:0
+app-text/xmlto:0
+games-util/steam-launcher:0
+sys-apps/portage:0
+sys-apps/rescan-scsi-bus:0
+sys-apps/util-linux:0
+sys-kernel/dracut:0
+
