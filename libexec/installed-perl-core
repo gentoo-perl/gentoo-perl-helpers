@@ -6,15 +6,7 @@ source "${LIBDIR}/core-functions.sh" || exit 1
 
 set -euo pipefail
 
-require_bin portageq sys-apps/portage
-require_bin xargs sys-apps/findutils
-require_bin qatom app-portage/portage-utils
-
-portageq match "${EPREFIX:-/}" "perl-core/*"                        |\
-  xargs qdepends --nocolor --quiet -k SLOT | sed 's/: /:/'          |\
-  xargs qatom --quiet --nocolor --format "%{CATEGORY}/%{PN}%[SLOT]" |\
-  sed -r 's|:([^/]*)/[^/]*|:\1|'
-
+dorun installed-match-atom "perl-core/*"
 
 # help: Invocation:
 # help:   gentoo-perl installed-perl-core
