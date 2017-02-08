@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# ABSTRACT: Lists all packages installed matching a specification
+
+source "${LIBDIR}/core-functions.sh" || exit 1
+
+[[ $# == 1 ]] || die "Expected argument [atom] in: ${cmdname} [atom]"
+
+set -euo pipefail
+
+atom=$1
+
+require_bin portageq sys-apps/portage
+require_bin xargs sys-apps/findutils
+require_bin qatom app-portage/portage-utils
+
+portageq match "${EPREFIX:-/}" "${atom}"                            |\
+  xargs qdepends --nocolor --quiet -k SLOT | sed 's/: /:/'          |\
+  xargs qatom --quiet --nocolor --format "%{CATEGORY}/%{PN}%[SLOT]" |\
+  sed -r 's|:([^/]*)/[^/]*|:\1|'
+
+
+# help: Invocation:
+# help:   gentoo-perl installed-match-atom [atomspec]
+# help:
+# help: Example
+# help:   gentoo-perl installed-match-atom "dev-lang/perl"
+# help:
+# help: Outputs:
+# help:   A list of all installed packages matching the specification
+# help:

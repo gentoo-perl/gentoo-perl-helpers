@@ -7,6 +7,7 @@ libexec/gen-upgrade-sets
 libexec/help
 libexec/installed-deps-atom
 libexec/installed-deps-perl-subslot-rebuild
+libexec/installed-match-atom
 libexec/installed-perl-core
 libexec/installed-perl-virtuals
 libexec/list-commands
@@ -18,6 +19,7 @@ t/bin/interface.t.sh
 t/cmd/gen-upgrade-sets.t.sh
 t/cmd/installed-deps-atom.t.sh
 t/cmd/installed-deps-perl-subslot-rebuild.t.sh
+t/cmd/installed-match-atom.t.sh
 t/cmd/installed-perl-core.t.sh
 t/cmd/installed-perl-virtuals.t.sh
 t/cmd/list-commands-desc.t.sh

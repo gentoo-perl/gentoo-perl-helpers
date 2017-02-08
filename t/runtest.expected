@@ -112,6 +112,7 @@ gen-upgrade-sets
 help
 installed-deps-atom
 installed-deps-perl-subslot-rebuild
+installed-match-atom
 installed-perl-core
 installed-perl-virtuals
 list-commands
@@ -124,6 +125,7 @@ version
  help                           : displays help
  installed-deps-atom            : Shows all packages depending on a specific atom
  installed-deps-perl-subslot-rebuild : Shows all packages would need to be rebuilt to match a target subslot
+ installed-match-atom           : Lists all packages installed matching a specification
  installed-perl-core            : Lists all packages installed in perl-core
  installed-perl-virtuals        : Lists all installed virtuals
  list-commands                  : Lists all commands in a format suitable for machine reading
