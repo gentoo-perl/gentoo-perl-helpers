@@ -1,4 +1,5 @@
-0.2.0 2017-02-08/06
+0.2.0 2017-02-08/07
+ - Trace lines now have a right-aligned limit
  - tarball generator now prefixes with ${P}
  - new-command: installed-match-atom
  - First version with this Changes file

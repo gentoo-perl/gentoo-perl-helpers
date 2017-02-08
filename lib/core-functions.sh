@@ -1,30 +1,36 @@
+function _wrap_trace() {
+  FULL_COMMAND=${FULL_COMMAND:-$(basename $0)}
+  color=$1
+  if [[ ${#FULL_COMMAND} -gt ${TRACELIMIT:-45} ]]; then
+    echo -n -e "\e[${color} * [...${FULL_COMMAND:0-(${TRACELIMIT:-45}-3)}] \e[0m"
+  else
+    echo -n -e "\e[${color} * [${FULL_COMMAND}] \e[0m"
+  fi
+}
+
 # die message
 function die() {
-  FULL_COMMAND=${FULL_COMMAND:-$(basename $0)}
-  echo -n -e "\e[31;1m * [${FULL_COMMAND}] \e[0m" >&2
-  echo "$@" >&2
+  _wrap_trace "31;1m" >&2
+  echo "$@"           >&2
   exit 1
 }
 
 # eerror message
 function eerror() {
-  FULL_COMMAND=${FULL_COMMAND:-$(basename $0)}
-  echo -n -e "\e[31;1m * [${FULL_COMMAND}] \e[0m" >&2
-  echo "$@" >&2
+  _wrap_trace "31;1m" >&2
+  echo "$@"           >&2
 }
 
 # einfo message
 function einfo() {
-  FULL_COMMAND=${FULL_COMMAND:-$(basename $0)}
-  echo -n -e "\e[32m * [${FULL_COMMAND}] \e[0m" >&2
-  echo "$@"                   >&2
+  _wrap_trace "32m" >&2
+  echo "$@"         >&2
 }
 
 # ewarn message
 function ewarn() {
-  FULL_COMMAND=${FULL_COMMAND:-$(basename $0)}
-  echo -n -e "\e[33m * [${FULL_COMMAND}] \e[0m" >&2
-  echo "$@"                   >&2
+  _wrap_trace "33m" >&2
+  echo "$@"         >&2
 }
 
 # require_bin bin_name portage/package

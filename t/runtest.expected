@@ -24,9 +24,9 @@
 [33m * [test > ewarn] [0mthis is warn
 [33m * [info.t.sh > ewarn] [0mthis is warn
 ====[ require_bin test ]====
-lib/core-functions.sh: line 32: type: x-some-program-that-does-not-exist: not found
+lib/core-functions.sh: line 38: type: x-some-program-that-does-not-exist: not found
 [31;1m * [require_bin.t.sh] [0mNo x-some-program-that-does-not-exist in path, install sys-fictious/troll-program
-lib/core-functions.sh: line 32: type: x-some-program-that-does-not-exist: not found
+lib/core-functions.sh: line 38: type: x-some-program-that-does-not-exist: not found
 [31;1m * [require_bin.t.sh > require_bin] [0mNo x-some-program-that-does-not-exist in path, install sys-fictious/troll-program
 ==== [ bin/gentoo-perl ] ====
 [31;1m * [interface.t.sh] [0mNo command specified
