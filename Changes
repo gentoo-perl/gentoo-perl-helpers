@@ -1,10 +1,10 @@
 0.2.0 2017-02-08/08
- - new-command: list-blacklisted-for
- - Trace lines now have a right-aligned limit
- - tarball generator now prefixes with ${P}
- - new-command: installed-match-atom
  - First version with this Changes file
+ - Trace lines now have a right-aligned limit
  - new-command: installed-deps-atom
+ - new-command: installed-match-atom
+ - new-command: list-blacklisted-for
+ - tarball generator now prefixes with ${P}
 
 0.1.0 2017-01-31/01
  - Initial Version

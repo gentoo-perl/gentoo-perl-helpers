@@ -65,7 +65,7 @@ sub print_notes {
             $fd->printf( "%s %s\n", $tag->{tag}, $tag->{time} );
         }
     }
-    for ( @{ $notes || [] } ) {
+    for ( sort @{ $notes || [] } ) {
         for my $fd ( *STDOUT, $fh ) {
             $fd->printf( " - %s", $_ );
         }
