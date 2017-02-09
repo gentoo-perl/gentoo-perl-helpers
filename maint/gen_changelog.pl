@@ -48,7 +48,7 @@ while ( $buf =~ /\A ( [^${RS}]* ${RS} ([^${RS}]*) ${RS} )/x ) {
 
     exists $tag->{time} or $tag->{time} = $time;
 
-    if ( $decoration =~ /^tag: (.*)$/ ) {
+    if ( $decoration =~ /^tag:\s*([\d.]*)/ ) {
         print_notes( $tag, \@notes );
         $tag = { tag => $1, time => $time };
         @notes = ();
