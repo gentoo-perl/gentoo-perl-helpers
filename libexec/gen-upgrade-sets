@@ -4,11 +4,22 @@
 
 source "${LIBDIR}/core-functions.sh" || exit 1;
 
+set_suffix=""
+
 while [[ $# -gt 0 ]]; do
   case "$1" in
     "--quiet")
       export GENTOO_PERL_HELPERS_QUIETNESS=10
       shift
+      ;;
+    "--suffix")
+      shift;
+      set_suffix="$1";
+      shift;
+      ;;
+    "--suffix="*)
+      set_suffix="${1##--suffix=}"
+      shift;
       ;;
     *)
       [[ -z "${1}"  || "${1:0:1}" == "-" ]] && die "Unknown argument ${1}"
@@ -30,8 +41,8 @@ done
 set -euo pipefail
 
 sets="${ETC_PORTAGE_SETS:-${ETC_PORTAGE:-/etc/portage}/sets}"
-cleanup="${sets}/perl-cleanup"
-upgrade="${sets}/perl-upgrade"
+cleanup="${sets}/perl-cleanup${set_suffix}"
+upgrade="${sets}/perl-upgrade${set_suffix}"
 perl_target="$(dorun print-matching-abi "${destsubslot}")"
 
 mkdir -p "${sets}"    || die "Cannot ensure ${sets} directory exists"
@@ -55,19 +66,19 @@ einfo "Generating ${upgrade}"
 
 einfo "... Done ${upgrade}"
 
-einfo "Created set @perl-cleanup in ${cleanup}"
-einfo "Created set @perl-upgrade in ${upgrade}"
+einfo "Created set @perl-cleanup${set_suffix} in ${cleanup}"
+einfo "Created set @perl-upgrade${set_suffix} in ${upgrade}"
 einfo
 einfo "Assuming both of those were in /etc/portage/sets you can now do"
-einfo "  emerge -va1 -k n @perl-upgrade"
+einfo "  emerge -va1 -k n @perl-upgrade${set_suffix}"
 einfo "And if this exhibits confusing blockers that only refer to perl-core"
-einfo "  emerge -C -va @perl-cleanup"
+einfo "  emerge -C -va @perl-cleanup${set_suffix}"
 einfo "Should help pave the way forward"
 einfo
 einfo "If portage crashes mid-way through an upgrade, after any relevant issues"
 einfo "Re-run this tool to regenerate the sets before proceeding"
 
-# help: gen-upgrade-sets --opts [previous perl version] [wanted perl version]
+# help: gen-upgrade-sets <--opts> [previous perl version] [wanted perl version]
 # help:
 # help: example:
 # help:   gen-upgrade-sets 5.22 5.24
@@ -84,7 +95,10 @@ einfo "Re-run this tool to regenerate the sets before proceeding"
 # help: sets with fewer upgrades to install, which is probably what you want.
 # help:
 # help: OPTIONS:
-# help:   --quiet - Suppresses all info/warnings except for fatal ones.
+# help:   --quiet         - Suppresses all info/warnings except for fatal ones.
+# help:
+# help:   --suffix=[name] - Append a user specified suffix string onto generated set
+# help:   --suffix [name]   names.
 # help:
 # help: ENVIRONMENT
 # help:   By default, this tool writes to /etc/portage/sets, and the following variables

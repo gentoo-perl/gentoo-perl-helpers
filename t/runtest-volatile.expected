@@ -1906,6 +1906,152 @@ x11-terms/rxvt-unicode:0
 !!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
 !!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
 
+==== [ bin/gentoo-perl gen-upgrade-sets --suffix -v5.20 5.18 5.20 ] ====
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating TEMPDIR/5.20-suffix/sets/perl-cleanup-v5.20
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-CGI
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Module-Build
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Module-Pluggable
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Version-Requirements
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Class-ISA
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Filter
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Switch
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-net-ping
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-locale-maketext
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-i18n-langtags
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-digest-base
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-PodParser
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m... Done TEMPDIR/5.20-suffix/sets/perl-cleanup-v5.20
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating TEMPDIR/5.20-suffix/sets/perl-upgrade-v5.20
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.26=
+[33m * [...perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.26=
+[33m * [...perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.26=
+[33m * [...perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.24=
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.24=
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.24=
+[33m * [...perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.22=
+[33m * [...perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.22=
+[33m * [...perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.22=
+[33m * [...perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.18=
+[33m * [...perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.18=
+[33m * [...perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.18=
+[33m * [...perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.16=
+[33m * [...perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.16=
+[33m * [...perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.16=
+[33m * [...perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m... Done TEMPDIR/5.20-suffix/sets/perl-upgrade-v5.20
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mCreated set @perl-cleanup-v5.20 in TEMPDIR/5.20-suffix/sets/perl-cleanup-v5.20
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mCreated set @perl-upgrade-v5.20 in TEMPDIR/5.20-suffix/sets/perl-upgrade-v5.20
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mAssuming both of those were in /etc/portage/sets you can now do
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m  emerge -va1 -k n @perl-upgrade-v5.20
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mAnd if this exhibits confusing blockers that only refer to perl-core
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m  emerge -C -va @perl-cleanup-v5.20
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mShould help pave the way forward
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mIf portage crashes mid-way through an upgrade, after any relevant issues
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mRe-run this tool to regenerate the sets before proceeding
+perl-cleanup-v5.20
+perl-upgrade-v5.20
+
+==== [ bin/gentoo-perl gen-upgrade-sets --suffix=-v5.20 5.18 5.20 ] ====
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating TEMPDIR/5.20-suffix=/sets/perl-cleanup-v5.20
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-CGI
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Module-Build
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Module-Pluggable
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Version-Requirements
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Class-ISA
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Filter
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Switch
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-net-ping
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-locale-maketext
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-i18n-langtags
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-digest-base
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-PodParser
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m... Done TEMPDIR/5.20-suffix=/sets/perl-cleanup-v5.20
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating TEMPDIR/5.20-suffix=/sets/perl-upgrade-v5.20
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.26=
+[33m * [...perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.26=
+[33m * [...perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.26=
+[33m * [...perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.24=
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.24=
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.24=
+[33m * [...perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.22=
+[33m * [...perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.22=
+[33m * [...perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.22=
+[33m * [...perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.18=
+[33m * [...perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.18=
+[33m * [...perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.18=
+[33m * [...perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.16=
+[33m * [...perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep RDEPEND scanning for dev-lang/perl:0/5.16=
+[33m * [...perl-subslot-rebuild > installed-deps-atom] [0mNo matches in RDEPEND
+[32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep PDEPEND scanning for dev-lang/perl:0/5.16=
+[33m * [...perl-subslot-rebuild > installed-deps-atom] [0mNo matches in PDEPEND
+!!! Section 'perl-experimental-snapshots' in repos.conf has name different from repository name 'perl-experimental' set inside repository
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m... Done TEMPDIR/5.20-suffix=/sets/perl-upgrade-v5.20
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mCreated set @perl-cleanup-v5.20 in TEMPDIR/5.20-suffix=/sets/perl-cleanup-v5.20
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mCreated set @perl-upgrade-v5.20 in TEMPDIR/5.20-suffix=/sets/perl-upgrade-v5.20
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mAssuming both of those were in /etc/portage/sets you can now do
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m  emerge -va1 -k n @perl-upgrade-v5.20
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mAnd if this exhibits confusing blockers that only refer to perl-core
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m  emerge -C -va @perl-cleanup-v5.20
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mShould help pave the way forward
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mIf portage crashes mid-way through an upgrade, after any relevant issues
+[32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mRe-run this tool to regenerate the sets before proceeding
+perl-cleanup-v5.20
+perl-upgrade-v5.20
+
 ==== [ bin/gentoo-perl gen-upgrade-sets 5.20 5.21 ] ====
 [31;1m * [...sh > gen-upgrade-sets > print-matching-abi] [0mNo ABI matched "5.21".
 
