@@ -9,6 +9,7 @@ libexec/gen-upgrade-sets
 libexec/help
 libexec/installed-deps-atom
 libexec/installed-deps-perl-subslot-rebuild
+libexec/installed-deps-regex
 libexec/installed-match-atom
 libexec/installed-match-atom-blacklisted
 libexec/installed-perl-core
