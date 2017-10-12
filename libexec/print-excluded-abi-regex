@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# ABSTRACT: Produce a regex that matches Perl's other than a given ABI
+
+source "${LIBDIR}/core-functions.sh" || exit 1
+
+ABISFILE="${LIBDIR}/perl-abis.txt"
+
+set -euo pipefail
+
+require_bin grep sys-apps/grep
+
+[[ $# -gt 0 ]] || die "Expected [wanted-perl-version] in ${cmdname} [wanted-perl-version]"
+[[ $# -lt 2 ]] || die "Too many arguments, expected 2 at most."
+
+subslot="$1"
+shift;
+
+grep -xqF "${subslot}" "${ABISFILE}" || die "All known ABIs excluded, does \"${subslot}\" match a known Perl ABI-version?"
+
+function join {
+  local IFS="$1"
+  shift
+  echo "$*"
+}
+
+ABIS=( $( grep -vxF "${subslot}" "${ABISFILE}" | sed 's^\.^\\.^' ) );
+
+printf "dev-lang/perl(|-5\.[^: ]+):0/(%s)=\n" "$(join '|' "${ABIS[@]}")";
+
+# help: Invocation
+# help:   gentoo-perl print-excluded-abi-regex [wanted-subslot]
+# help:
+# help: Outputs:
+# help:   A regex that should match all abi-locking perl dependencies
+# help:   other than the stated one

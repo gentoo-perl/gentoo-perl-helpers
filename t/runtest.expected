@@ -107,7 +107,7 @@ lib/core-functions.sh: line 50: type: x-some-program-that-does-not-exist: not fo
 /home/kent/gentoo/gentoo-perl-helpers/lib/core-functions.sh: line 61: type: x-does-not-exist: not found
 [31;1m * [interface.t.sh] [0mNo such command x-does-not-exist, /home/kent/gentoo/gentoo-perl-helpers/libexec/x-does-not-exist does not exist
 ==== [ bin/gentoo-perl version ] ====
-0.2.2
+0.2.3
 ==== [ bin/gentoo-perl list-commands ] ====
 gen-upgrade-sets
 help
@@ -121,6 +121,7 @@ list-blacklisted-for
 list-commands
 list-commands-desc
 list-excluded-abis
+print-excluded-abi-regex
 print-matching-abi
 vdb-report-snapshot
 version
@@ -137,6 +138,7 @@ version
  list-commands                  : Lists all commands in a format suitable for machine reading
  list-commands-desc             : Lists all commands with descriptions extracted from "ABSTRACT" headings
  list-excluded-abis             : Lists all known ABI's except the one specified
+ print-excluded-abi-regex       : Produce a regex that matches Perl's other than a given ABI
  print-matching-abi             : Validate and expand an ABI version
  vdb-report-snapshot            : Takes a snapshot of your portage package state for debugging
  version                        : Print the version of gentoo-perl helpers

@@ -17,6 +17,7 @@ libexec/list-blacklisted-for
 libexec/list-commands
 libexec/list-commands-desc
 libexec/list-excluded-abis
+libexec/print-excluded-abi-regex
 libexec/print-matching-abi
 libexec/vdb-report-snapshot
 libexec/version
