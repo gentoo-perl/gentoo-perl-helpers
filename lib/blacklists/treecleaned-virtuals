@@ -10,3 +10,5 @@ virtual/perl-locale-maketext
 virtual/perl-i18n-langtags
 virtual/perl-digest-base
 virtual/perl-PodParser
+virtual/perl-ExtUtils-Command
+virtual/perl-Package-Constants
