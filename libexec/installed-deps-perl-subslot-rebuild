@@ -16,12 +16,8 @@ require_bin qdepends app-portage/portage-utils
 require_bin sed sys-apps/sed
 require_bin sort sys-apps/coreutils
 
-abis=( $(dorun list-excluded-abis "${subslot}") )
-(
-    for abi in "${abis[@]}"; do
-      dorun installed-deps-atom "${abi}="
-    done
-) | sort -u
+regex=$(dorun print-excluded-abi-regex "${subslot}")
+dorun installed-deps-atom "${regex}"
 
 # help: Invocation:
 # help:   gentoo-perl installed-deps-perl-subslot-rebuild [perl-subslot-version]

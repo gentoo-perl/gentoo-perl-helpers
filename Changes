@@ -2,6 +2,7 @@
  - Add support for Perl ABI 5.28
  - add installed-deps-regex command
  - add print-excluded-abi-regex
+ - use regex matching to pick up deps with versions in them making it faster in the process
 
 0.2.2 2017-06-05/14
  - Add a --suffix option to gen-upgrade-sets
