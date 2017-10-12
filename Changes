@@ -1,4 +1,5 @@
 0.2.3 2017-10-12/04
+ - Add support for Perl ABI 5.28
  - add print-excluded-abi-regex
 
 0.2.2 2017-06-05/14
