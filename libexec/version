@@ -2,7 +2,7 @@
 
 # ABSTRACT: Print the version of gentoo-perl helpers
 
-echo 0.3.0
+echo 0.3.1
 
 # help: Invocation
 # help:   gentoo-perl version

@@ -1,3 +1,5 @@
+0.3.1 2017-10-12/18
+
 0.3.0 2017-10-12/04
  - Add support for Perl ABI 5.28
  - add installed-deps-regex command
