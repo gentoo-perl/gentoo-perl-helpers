@@ -10,20 +10,12 @@ set -euo pipefail
 atom=$1;
 
 shift
-require_bin xargs sys-apps/findutils
-require_bin qatom app-portage/portage-utils
 require_bin qdepends app-portage/portage-utils
-require_bin sed sys-apps/sed
 require_bin sort sys-apps/coreutils
-
 (
-  for PHASE in "depend" "rdepend" "pdepend"; do
-  einfo "revdep ${PHASE^^} scanning for ${atom}"
-  qdepends --nocolor --${PHASE} --quiet --query "${atom}" |\
-           xargs qdepends --nocolor --quiet -k SLOT | sed 's/: /:/'           |\
-           xargs qatom --quiet --nocolor --format "%{CATEGORY}/%{PN}%[SLOT]"  |\
-           sed -r 's|:([^/]*)/[^/]*|:\1|'       || ewarn "No matches in ${PHASE^^}"
-  done
+  einfo "revdep scanning for ${atom}"
+  qdepends --nocolor --quiet --quiet --depend --rdepend --pdepend --bdepend --format "%{CAT}/%{PN}:%{SLOT}" --query "${atom}" ||
+    ewarn "No matches"
 ) | sort -u
 # help: Invocation:
 # help:   gentoo-perl installed-deps-atom [spec]
