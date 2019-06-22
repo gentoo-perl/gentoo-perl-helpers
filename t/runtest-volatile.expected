@@ -1,23 +1,20 @@
 ==== [ bin/gentoo-perl installed-perl-virtuals ] ====
 virtual/perl-Archive-Tar:0
 virtual/perl-Attribute-Handlers:0
-virtual/perl-AutoLoader:0
+virtual/perl-CPAN:0
+virtual/perl-CPAN-Meta:0
 virtual/perl-CPAN-Meta-Requirements:0
 virtual/perl-CPAN-Meta-YAML:0
-virtual/perl-CPAN-Meta:0
-virtual/perl-CPAN:0
 virtual/perl-Carp:0
 virtual/perl-Compress-Raw-Bzip2:0
 virtual/perl-Compress-Raw-Zlib:0
-virtual/perl-DB_File:0
 virtual/perl-Data-Dumper:0
+virtual/perl-Digest:0
 virtual/perl-Digest-MD5:0
 virtual/perl-Digest-SHA:0
-virtual/perl-Digest:0
 virtual/perl-Encode:0
 virtual/perl-Exporter:0
 virtual/perl-ExtUtils-CBuilder:0
-virtual/perl-ExtUtils-Constant:0
 virtual/perl-ExtUtils-Install:0
 virtual/perl-ExtUtils-MakeMaker:0
 virtual/perl-ExtUtils-Manifest:0
@@ -27,19 +24,15 @@ virtual/perl-File-Spec:0
 virtual/perl-File-Temp:0
 virtual/perl-Getopt-Long:0
 virtual/perl-HTTP-Tiny:0
+virtual/perl-IO:0
 virtual/perl-IO-Compress:0
 virtual/perl-IO-Socket-IP:0
 virtual/perl-IO-Zlib:0
-virtual/perl-IO:0
 virtual/perl-IPC-Cmd:0
 virtual/perl-JSON-PP:0
 virtual/perl-Locale-Maketext-Simple:0
-virtual/perl-Locale-Maketext:0
 virtual/perl-MIME-Base64:0
-virtual/perl-Math-BigInt-FastCalc:0
 virtual/perl-Math-BigInt:0
-virtual/perl-Math-BigRat:0
-virtual/perl-Math-Complex:0
 virtual/perl-Module-CoreList:0
 virtual/perl-Module-Load:0
 virtual/perl-Module-Metadata:0
@@ -49,36 +42,32 @@ virtual/perl-Perl-OSType:0
 virtual/perl-Pod-Escapes:0
 virtual/perl-Pod-Parser:0
 virtual/perl-Pod-Simple:0
+virtual/perl-Safe:0
 virtual/perl-Scalar-List-Utils:0
 virtual/perl-Socket:0
 virtual/perl-Storable:0
 virtual/perl-Sys-Syslog:0
 virtual/perl-Term-ANSIColor:0
 virtual/perl-Term-ReadLine:0
+virtual/perl-Test:0
 virtual/perl-Test-Harness:0
 virtual/perl-Test-Simple:0
-virtual/perl-Test:0
 virtual/perl-Text-Balanced:0
 virtual/perl-Text-ParseWords:0
 virtual/perl-Text-Tabs+Wrap:0
 virtual/perl-Time-HiRes:0
 virtual/perl-Time-Local:0
 virtual/perl-Time-Piece:0
-virtual/perl-Unicode-Normalize:0
 virtual/perl-XSLoader:0
 virtual/perl-autodie:0
-virtual/perl-bignum:0
 virtual/perl-if:0
 virtual/perl-libnet:0
 virtual/perl-parent:0
 virtual/perl-podlators:0
-virtual/perl-threads-shared:0
 virtual/perl-version:0
 ==== [ bin/gentoo-perl installed-perl-core ] ====
 perl-core/File-Temp:0
-perl-core/Math-BigInt:0
-perl-core/Scalar-List-Utils:0
-perl-core/Test-Simple:0
+perl-core/Module-CoreList:0
 ==== [ bin/gentoo-perl installed-deps-perl-subslot-rebuild 5.24 ] ====
 [32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.26=
 [33m * [...perl-subslot-rebuild > installed-deps-atom] [0mNo matches in DEPEND
@@ -1698,6 +1687,8 @@ x11-terms/rxvt-unicode:0
 [32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-i18n-langtags
 [32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-digest-base
 [32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-PodParser
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-ExtUtils-Command
+[32m * [...de-sets > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Package-Constants
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0m... Done TEMPDIR/5.24/sets/perl-cleanup
 [32m * [gen-upgrade-sets.t.sh > gen-upgrade-sets] [0mGenerating TEMPDIR/5.24/sets/perl-upgrade
 [32m * [...perl-subslot-rebuild > installed-deps-atom] [0mrevdep DEPEND scanning for dev-lang/perl:0/5.26=
@@ -1990,30 +1981,25 @@ dev-lang/perl:0
 
 ==== [ bin/gentoo-perl installed-match-atom perl-core/* ] ====
 perl-core/File-Temp:0
-perl-core/Math-BigInt:0
-perl-core/Scalar-List-Utils:0
-perl-core/Test-Simple:0
+perl-core/Module-CoreList:0
 
 ==== [ bin/gentoo-perl installed-match-atom virtual/perl-* ] ====
 virtual/perl-Archive-Tar:0
 virtual/perl-Attribute-Handlers:0
-virtual/perl-AutoLoader:0
+virtual/perl-CPAN:0
+virtual/perl-CPAN-Meta:0
 virtual/perl-CPAN-Meta-Requirements:0
 virtual/perl-CPAN-Meta-YAML:0
-virtual/perl-CPAN-Meta:0
-virtual/perl-CPAN:0
 virtual/perl-Carp:0
 virtual/perl-Compress-Raw-Bzip2:0
 virtual/perl-Compress-Raw-Zlib:0
-virtual/perl-DB_File:0
 virtual/perl-Data-Dumper:0
+virtual/perl-Digest:0
 virtual/perl-Digest-MD5:0
 virtual/perl-Digest-SHA:0
-virtual/perl-Digest:0
 virtual/perl-Encode:0
 virtual/perl-Exporter:0
 virtual/perl-ExtUtils-CBuilder:0
-virtual/perl-ExtUtils-Constant:0
 virtual/perl-ExtUtils-Install:0
 virtual/perl-ExtUtils-MakeMaker:0
 virtual/perl-ExtUtils-Manifest:0
@@ -2023,19 +2009,15 @@ virtual/perl-File-Spec:0
 virtual/perl-File-Temp:0
 virtual/perl-Getopt-Long:0
 virtual/perl-HTTP-Tiny:0
+virtual/perl-IO:0
 virtual/perl-IO-Compress:0
 virtual/perl-IO-Socket-IP:0
 virtual/perl-IO-Zlib:0
-virtual/perl-IO:0
 virtual/perl-IPC-Cmd:0
 virtual/perl-JSON-PP:0
 virtual/perl-Locale-Maketext-Simple:0
-virtual/perl-Locale-Maketext:0
 virtual/perl-MIME-Base64:0
-virtual/perl-Math-BigInt-FastCalc:0
 virtual/perl-Math-BigInt:0
-virtual/perl-Math-BigRat:0
-virtual/perl-Math-Complex:0
 virtual/perl-Module-CoreList:0
 virtual/perl-Module-Load:0
 virtual/perl-Module-Metadata:0
@@ -2045,30 +2027,28 @@ virtual/perl-Perl-OSType:0
 virtual/perl-Pod-Escapes:0
 virtual/perl-Pod-Parser:0
 virtual/perl-Pod-Simple:0
+virtual/perl-Safe:0
 virtual/perl-Scalar-List-Utils:0
 virtual/perl-Socket:0
 virtual/perl-Storable:0
 virtual/perl-Sys-Syslog:0
 virtual/perl-Term-ANSIColor:0
 virtual/perl-Term-ReadLine:0
+virtual/perl-Test:0
 virtual/perl-Test-Harness:0
 virtual/perl-Test-Simple:0
-virtual/perl-Test:0
 virtual/perl-Text-Balanced:0
 virtual/perl-Text-ParseWords:0
 virtual/perl-Text-Tabs+Wrap:0
 virtual/perl-Time-HiRes:0
 virtual/perl-Time-Local:0
 virtual/perl-Time-Piece:0
-virtual/perl-Unicode-Normalize:0
 virtual/perl-XSLoader:0
 virtual/perl-autodie:0
-virtual/perl-bignum:0
 virtual/perl-if:0
 virtual/perl-libnet:0
 virtual/perl-parent:0
 virtual/perl-podlators:0
-virtual/perl-threads-shared:0
 virtual/perl-version:0
 
 ==== [ bin/gentoo-perl installed-match-atom-blacklisted dev-lang/perl:0/5.22= ] ====
@@ -2084,4 +2064,6 @@ virtual/perl-version:0
 [32m * [...ed.t.sh > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-i18n-langtags
 [32m * [...ed.t.sh > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-digest-base
 [32m * [...ed.t.sh > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-PodParser
+[32m * [...ed.t.sh > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-ExtUtils-Command
+[32m * [...ed.t.sh > installed-match-atom-blacklisted] [0mLooking for cleanups for virtual/perl-Package-Constants
 

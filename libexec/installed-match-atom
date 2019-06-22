@@ -10,15 +10,9 @@ set -euo pipefail
 
 atom=$1
 
-require_bin portageq sys-apps/portage
-require_bin xargs sys-apps/findutils
-require_bin qatom app-portage/portage-utils
+require_bin qlist app-portage/portage-utils
 
-portageq match "${EPREFIX:-/}" "${atom}"                            |\
-  xargs qdepends --nocolor --quiet -k SLOT | sed 's/: /:/'          |\
-  xargs qatom --quiet --nocolor --format "%{CATEGORY}/%{PN}%[SLOT]" |\
-  sed -r 's|:([^/]*)/[^/]*|:\1|'
-
+qlist --nocolor --installed --slots "${atom}"
 
 # help: Invocation:
 # help:   gentoo-perl installed-match-atom [atomspec]

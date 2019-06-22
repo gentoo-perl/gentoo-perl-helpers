@@ -6,7 +6,6 @@
 - sys-apps/coreutils (sort)
 - sys-apps/findutils (xargs)
 - sys-apps/grep (grep)
-- sys-apps/portage  (portageq)
 - sys-apps/sed (sed)
 
 
