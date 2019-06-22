@@ -71,7 +71,7 @@ sub tar_manifest {
         '--no-selinux',                           '--exclude-vcs',
         '--exclude-vcs-ignores',                  '--dereference',
         '-v',                                     '--totals',
-        "--files-from=$manifest",                 "--verbatim-files-from",
+        "--verbatim-files-from",                  "--files-from=$manifest",
         '--transform=s|^|' . $output_name . '/|', '--show-transformed-names',
       ) == 0
       or eerror "tar did not exit cleanly, $? $!";
