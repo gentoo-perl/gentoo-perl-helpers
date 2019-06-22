@@ -1,4 +1,4 @@
-0.4.0 2019-06-22/09
+0.4.0 2019-06-22/10
  - Support functions that match against ABIs up to perl 5.40
  - installed-match-atom reimpmented in terms of new qlist
  - reimplement installed-deps-atom mechanic w/ new portage-utils
