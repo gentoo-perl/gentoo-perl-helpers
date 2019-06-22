@@ -13,5 +13,5 @@ bash bin/gentoo-perl installed-deps-perl-subslot-rebuild 5.20
 echo
 
 echo "==== [ bin/gentoo-perl installed-deps-perl-subslot-rebuild 5.21 ] ===="
-bash bin/gentoo-perl installed-deps-perl-subslot-rebuild 5.21 && die "FAIL: Expected INVALID ABI Fails"
+bash bin/gentoo-perl installed-deps-perl-subslot-rebuild 5.21
 echo

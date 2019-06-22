@@ -10,14 +10,10 @@ set -euo pipefail
 subslot=$1;
 
 shift
-require_bin xargs sys-apps/findutils
-require_bin qatom app-portage/portage-utils
 require_bin qdepends app-portage/portage-utils
-require_bin sed sys-apps/sed
 require_bin sort sys-apps/coreutils
 
-regex=$(dorun print-excluded-abi-regex "${subslot}")
-dorun installed-deps-atom "${regex}"
+dorun installed-deps-atom "^dev-lang/perl:0/${subslot}"
 
 # help: Invocation:
 # help:   gentoo-perl installed-deps-perl-subslot-rebuild [perl-subslot-version]

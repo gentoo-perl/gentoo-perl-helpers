@@ -2,6 +2,7 @@
  - Support functions that match against ABIs up to perl 5.40
  - installed-match-atom reimpmented in terms of new qlist
  - reimplement installed-deps-atom mechanic w/ new portage-utils
+ - reimplement subslot rebuild extraction using new qdepends antislot matching
 
 0.3.1 2017-10-12/18
  - blacklist virtual/perl-ExtUtils-Command and virtual/perl-Package-Constants
